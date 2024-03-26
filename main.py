@@ -92,7 +92,6 @@ for image_file in image_files:
                 ]
             )
 
-
             # Получаем текстовый ответ от GPT
             gpt_response = response.choices[0]["message"]["content"]
 
@@ -120,41 +119,6 @@ for image_file in image_files:
 
             print("---------------------------------------")
 
-
-
-            # # Проверяем наличие запрещенных слов
-            # if title_line and description and ("the photo shows" in title_line or "In the picture" in title_line or "the photo shows" in description or "In the picture" in description):
-            #     print("Ошибка: найдены запрещенные слова в ответе")
-            #     attempts += 1  # Увеличиваем счетчик попыток
-            #     continue  # Повторяем обработку файла
-
-            # Загружаем изображение
-            # img = Image.open(image_path)
-
-            # Проверяем наличие метаданных Exif
-            # Проверяем наличие метаданных Exif
-
-            # exif_dict = {"0th": {}, "Exif": {}, "GPS": {}, "Interop": {}, "1st": {}, "thumbnail": None}
-
-            # # Кодировка строк в UTF-16LE для совместимости с XP тегами
-            # if title_line:
-            #     encoded_title = title_line.encode('utf-16le')
-            # if description:
-            #     encoded_description = description.encode('utf-16le')
-            # if tags_line:
-            #     encoded_tags = tags_line.encode('utf-16le')
-
-            # # Добавление метаданных
-            # if title_line:
-            #     exif_dict['0th'][piexif.ImageIFD.XPTitle] = encoded_title
-            # if description:
-            #     exif_dict['0th'][piexif.ImageIFD.XPSubject] = encoded_description
-            # if tags_line:
-            #     exif_dict['0th'][piexif.ImageIFD.XPKeywords] = encoded_tags
-
-            # Сохранение изменений
-            # exif_bytes = piexif.dump(exif_dict)
-            # img.save(image_path, exif=exif_bytes, format='JPEG')
 
         except Exception as e:
             print("Ошибка при обработке файла:", e)

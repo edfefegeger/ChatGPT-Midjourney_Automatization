@@ -1,0 +1,5 @@
+# Ignore contents of the PICTURES folder
+PICTURES/*
+
+# Ignore the config.ini file
+config.ini
