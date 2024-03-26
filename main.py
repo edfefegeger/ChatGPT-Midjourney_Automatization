@@ -4,8 +4,8 @@ import os
 import base64
 import configparser
 from PIL import Image
-import piexif
 from tkinter import filedialog, Tk  # Импортируем необходимые модули из tkinter
+import keyboard
 
 # Чтение API-ключей из файла конфигурации
 config = configparser.ConfigParser()
@@ -77,6 +77,9 @@ for image_file in image_files:
     # Установка ключа API
     openai.api_key = api_key
     
+    # Флаг для проверки состояния паузы
+    paused = False
+    
     # Цикл для обработки запросов с обработкой ошибок и ограничений
     while attempts < attempts_max:
         try:
@@ -145,7 +148,16 @@ for image_file in image_files:
                 pause_for_two_hours()
                 continue
 
-        break  # Выходим из цикла while, если ответ не содержит запрещенных слов или достигнуто ограничение по попыткам
+        # Ждем, пока не будет нажата клавиша
+        while True:
+            if keyboard.is_pressed('-') and not paused:
+                paused = True
+                print("Программа поставлена на паузу")
+            elif keyboard.is_pressed('+') and paused:
+                paused = False
+                print("Программа возобновлена")
+                break
+
 
     # Если после 5 попыток ответ все еще содержит запрещенные слова, переходим к следующему файлу
     if attempts == attempts_max:
