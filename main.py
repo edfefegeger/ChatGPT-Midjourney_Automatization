@@ -61,6 +61,24 @@ current_api_key_index = 0
 def get_current_api_key():
     return api_keys[current_api_key_index]
 
+# Функция для обработки нажатия клавиши "-"
+def on_pause():
+    global paused
+    if not paused:
+        paused = True
+        print("Программа поставлена на паузу")
+
+# Функция для обработки нажатия клавиши "+"
+def on_resume():
+    global paused
+    if paused:
+        paused = False
+        print("Программа возобновлена")
+
+# Создаем горячие клавиши для постановки на паузу и возобновления
+keyboard.add_hotkey('-', on_pause)
+keyboard.add_hotkey('+', on_resume)
+
 # Обработка каждого изображения
 for image_file in image_files:
     attempts = 0
@@ -112,11 +130,11 @@ for image_file in image_files:
             )
 
             # Получаем текстовый ответ от GPT
-            gpt_response = response.choices[0]["message"]["content"]
+            gpt_response = response.choices[0]["message"]["content"].rstrip(".")
 
             if "--ar 16:9" not in gpt_response:
                 # Если не соответствует, повторяем запрос
-                print("Ошибка формата ответа. Повторный запрос.")
+                print("Ошибка формата ответа с --ar 16:9 . Повторный запрос.")
                 attempts += 1
                 continue
 
@@ -155,17 +173,7 @@ for image_file in image_files:
                 pause_for_two_hours()
                 continue
 
-        # Ждем, пока не будет нажата клавиша
-        while True:
-            if keyboard.is_pressed('-') and not paused:
-                paused = True
-                print("Программа поставлена на паузу")
-            elif keyboard.is_pressed('+') and paused:
-                paused = False
-                print("Программа возобновлена")
-                break
-
-
+        break  # Выходим из цикла while, если ответ не содержит запрещенных слов или достигнуто ограничение по попыткам
     # Если после 5 попыток ответ все еще содержит запрещенные слова, переходим к следующему файлу
     if attempts == attempts_max:
         print(f"Достигнуто максимальное количество попыток ({attempts_max}) для файла {image_file}. Переходим к следующему файлу.", "\n")
