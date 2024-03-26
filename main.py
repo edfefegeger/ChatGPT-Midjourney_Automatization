@@ -96,22 +96,27 @@ for image_file in image_files:
             # Получаем текстовый ответ от GPT
             gpt_response = response.choices[0]["message"]["content"]
 
-
             paragraphs = gpt_response.split("\n\n")
-            result_1 = paragraphs[0]
-            result_2 = paragraphs[1]
-            result_3 = paragraphs[2]
-
-
-            if result_1:
-                print("Найден параграф 1:")
-            if result_2:
-                print("Найден параграф 2:")
-            if result_3:
-                print("Найден параграф 3:")
-                
-            # Выводим информацию о тегах и названии файла
+           # Выводим информацию о тегах и названии файла
+            
             print(f"File: '{image_file}' Обработан ключом: {file_count}! \n{response.choices[0]['message']['content']}")
+
+            # Проверяем, сколько параграфов найдено
+            if len(paragraphs) >= 1:
+                result_1 = paragraphs[0]
+                print("Найден параграф 1:")
+
+            if len(paragraphs) >= 2:
+                result_2 = paragraphs[1]
+                print("Найден параграф 2:")
+
+            if len(paragraphs) >= 3:
+                result_3 = paragraphs[2]
+                print("Найден параграф 3:")
+
+            else:
+                print("Не найдены все параграфы")
+
             print("---------------------------------------")
 
 
