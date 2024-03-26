@@ -114,6 +114,13 @@ for image_file in image_files:
             # Получаем текстовый ответ от GPT
             gpt_response = response.choices[0]["message"]["content"]
 
+            if "--ar 16:9" not in gpt_response:
+                # Если не соответствует, повторяем запрос
+                print("Ошибка формата ответа. Повторный запрос.")
+                attempts += 1
+                continue
+
+
             # Разбиваем ответ на параграфы
             paragraphs = gpt_response.split("\n\n")
 
