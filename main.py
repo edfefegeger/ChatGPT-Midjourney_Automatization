@@ -36,8 +36,6 @@ max_tokens = int(config['API']['max_tokens'])
 temp = int(config['API']['temp'])
 model = config['API']['model']
 
-
-
 # Функция для кодирования изображения в формат Base64
 def encode_image(image_path):
     with open(image_path, "rb") as image_file:
@@ -136,10 +134,8 @@ for image_file in image_files:
         try:
             # Формируем полный путь к файлу
             image_path = os.path.join(folder_path, image_file)
-
             # Кодируем изображение в формат Base64
             base64_image = encode_image(image_path)
-
             # Отправляем запрос к OpenAI API с изображением в формате Base64
             response = openai.ChatCompletion.create(
                 model=model,
