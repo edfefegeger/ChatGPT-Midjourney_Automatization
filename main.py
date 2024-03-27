@@ -7,6 +7,9 @@ from PIL import Image
 from tkinter import filedialog, Tk  # Импортируем необходимые модули из tkinter
 import keyboard
 import requests
+import http.client
+import json
+import pprint
 
 # Чтение API-ключей из файла конфигурации
 config = configparser.ConfigParser()
@@ -16,16 +19,16 @@ api_key2 = config['API']['api_key2']
 api_key3 = config['API']['api_key3']
 api_key4 = config['API']['api_key4']
 api_key5 = config['API']['api_key5']
-api_key_midjorney = config['API']['api_key_midjorney']
-api_key_midjorney2 = config['API']['api_key_midjorney2']
-api_key_midjorney3 = config['API']['api_key_midjorney3']
-api_key_midjorney4 = config['API']['api_key_midjorney4']
-api_key_midjorney5 = config['API']['api_key_midjorney5']
-api_key_midjorney6 = config['API']['api_key_midjorney6']
-api_key_midjorney7 = config['API']['api_key_midjorney7']
-api_key_midjorney8 = config['API']['api_key_midjorney8']
-api_key_midjorney9 = config['API']['api_key_midjorney9']
-api_key_midjorney10 = config['API']['api_key_midjorney10']
+api_key_midjorney = config['API']['api_key_midjourney']
+api_key_midjorney2 = config['API']['api_key_midjourney2']
+api_key_midjorney3 = config['API']['api_key_midjourney3']
+api_key_midjorney4 = config['API']['api_key_midjourney4']
+api_key_midjorney5 = config['API']['api_key_midjourney5']
+api_key_midjorney6 = config['API']['api_key_midjourney6']
+api_key_midjorney7 = config['API']['api_key_midjourney7']
+api_key_midjorney8 = config['API']['api_key_midjourney8']
+api_key_midjorney9 = config['API']['api_key_midjourney9']
+api_key_midjorney10 = config['API']['api_key_midjourney10']
 
 promt = config['API']['promt']
 detail = config['API']['detail']
@@ -33,6 +36,8 @@ attempts_max = int(config['API']['max_attempts'])
 max_tokens = int(config['API']['max_tokens'])
 temp = int(config['API']['temp'])
 model = config['API']['model']
+
+
 
 # Функция для кодирования изображения в формат Base64
 def encode_image(image_path):
@@ -161,17 +166,64 @@ for image_file in image_files:
             if len(paragraphs) >= 1:
                 result_1 = paragraphs[0]
                 print("Найден параграф 1")
+                data1 = {
+                "prompt": result_1, }
+                headers1 = {
+                    'Authorization': f'Bearer {api_key_midjorney}',  # <<<< TODO: remember to change this
+                    'Content-Type': 'application/json'
+                }
+                conn = http.client.HTTPSConnection("cl.imagineapi.dev")
+                conn.request("POST", "/items/images/", body=json.dumps(data1), headers=headers1)
+
+                response = conn.getresponse()
+                response_data = json.loads(response.read().decode('utf-8'))
+
+                print("Промт отправлен в Midjourney (1 параграф)")
+
+                pprint.pp(response_data)
 
             if len(paragraphs) >= 2:
                 result_2 = paragraphs[1]
                 print("Найден параграф 2")
+                data2 = {
+                "prompt": result_2, }
+                headers2 = {
+                    'Authorization': f'Bearer {api_key_midjorney}',  # <<<< TODO: remember to change this
+                    'Content-Type': 'application/json'
+                }
+                conn = http.client.HTTPSConnection("cl.imagineapi.dev")
+                conn.request("POST", "/items/images/", body=json.dumps(data2), headers=headers2)
+
+                response = conn.getresponse()
+                response_data = json.loads(response.read().decode('utf-8'))
+
+                print("Промт отправлен в Midjourney (2 параграф)")
+
+                pprint.pp(response_data)
+
+                time.sleep(30)
 
             if len(paragraphs) >= 3:
                 result_3 = paragraphs[2]
                 print("Найден параграф 3")
+                data3 = {
+                "prompt": result_3, }
+                headers3 = {
+                    'Authorization': f'Bearer {api_key_midjorney}',  # <<<< TODO: remember to change this
+                    'Content-Type': 'application/json'
+                }
+                conn = http.client.HTTPSConnection("cl.imagineapi.dev")
+                conn.request("POST", "/items/images/", body=json.dumps(data3), headers=headers3)
+
+                response = conn.getresponse()
+                response_data = json.loads(response.read().decode('utf-8'))
+                print("Промт отправлен в Midjourney (3 параграф)")
+                pprint.pp(response_data)
 
             else:
                 print("Не найдены все параграфы")
+            
+
 
             print("---------------------------------------")
 
