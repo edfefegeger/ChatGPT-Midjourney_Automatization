@@ -6,6 +6,7 @@ import configparser
 from PIL import Image
 from tkinter import filedialog, Tk  # Импортируем необходимые модули из tkinter
 import keyboard
+import requests
 
 # Чтение API-ключей из файла конфигурации
 config = configparser.ConfigParser()
@@ -15,6 +16,17 @@ api_key2 = config['API']['api_key2']
 api_key3 = config['API']['api_key3']
 api_key4 = config['API']['api_key4']
 api_key5 = config['API']['api_key5']
+api_key_midjorney = config['API']['api_key_midjorney']
+api_key_midjorney2 = config['API']['api_key_midjorney2']
+api_key_midjorney3 = config['API']['api_key_midjorney3']
+api_key_midjorney4 = config['API']['api_key_midjorney4']
+api_key_midjorney5 = config['API']['api_key_midjorney5']
+api_key_midjorney6 = config['API']['api_key_midjorney6']
+api_key_midjorney7 = config['API']['api_key_midjorney7']
+api_key_midjorney8 = config['API']['api_key_midjorney8']
+api_key_midjorney9 = config['API']['api_key_midjorney9']
+api_key_midjorney10 = config['API']['api_key_midjorney10']
+
 promt = config['API']['promt']
 detail = config['API']['detail']
 attempts_max = int(config['API']['max_attempts'])
@@ -62,22 +74,22 @@ def get_current_api_key():
     return api_keys[current_api_key_index]
 
 # Функция для обработки нажатия клавиши "-"
-def on_pause():
-    global paused
-    if not paused:
-        paused = True
-        print("Программа поставлена на паузу")
+# def on_pause():
+#     global paused
+#     if not paused:
+#         paused = True
+#         print("Программа поставлена на паузу")
 
-# Функция для обработки нажатия клавиши "+"
-def on_resume():
-    global paused
-    if paused:
-        paused = False
-        print("Программа возобновлена")
+# # Функция для обработки нажатия клавиши "+"
+# def on_resume():
+#     global paused
+#     if paused:
+#         paused = False
+#         print("Программа возобновлена")
 
 # Создаем горячие клавиши для постановки на паузу и возобновления
-keyboard.add_hotkey('-', on_pause)
-keyboard.add_hotkey('+', on_resume)
+# keyboard.add_hotkey('-', on_pause)
+# keyboard.add_hotkey('+', on_resume)
 
 # Обработка каждого изображения
 for image_file in image_files:
@@ -96,7 +108,7 @@ for image_file in image_files:
     openai.api_key = api_key
     
     # Флаг для проверки состояния паузы
-    paused = False
+    # paused = False
     
     # Цикл для обработки запросов с обработкой ошибок и ограничений
     while attempts < attempts_max:
