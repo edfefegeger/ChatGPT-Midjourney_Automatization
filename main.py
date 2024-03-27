@@ -165,7 +165,7 @@ for image_file in image_files:
             # Проверяем, сколько параграфов найдено
             if len(paragraphs) >= 1:
                 result_1 = paragraphs[0].rstrip('.')
-                print("Найден параграф 1")
+                print("Найден параграф 1", "\n")
                 data1 = {
                     "prompt": result_1
                 }
@@ -180,7 +180,7 @@ for image_file in image_files:
                 response_data = json.loads(response.read().decode('utf-8'))
 
                 print("Промт отправлен в Midjourney (1 параграф)")
-                pprint.pp(response_data)
+                pprint.pp(response_data, "\n")
 
                 def send_request(method, path, body=None, headers={}):
                     conn = http.client.HTTPSConnection("cl.imagineapi.dev")
@@ -194,7 +194,7 @@ for image_file in image_files:
                     while True:
                         response_data = send_request('GET', f"/items/images/{response_data['data']['id']}", headers=headers1)
                         if response_data['data']['status'] in ['completed', 'failed']:
-                            print('Завершена обработка от Midjourney')
+                            print('Завершена обработка от Midjourney', "\n")
                             return True
                         else:
                             print(f"Изображение еще не завершило генерацию. Статус: {response_data['data']['status']}")
@@ -203,13 +203,10 @@ for image_file in image_files:
                 while not check_image_status(response_data):
                     time.sleep(10)
 
-                time.sleep(500)
-
-
 
             if len(paragraphs) >= 2:
                 result_2 = paragraphs[1].rstrip('.')
-                print("Найден параграф 2")
+                print("Найден параграф 2", "\n")
                 data2 = {
                 "prompt": result_2, }
                 headers2 = {
@@ -219,35 +216,35 @@ for image_file in image_files:
                 conn = http.client.HTTPSConnection("cl.imagineapi.dev")
                 conn.request("POST", "/items/images/", body=json.dumps(data2), headers=headers2)
 
-                response = conn.getresponse()
-                response_data = json.loads(response.read().decode('utf-8'))
+                response2 = conn.getresponse()
+                response_data2 = json.loads(response.read().decode('utf-8'))
 
                 print("Промт отправлен в Midjourney (2 параграф)")
 
-                pprint.pp(response_data)
+                pprint.pp(response_data2, "\n")
 
-                check_image_status(response_data)
+                check_image_status(response_data2)
 
                 time.sleep(30)
 
             if len(paragraphs) >= 3:
                 result_3 = paragraphs[2].rstrip('.')
-                print("Найден параграф 3")
+                print("Найден параграф 3", "\n")
                 data3 = {
                 "prompt": result_3, }
                 headers3 = {
                     'Authorization': f'Bearer {api_key_midjorney}',  # <<<< TODO: remember to change this
                     'Content-Type': 'application/json'
                 }
-                conn = http.client.HTTPSConnection("cl.imagineapi.dev")
-                conn.request("POST", "/items/images/", body=json.dumps(data3), headers=headers3)
+                conn3 = http.client.HTTPSConnection("cl.imagineapi.dev")
+                conn3.request("POST", "/items/images/", body=json.dumps(data3), headers=headers3)
 
-                response = conn.getresponse()
-                response_data = json.loads(response.read().decode('utf-8'))
+                response3 = conn.getresponse()
+                response_data3 = json.loads(response.read().decode('utf-8'))
                 print("Промт отправлен в Midjourney (3 параграф)")
-                pprint.pp(response_data)
+                pprint.pp(response_data3, "\n")
 
-                check_image_status(response_data)
+                check_image_status(response_data3)
 
             else:
                 print("Не найдены все параграфы")
