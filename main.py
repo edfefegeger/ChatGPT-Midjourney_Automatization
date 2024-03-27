@@ -175,13 +175,13 @@ for image_file in image_files:
                 }
                 conn = http.client.HTTPSConnection("cl.imagineapi.dev")
                 conn.request("POST", "/items/images/", body=json.dumps(data1), headers=headers1)
-
-                response = conn.getresponse()
-                response_data = json.loads(response.read().decode('utf-8'))
-
+            
+                response1 = conn.getresponse()
+                response_data1 = json.loads(response1.read().decode('utf-8'))
+            
                 print("Промт отправлен в Midjourney (1 параграф)")
-                pprint.pp(response_data, "\n")
-
+                pprint.pp(response_data1)
+            
                 def send_request(method, path, body=None, headers={}):
                     conn = http.client.HTTPSConnection("cl.imagineapi.dev")
                     conn.request(method, path, body=json.dumps(body) if body else None, headers=headers)
@@ -189,7 +189,7 @@ for image_file in image_files:
                     data = json.loads(response.read().decode())
                     conn.close()
                     return data
-                
+                               
                 def check_image_status(response_data):
                     while True:
                         response_data = send_request('GET', f"/items/images/{response_data['data']['id']}", headers=headers1)
@@ -198,9 +198,9 @@ for image_file in image_files:
                             return True
                         else:
                             print(f"Изображение еще не завершило генерацию. Статус: {response_data['data']['status']}")
-                            time.sleep(10)
+                            time.sleep(15)
 
-                while not check_image_status(response_data):
+                while not check_image_status(response_data1):
                     time.sleep(10)
 
 
@@ -217,15 +217,14 @@ for image_file in image_files:
                 conn.request("POST", "/items/images/", body=json.dumps(data2), headers=headers2)
 
                 response2 = conn.getresponse()
-                response_data2 = json.loads(response.read().decode('utf-8'))
+                response_data2 = json.loads(response2.read().decode('utf-8'))
 
                 print("Промт отправлен в Midjourney (2 параграф)")
 
-                pprint.pp(response_data2, "\n")
+                pprint.pp(response_data2)
 
                 check_image_status(response_data2)
 
-                time.sleep(30)
 
             if len(paragraphs) >= 3:
                 result_3 = paragraphs[2].rstrip('.')
@@ -236,21 +235,19 @@ for image_file in image_files:
                     'Authorization': f'Bearer {api_key_midjorney}',  # <<<< TODO: remember to change this
                     'Content-Type': 'application/json'
                 }
-                conn3 = http.client.HTTPSConnection("cl.imagineapi.dev")
-                conn3.request("POST", "/items/images/", body=json.dumps(data3), headers=headers3)
+                conn = http.client.HTTPSConnection("cl.imagineapi.dev")
+                conn.request("POST", "/items/images/", body=json.dumps(data3), headers=headers3)
 
                 response3 = conn.getresponse()
-                response_data3 = json.loads(response.read().decode('utf-8'))
+                response_data3 = json.loads(response3.read().decode('utf-8'))
                 print("Промт отправлен в Midjourney (3 параграф)")
-                pprint.pp(response_data3, "\n")
+                pprint.pp(response_data3)
 
                 check_image_status(response_data3)
 
             else:
-                print("Не найдены все параграфы")
+                print("Не все параграфы найдены ")
             
-
-
             print("---------------------------------------")
 
         except Exception as e:
