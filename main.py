@@ -164,12 +164,13 @@ for image_file in image_files:
 
             # Проверяем, сколько параграфов найдено
             if len(paragraphs) >= 1:
-                result_1 = paragraphs[0]
+                result_1 = paragraphs[0].rstrip('.')
                 print("Найден параграф 1")
                 data1 = {
-                "prompt": result_1, }
+                    "prompt": result_1
+                }
                 headers1 = {
-                    'Authorization': f'Bearer {api_key_midjorney}',  # <<<< TODO: remember to change this
+                    'Authorization': f'Bearer {api_key_midjorney}',
                     'Content-Type': 'application/json'
                 }
                 conn = http.client.HTTPSConnection("cl.imagineapi.dev")
@@ -179,24 +180,35 @@ for image_file in image_files:
                 response_data = json.loads(response.read().decode('utf-8'))
 
                 print("Промт отправлен в Midjourney (1 параграф)")
-
                 pprint.pp(response_data)
+
+                def send_request(method, path, body=None, headers={}):
+                    conn = http.client.HTTPSConnection("cl.imagineapi.dev")
+                    conn.request(method, path, body=json.dumps(body) if body else None, headers=headers)
+                    response = conn.getresponse()
+                    data = json.loads(response.read().decode())
+                    conn.close()
+                    return data
+                
                 def check_image_status(response_data):
-                    if response_data['data']['status'] in ['completed', 'failed']:
-                        print('Completed image details',)
-                        pprint.pp(response_data['data'])
-                        return True
-                    else:
-                        print(f"Image is not finished generation. Status: {response_data['data']['status']}")
-                        return False         
+                    while True:
+                        response_data = send_request('GET', f"/items/images/{response_data['data']['id']}", headers=headers1)
+                        if response_data['data']['status'] in ['completed', 'failed']:
+                            print('Завершена обработка от Midjourney')
+                            return True
+                        else:
+                            print(f"Изображение еще не завершило генерацию. Статус: {response_data['data']['status']}")
+                            time.sleep(10)
+
                 while not check_image_status(response_data):
-                    time.sleep(5) 
+                    time.sleep(10)
 
                 time.sleep(500)
 
 
+
             if len(paragraphs) >= 2:
-                result_2 = paragraphs[1]
+                result_2 = paragraphs[1].rstrip('.')
                 print("Найден параграф 2")
                 data2 = {
                 "prompt": result_2, }
@@ -219,7 +231,7 @@ for image_file in image_files:
                 time.sleep(30)
 
             if len(paragraphs) >= 3:
-                result_3 = paragraphs[2]
+                result_3 = paragraphs[2].rstrip('.')
                 print("Найден параграф 3")
                 data3 = {
                 "prompt": result_3, }
