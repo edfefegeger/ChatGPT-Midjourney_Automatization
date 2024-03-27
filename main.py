@@ -181,6 +181,19 @@ for image_file in image_files:
                 print("Промт отправлен в Midjourney (1 параграф)")
 
                 pprint.pp(response_data)
+                def check_image_status(response_data):
+                    if response_data['data']['status'] in ['completed', 'failed']:
+                        print('Completed image details',)
+                        pprint.pp(response_data['data'])
+                        return True
+                    else:
+                        print(f"Image is not finished generation. Status: {response_data['data']['status']}")
+                        return False         
+                while not check_image_status(response_data):
+                    time.sleep(5) 
+
+                time.sleep(500)
+
 
             if len(paragraphs) >= 2:
                 result_2 = paragraphs[1]
@@ -201,6 +214,8 @@ for image_file in image_files:
 
                 pprint.pp(response_data)
 
+                check_image_status(response_data)
+
                 time.sleep(30)
 
             if len(paragraphs) >= 3:
@@ -219,6 +234,8 @@ for image_file in image_files:
                 response_data = json.loads(response.read().decode('utf-8'))
                 print("Промт отправлен в Midjourney (3 параграф)")
                 pprint.pp(response_data)
+
+                check_image_status(response_data)
 
             else:
                 print("Не найдены все параграфы")
