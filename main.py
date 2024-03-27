@@ -209,7 +209,7 @@ for image_file in image_files:
                 def check_image_status(response_data):
                     max_attempts = 3  # Максимальное количество попыток
                     attempts_mid = 0
-                    while attempts < max_attempts:
+                    while attempts_mid < max_attempts:
                         response_data = send_request('GET', f"/items/images/{response_data['data']['id']}", headers=headers1)
                         if response_data['data']['status'] == 'completed':
                             print(f"Статус: {response_data['data']['status']}")
@@ -228,9 +228,29 @@ for image_file in image_files:
                     return False
 
                 
-                while not check_image_status(response_data1):
-                    time.sleep(10)
+                check_image_status(response_data1)
 
+
+            if len(paragraphs) >= 1:
+                result_1 = paragraphs[0].rstrip('.')
+                data1 = {
+                    "prompt": result_1
+                }
+                headers1 = {
+                    'Authorization': f'Bearer {midjourney_key}',
+                    'Content-Type': 'application/json'
+                }
+                conn = http.client.HTTPSConnection("cl.imagineapi.dev")
+                conn.request("POST", "/items/images/", body=json.dumps(data1), headers=headers1)
+            
+                response1 = conn.getresponse()
+                response_data1 = json.loads(response1.read().decode('utf-8'))
+            
+                print("Промт отправлен в Midjourney (1 параграф, второй раз)")
+                pprint.pp(response_data1)
+            
+                
+                check_image_status(response_data1)
 
             if len(paragraphs) >= 2:
                 result_2 = paragraphs[1].rstrip('.')
@@ -253,6 +273,26 @@ for image_file in image_files:
 
                 check_image_status(response_data2)
 
+            if len(paragraphs) >= 2:
+                result_2 = paragraphs[1].rstrip('.')
+                data2 = {
+                "prompt": result_2, }
+                headers2 = {
+                    'Authorization': f'Bearer {midjourney_key}',  # <<<< TODO: remember to change this
+                    'Content-Type': 'application/json'
+                }
+                conn = http.client.HTTPSConnection("cl.imagineapi.dev")
+                conn.request("POST", "/items/images/", body=json.dumps(data2), headers=headers2)
+
+                response2 = conn.getresponse()
+                response_data2 = json.loads(response2.read().decode('utf-8'))
+
+                print("Промт отправлен в Midjourney (2 параграф, второй раз)")
+
+                pprint.pp(response_data2)
+
+                check_image_status(response_data2)
+
 
             if len(paragraphs) >= 3:
                 result_3 = paragraphs[2].rstrip('.')
@@ -269,6 +309,24 @@ for image_file in image_files:
                 response3 = conn.getresponse()
                 response_data3 = json.loads(response3.read().decode('utf-8'))
                 print("Промт отправлен в Midjourney (3 параграф)")
+                pprint.pp(response_data3)
+
+                check_image_status(response_data3)
+
+            if len(paragraphs) >= 3:
+                result_3 = paragraphs[2].rstrip('.')
+                data3 = {
+                "prompt": result_3, }
+                headers3 = {
+                    'Authorization': f'Bearer {midjourney_key}',  # <<<< TODO: remember to change this
+                    'Content-Type': 'application/json'
+                }
+                conn = http.client.HTTPSConnection("cl.imagineapi.dev")
+                conn.request("POST", "/items/images/", body=json.dumps(data3), headers=headers3)
+
+                response3 = conn.getresponse()
+                response_data3 = json.loads(response3.read().decode('utf-8'))
+                print("Промт отправлен в Midjourney (3 параграф, второй раз)")
                 pprint.pp(response_data3)
 
                 check_image_status(response_data3)
