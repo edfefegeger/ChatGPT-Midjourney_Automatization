@@ -6,7 +6,6 @@ import configparser
 from PIL import Image
 from tkinter import filedialog, Tk  # Импортируем необходимые модули из tkinter
 import keyboard
-import requests
 import http.client
 import json
 import pprint
@@ -191,15 +190,27 @@ for image_file in image_files:
                     return data
                                
                 def check_image_status(response_data):
-                    while True:
+                    max_attempts = 3  # Максимальное количество попыток
+                    attempts_mid = 0
+                    while attempts < max_attempts:
                         response_data = send_request('GET', f"/items/images/{response_data['data']['id']}", headers=headers1)
-                        if response_data['data']['status'] in ['completed', 'failed']:
+                        if response_data['data']['status'] == 'completed':
+                            print(f"Статус: {response_data['data']['status']}")
                             print('Завершена обработка от Midjourney', "\n")
                             return True
+                        elif response_data['data']['status'] == 'failed':
+                            print('Обработка в Midjourney не удалась. Повторная попытка отправки...', "\n")
+                            conn.request("POST", "/items/images/", body=json.dumps(data1), headers=headers1)
+                            response1 = conn.getresponse()
+                            response_data = json.loads(response1.read().decode('utf-8'))
+                            attempts_mid += 1
                         else:
                             print(f"Изображение еще не завершило генерацию. Статус: {response_data['data']['status']}")
                             time.sleep(15)
+                    print('Достигнуто максимальное количество попыток. Обработка в Midjourney не удалась.', "\n")
+                    return False
 
+                
                 while not check_image_status(response_data1):
                     time.sleep(10)
 
