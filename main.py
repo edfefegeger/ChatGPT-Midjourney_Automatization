@@ -70,12 +70,27 @@ result_3 = ""
 # Список всех API-ключей
 api_keys = [api_key1, api_key2, api_key3, api_key4, api_key5]
 
+midjourney_api_keys = [
+    api_key_midjorney,
+    api_key_midjorney2,
+    api_key_midjorney3,
+    api_key_midjorney4,
+    api_key_midjorney5,
+    api_key_midjorney6,
+    api_key_midjorney7,
+    api_key_midjorney8,
+    api_key_midjorney9,
+    api_key_midjorney10
+]
+
 # Индекс текущего используемого ключа API
 current_api_key_index = 0
-
+current_midjourney_key_index = 0
 # Функция для получения текущего ключа API
 def get_current_api_key():
     return api_keys[current_api_key_index]
+def get_current_midjourney_key():
+    return midjourney_api_keys[current_midjourney_key_index]
 
 # Функция для обработки нажатия клавиши "-"
 # def on_pause():
@@ -101,12 +116,14 @@ for image_file in image_files:
     
     # Получение текущего ключа API
     api_key = get_current_api_key()
+    midjourney_key = get_current_midjourney_key()
     
     # Определяем, какой ключ использовать для текущего файла
     file_count = f"Ключ {current_api_key_index + 1}"
-
+    midjourney_key_count = f"Ключ {current_midjourney_key_index + 1}"
     # Увеличиваем индекс для следующего использования ключа
     current_api_key_index = (current_api_key_index + 1) % len(api_keys)
+    current_midjourney_key_index = (current_midjourney_key_index + 1) % len(midjourney_api_keys)
 
     # Установка ключа API
     openai.api_key = api_key
@@ -169,7 +186,7 @@ for image_file in image_files:
                     "prompt": result_1
                 }
                 headers1 = {
-                    'Authorization': f'Bearer {api_key_midjorney}',
+                    'Authorization': f'Bearer {midjourney_key}',
                     'Content-Type': 'application/json'
                 }
                 conn = http.client.HTTPSConnection("cl.imagineapi.dev")
@@ -221,7 +238,7 @@ for image_file in image_files:
                 data2 = {
                 "prompt": result_2, }
                 headers2 = {
-                    'Authorization': f'Bearer {api_key_midjorney}',  # <<<< TODO: remember to change this
+                    'Authorization': f'Bearer {midjourney_key}',  # <<<< TODO: remember to change this
                     'Content-Type': 'application/json'
                 }
                 conn = http.client.HTTPSConnection("cl.imagineapi.dev")
@@ -243,7 +260,7 @@ for image_file in image_files:
                 data3 = {
                 "prompt": result_3, }
                 headers3 = {
-                    'Authorization': f'Bearer {api_key_midjorney}',  # <<<< TODO: remember to change this
+                    'Authorization': f'Bearer {midjourney_key}',  # <<<< TODO: remember to change this
                     'Content-Type': 'application/json'
                 }
                 conn = http.client.HTTPSConnection("cl.imagineapi.dev")
