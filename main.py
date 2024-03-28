@@ -49,7 +49,7 @@ def pause_for_two_hours():
     log_and_print("Превышен лимит запросов. Остановка работы на два часа.")
     time.sleep(7200)  # 7200 секунд = 2 часа
 
-print("Выберите папку с вашими изображениями")
+print("Выберите папку с вашими изображениями", "\n")
 # Путь к папке с изображениями
 folder_path = filedialog.askdirectory(title="Выберите папку с изображениями")
 
@@ -60,7 +60,7 @@ if not folder_path:
 
 # Получаем список файлов в порядке их имени, учитывая числовой порядок
 image_files = sorted(os.listdir(folder_path), key=lambda x: int(x.split('.')[0]))
-
+print("Для постановки на паузу нажмите '-', для снятие с паузы '+'")
 print("Ваш запрос:", promt, "\n")
 
 # Переменные для хранения результатов обработки изображений
@@ -107,11 +107,11 @@ def toggle_pause2():
     log_and_print("Нажато '+'")
 def pause_check():
     if paused == True:
-        log_and_print("Вы на паузе+-")
+        log_and_print("Вы на паузе", "\n")
         while Not_paused == False:
             time.sleep(10)                
             # Получаем значения из конфигурационного файла]
-        log_and_print("Снятие с паузы")
+        log_and_print("Снятие с паузы", "\n")
 paused = False
 keyboard.add_hotkey('-', toggle_pause)
 keyboard.add_hotkey('+', toggle_pause2)
