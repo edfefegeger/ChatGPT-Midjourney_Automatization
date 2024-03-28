@@ -9,6 +9,7 @@ import keyboard
 import http.client
 import json
 import pprint
+from logger import log_and_print
 
 # Чтение API-ключей из файла конфигурации
 config = configparser.ConfigParser()
@@ -43,7 +44,7 @@ def encode_image(image_path):
 
 # Функция для приостановки работы программы на два часа при превышении лимита запросов
 def pause_for_two_hours():
-    print("Превышен лимит запросов. Остановка работы на два часа.")
+    log_and_print("Превышен лимит запросов. Остановка работы на два часа.")
     time.sleep(7200)  # 7200 секунд = 2 часа
 
 print("Выберите папку с вашими изображениями")
@@ -52,7 +53,7 @@ folder_path = filedialog.askdirectory(title="Выберите папку с из
 
 # Если пользователь не выбрал папку, завершаем программу
 if not folder_path:
-    print("Папка не выбрана. Программа завершает работу.")
+    log_and_print("Ошибка.Папка не выбрана. Программа завершает работу.")
     exit()
 
 # Получаем список файлов в порядке их имени, учитывая числовой порядок
@@ -163,7 +164,7 @@ for image_file in image_files:
 
             if "--ar 16:9" not in gpt_response:
                 # Если не соответствует, повторяем запрос
-                print("Ошибка формата ответа с --ar 16:9 . Повторный запрос.")
+                log_and_print("Ошибка формата ответа с --ar 16:9 . Повторный запрос.")
                 attempts += 1
                 continue
 
@@ -172,12 +173,12 @@ for image_file in image_files:
             paragraphs = gpt_response.split("\n\n")
 
             # Выводим информацию о тегах и названии файла
-            print(f"File: '{image_file}' Обработан ключом: {file_count}! \n{response.choices[0]['message']['content']}\n")
+            log_and_print(f"File: '{image_file}' Обработан ключом: {file_count}! \n{response.choices[0]['message']['content']}\n")
 
             # Проверяем, сколько параграфов найдено
             if len(paragraphs) >= 1:
                 result_1 = paragraphs[0].rstrip('.')
-                print("Найден параграф 1", "\n")
+                log_and_print("Найден параграф 1", "\n")
                 data1 = {
                     "prompt": result_1
                 }
@@ -191,7 +192,7 @@ for image_file in image_files:
                 response1 = conn.getresponse()
                 response_data1 = json.loads(response1.read().decode('utf-8'))
             
-                print("Промт отправлен в Midjourney (1 параграф)")
+                log_and_print("Промт отправлен в Midjourney (1 параграф)")
                 pprint.pp(response_data1)
             
                 def send_request(method, path, body=None, headers={}):
@@ -208,19 +209,19 @@ for image_file in image_files:
                     while attempts_mid < max_attempts:
                         response_data = send_request('GET', f"/items/images/{response_data['data']['id']}", headers=headers1)
                         if response_data['data']['status'] == 'completed':
-                            print(f"Статус: {response_data['data']['status']}")
-                            print('Завершена обработка от Midjourney', "\n")
+                            log_and_print(f"Статус: {response_data['data']['status']}")
+                            log_and_print('Завершена обработка от Midjourney', "\n")
                             return True
                         elif response_data['data']['status'] == 'failed':
-                            print('Обработка в Midjourney не удалась. Повторная попытка отправки...', "\n")
+                            log_and_print('Ошибка. Обработка в Midjourney не удалась. Повторная попытка отправки...', "\n")
                             conn.request("POST", "/items/images/", body=json.dumps(data1), headers=headers1)
                             response1 = conn.getresponse()
                             response_data = json.loads(response1.read().decode('utf-8'))
                             attempts_mid += 1
                         else:
-                            print(f"Изображение еще не завершило генерацию. Статус: {response_data['data']['status']}")
+                            log_and_print(f"Изображение еще не завершило генерацию. Статус: {response_data['data']['status']}")
                             time.sleep(15)
-                    print('Достигнуто максимальное количество попыток. Обработка в Midjourney не удалась.', "\n")
+                    log_and_print('Достигнуто максимальное количество попыток. Обработка в Midjourney не удалась.', "\n")
                     return False
 
                 
@@ -242,7 +243,7 @@ for image_file in image_files:
                 response1 = conn.getresponse()
                 response_data1 = json.loads(response1.read().decode('utf-8'))
             
-                print("Промт отправлен в Midjourney (1 параграф, второй раз)")
+                log_and_print("Промт отправлен в Midjourney (1 параграф, второй раз)")
                 pprint.pp(response_data1)
             
                 
@@ -250,7 +251,7 @@ for image_file in image_files:
 
             if len(paragraphs) >= 2:
                 result_2 = paragraphs[1].rstrip('.')
-                print("Найден параграф 2", "\n")
+                log_and_print("Найден параграф 2", "\n")
                 data2 = {
                 "prompt": result_2, }
                 headers2 = {
@@ -263,7 +264,7 @@ for image_file in image_files:
                 response2 = conn.getresponse()
                 response_data2 = json.loads(response2.read().decode('utf-8'))
 
-                print("Промт отправлен в Midjourney (2 параграф)")
+                log_and_print("Промт отправлен в Midjourney (2 параграф)")
 
                 pprint.pp(response_data2)
 
@@ -283,7 +284,7 @@ for image_file in image_files:
                 response2 = conn.getresponse()
                 response_data2 = json.loads(response2.read().decode('utf-8'))
 
-                print("Промт отправлен в Midjourney (2 параграф, второй раз)")
+                log_and_print("Промт отправлен в Midjourney (2 параграф, второй раз)")
 
                 pprint.pp(response_data2)
 
@@ -292,7 +293,7 @@ for image_file in image_files:
 
             if len(paragraphs) >= 3:
                 result_3 = paragraphs[2].rstrip('.')
-                print("Найден параграф 3", "\n")
+                log_and_print("Найден параграф 3", "\n")
                 data3 = {
                 "prompt": result_3, }
                 headers3 = {
@@ -304,7 +305,7 @@ for image_file in image_files:
 
                 response3 = conn.getresponse()
                 response_data3 = json.loads(response3.read().decode('utf-8'))
-                print("Промт отправлен в Midjourney (3 параграф)")
+                log_and_print("Промт отправлен в Midjourney (3 параграф)")
                 pprint.pp(response_data3)
 
                 check_image_status(response_data3)
@@ -322,18 +323,18 @@ for image_file in image_files:
 
                 response3 = conn.getresponse()
                 response_data3 = json.loads(response3.read().decode('utf-8'))
-                print("Промт отправлен в Midjourney (3 параграф, второй раз)")
+                log_and_print("Промт отправлен в Midjourney (3 параграф, второй раз)")
                 pprint.pp(response_data3)
 
                 check_image_status(response_data3)
 
             else:
-                print("Не все параграфы найдены ")
+                log_and_print("Не все параграфы найдены ")
             
             print("---------------------------------------")
 
         except Exception as e:
-            print("Ошибка при обработке файла:", e)
+            log_and_print("Ошибка при обработке файла:", e)
             attempts += 1
             continue
 
@@ -345,8 +346,8 @@ for image_file in image_files:
         break  # Выходим из цикла while, если ответ не содержит запрещенных слов или достигнуто ограничение по попыткам
     # Если после 5 попыток ответ все еще содержит запрещенные слова, переходим к следующему файлу
     if attempts == attempts_max:
-        print(f"Достигнуто максимальное количество попыток ({attempts_max}) для файла {image_file}. Переходим к следующему файлу.", "\n")
+        log_and_print(f"Достигнуто максимальное количество попыток ({attempts_max}) для файла {image_file}. Переходим к следующему файлу.", "\n")
 
         
-print("Все файлы успешно обработаны!")
+log_and_print("Все файлы успешно обработаны!")
 input("Для выхода нажмите Enter...")

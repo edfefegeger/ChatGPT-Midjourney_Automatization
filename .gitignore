@@ -3,3 +3,5 @@ PICTURES/*
 
 # Ignore the config.ini file
 config.ini
+
+LOGS.log
