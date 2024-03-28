@@ -92,7 +92,6 @@ def get_current_api_key():
     return api_keys[current_api_key_index]
 def get_current_midjourney_key():
     return midjourney_api_keys[current_midjourney_key_index]
-
 def toggle_pause():
     global paused
     paused = not paused
