@@ -173,7 +173,7 @@ for image_file in image_files:
             paragraphs = gpt_response.split("\n\n")
 
             # Выводим информацию о тегах и названии файла
-            log_and_print(f"File: '{image_file}' Обработан ключом: {file_count}! \n{response.choices[0]['message']['content']}\n")
+            log_and_print(f"File: '{image_file}' Обработан c CHAT GPT ключом: {file_count}! \n{response.choices[0]['message']['content']}\n")
 
             # Проверяем, сколько параграфов найдено
             if len(paragraphs) >= 1:
