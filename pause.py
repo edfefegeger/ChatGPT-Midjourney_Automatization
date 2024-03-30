@@ -19,5 +19,4 @@ def pause_check():
         log_and_print("Вы на паузе", "\n")
         while Not_paused == False:
             time.sleep(10)                
-            # Получаем значения из конфигурационного файла]
         log_and_print("Снятие с паузы", "\n")

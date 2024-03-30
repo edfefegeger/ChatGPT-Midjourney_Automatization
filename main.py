@@ -59,8 +59,33 @@ if not folder_path:
     log_and_print("Ошибка.Папка не выбрана. Программа завершает работу.")
     exit()
 
-# Получаем список файлов в порядке их имени, учитывая числовой порядок
-image_files = sorted(os.listdir(folder_path), key=lambda x: int(x.split('.')[0]))
+all_files = os.listdir(folder_path)
+
+# Функция для разделения файлов на те, что начинаются с цифр и те, что начинаются с букв
+def separate_files(files):
+    numeric_files = []
+    text_files = []
+    for file in files:
+        if file.split('.')[0].isdigit():
+            numeric_files.append(file)
+        else:
+            text_files.append(file)
+    return numeric_files, text_files
+
+# Разделяем файлы на числовые и текстовые
+numeric_files, text_files = separate_files(all_files)
+
+# Сортируем числовые файлы
+sorted_numeric_files = sorted(numeric_files, key=lambda x: int(x.split('.')[0]))
+
+# Сортируем текстовые файлы
+sorted_text_files = sorted(text_files)
+
+# Объединяем отсортированные списки
+sorted_image_files = sorted_numeric_files + sorted_text_files
+
+# Объединяем отсортированные списки
+sorted_image_files = sorted_numeric_files + sorted_text_files
 print("Для постановки на паузу нажмите '-', для снятие с паузы '+'")
 print("Ваш запрос:", promt, "\n")
 
@@ -98,9 +123,9 @@ paused = False
 keyboard.add_hotkey('-', toggle_pause)
 keyboard.add_hotkey('+', toggle_pause2)
 
-# Обработка каждого изображения
-for image_file in image_files:
-    while not paused or paused:
+while not paused or paused:# Обработка каждого изображения
+    for image_file in sorted_image_files:
+
         attempts = 0
 
         # Получение текущего ключа API
@@ -153,16 +178,14 @@ for image_file in image_files:
                 # Получаем текстовый ответ от GPT
                 gpt_response = response.choices[0]["message"]["content"].rstrip(".")
 
+
+                # Разбиваем ответ на параграфы
+                paragraphs = gpt_response.split("\n\n")
                 if "--ar 16:9" not in gpt_response:
                     # Если не соответствует, повторяем запрос
                     log_and_print("Ошибка формата ответа с --ar 16:9 . Повторный запрос.")
                     attempts += 1
                     continue
-
-
-                # Разбиваем ответ на параграфы
-                paragraphs = gpt_response.split("\n\n")
-
                 # Выводим информацию о тегах и названии файла
                 log_and_print(f"File: '{image_file}' Обработан c CHAT GPT ключом: {file_count}! \n{response.choices[0]['message']['content']}\n")
                 pause_check()
@@ -342,5 +365,5 @@ for image_file in image_files:
             log_and_print(f"Достигнуто максимальное количество попыток ({attempts_max}) для файла {image_file}. Переходим к следующему файлу.", "\n")
 
         
-log_and_print("Все файлы успешно обработаны!")
-input("Для выхода нажмите Enter...")
+    log_and_print("Все файлы успешно обработаны!")
+    input("Для выхода нажмите Enter...")
