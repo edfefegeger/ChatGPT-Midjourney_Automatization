@@ -226,9 +226,9 @@ while not paused or paused:# Обработка каждого изображе�
                                 image_name = image_url.split('/')[-1]  # Получаем имя файла из URL
                                 image_path = os.path.join(today_folder, image_name)
                                 urllib.request.urlretrieve(image_url, image_path)  # Скачиваем изображение
-                                print(f"Изображение успешно скачано: {image_name}")
+                                log_and_print(f"Изображение успешно скачано: {image_name}")
                             except Exception as e:
-                                print(f"Ошибка при скачивании изображения {image_url}: {e}")
+                                log_and_print(f"Ошибка при скачивании изображения {image_url}: {e}")
                                 
                     def send_request(method, path, body=None, headers={}):
                         conn = http.client.HTTPSConnection("cl.imagineapi.dev")
@@ -246,12 +246,9 @@ while not paused or paused:# Обработка каждого изображе�
                             if response_data['data']['status'] == 'completed':
                                 log_and_print(f"Статус: {response_data['data']['status']}")
                                 log_and_print('Завершена обработка от Midjourney', "\n")
-                                print(response_data)
-                                print(response_data['data']['upscaled_urls'])
                                 upscaled_urls = response_data['data']['upscaled_urls']
                                 folder_path = "Results"
                                 download_images(upscaled_urls, folder_path)
-
 
                                 return True
                             elif response_data['data']['status'] == 'failed':
