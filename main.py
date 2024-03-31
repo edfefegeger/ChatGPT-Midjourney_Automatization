@@ -342,16 +342,24 @@ while not paused or paused:# Обработка каждого изображе�
 
                     check_image_status(response_data3)
 
+                
+
                 else:
                     log_and_print("Не все параграфы найдены ")
+
+                log_and_print(f"File: '{image_file}' Обработан c ImagineDev ключом: {midjourney_key_count}! \n{response.choices[0]['message']['content']}\n", "\n")
 
                 print("---------------------------------------")
 
             except Exception as e:
-                log_and_print("Ошибка при обработке файла:", e)
-                attempts += 1
-                continue
-
+                if str(e) == "Ошибка при обработке файла: 'data'":
+                    log_and_print(f"Пропущен файл {image_file} из-за ошибки: {e}")
+                    break  # Переходим к следующему файлу
+                else:
+                    log_and_print("Ошибка при обработке файла:", e)
+                    attempts += 1
+                    continue
+                
             except openai.error.APIError as e:
                 if "You’ve reached the current usage cap for GPT-4" in str(e):
                     pause_for_two_hours()
