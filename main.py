@@ -1,3 +1,4 @@
+import datetime
 import time
 import openai
 import os
@@ -9,6 +10,10 @@ import keyboard
 import http.client
 import json
 import pprint
+import urllib.request
+
+import urllib3
+
 from logger import log_and_print
 from pause import toggle_pause, toggle_pause2, pause_check
 
@@ -210,6 +215,21 @@ while not paused or paused:# Обработка каждого изображе�
                     log_and_print("Промт отправлен в Midjourney (1 параграф)")
                     pprint.pp(response_data1)
 
+                    def download_images(image_urls, folder_path):
+                        # Создаем папку с сегодняшней датой, если она еще не существует
+                        today_folder = os.path.join(folder_path, datetime.datetime.now().strftime("%Y-%m-%d"))
+                        if not os.path.exists(today_folder):
+                            os.makedirs(today_folder)
+
+                        for image_url in image_urls:
+                            try:
+                                image_name = image_url.split('/')[-1]  # Получаем имя файла из URL
+                                image_path = os.path.join(today_folder, image_name)
+                                urllib.request.urlretrieve(image_url, image_path)  # Скачиваем изображение
+                                print(f"Изображение успешно скачано: {image_name}")
+                            except Exception as e:
+                                print(f"Ошибка при скачивании изображения {image_url}: {e}")
+                                
                     def send_request(method, path, body=None, headers={}):
                         conn = http.client.HTTPSConnection("cl.imagineapi.dev")
                         conn.request(method, path, body=json.dumps(body) if body else None, headers=headers)
@@ -227,6 +247,11 @@ while not paused or paused:# Обработка каждого изображе�
                                 log_and_print(f"Статус: {response_data['data']['status']}")
                                 log_and_print('Завершена обработка от Midjourney', "\n")
                                 print(response_data)
+                                print(response_data['data']['upscaled_urls'])
+                                upscaled_urls = response_data['data']['upscaled_urls']
+                                folder_path = "Results"
+                                download_images(upscaled_urls, folder_path)
+
 
                                 return True
                             elif response_data['data']['status'] == 'failed':
