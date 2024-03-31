@@ -119,6 +119,7 @@ def get_current_api_key():
 def get_current_midjourney_key():
     return midjourney_api_keys[current_midjourney_key_index]
 
+global paused
 paused = False
 keyboard.add_hotkey('-', toggle_pause)
 keyboard.add_hotkey('+', toggle_pause2)
@@ -225,6 +226,8 @@ while not paused or paused:# Обработка каждого изображе�
                             if response_data['data']['status'] == 'completed':
                                 log_and_print(f"Статус: {response_data['data']['status']}")
                                 log_and_print('Завершена обработка от Midjourney', "\n")
+                                response_data = json.loads(response1.read().decode('utf-8'))
+                                pprint.pp(response_data)
                                 return True
                             elif response_data['data']['status'] == 'failed':
                                 log_and_print('Ошибка. Обработка в Midjourney не удалась. Повторная попытка отправки...', "\n")
@@ -240,6 +243,7 @@ while not paused or paused:# Обработка каждого изображе�
 
 
                     check_image_status(response_data1)
+                    
 
                 pause_check()
                 if len(paragraphs) >= 1:
@@ -262,6 +266,7 @@ while not paused or paused:# Обработка каждого изображе�
 
 
                     check_image_status(response_data1)
+                    pprint.pp(response_data1)
                 pause_check()
                 if len(paragraphs) >= 2:
                     result_2 = paragraphs[1].rstrip('.')
@@ -283,6 +288,7 @@ while not paused or paused:# Обработка каждого изображе�
                     pprint.pp(response_data2)
 
                     check_image_status(response_data2)
+                    pprint.pp(response_data1)
                 pause_check()
                 if len(paragraphs) >= 2:
                     result_2 = paragraphs[1].rstrip('.')
@@ -303,6 +309,7 @@ while not paused or paused:# Обработка каждого изображе�
                     pprint.pp(response_data2)
 
                     check_image_status(response_data2)
+                    pprint.pp(response_data1)
 
                 pause_check()
                 if len(paragraphs) >= 3:
@@ -323,6 +330,7 @@ while not paused or paused:# Обработка каждого изображе�
                     pprint.pp(response_data3)
 
                     check_image_status(response_data3)
+                    pprint.pp(response_data1)
                 pause_check()
                 if len(paragraphs) >= 3:
                     result_3 = paragraphs[2].rstrip('.')
@@ -341,6 +349,7 @@ while not paused or paused:# Обработка каждого изображе�
                     pprint.pp(response_data3)
 
                     check_image_status(response_data3)
+                    pprint.pp(response_data1)
 
                 
 
