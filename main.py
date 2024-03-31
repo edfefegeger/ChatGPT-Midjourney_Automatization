@@ -226,8 +226,8 @@ while not paused or paused:# Обработка каждого изображе�
                             if response_data['data']['status'] == 'completed':
                                 log_and_print(f"Статус: {response_data['data']['status']}")
                                 log_and_print('Завершена обработка от Midjourney', "\n")
-                                response_data = json.loads(response1.read().decode('utf-8'))
-                                pprint.pp(response_data)
+                                print(response_data)
+
                                 return True
                             elif response_data['data']['status'] == 'failed':
                                 log_and_print('Ошибка. Обработка в Midjourney не удалась. Повторная попытка отправки...', "\n")
@@ -240,12 +240,11 @@ while not paused or paused:# Обработка каждого изображе�
                                 time.sleep(15)
                         log_and_print('Достигнуто максимальное количество попыток. Обработка в Midjourney не удалась.', "\n")
                         return False
-
-
-                    check_image_status(response_data1)
                     
+                    check_image_status(response_data1)
 
                 pause_check()
+
                 if len(paragraphs) >= 1:
                     result_1 = paragraphs[0].rstrip('.')
                     data1 = {
@@ -268,6 +267,7 @@ while not paused or paused:# Обработка каждого изображе�
                     check_image_status(response_data1)
                     pprint.pp(response_data1)
                 pause_check()
+
                 if len(paragraphs) >= 2:
                     result_2 = paragraphs[1].rstrip('.')
                     log_and_print("Найден параграф 2", "\n")
