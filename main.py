@@ -116,10 +116,10 @@ midjourney_api_keys = [
     api_key_midjorney10
 ]
 
-# Индекс текущего используемого ключа API
+
 current_api_key_index = 0
 current_midjourney_key_index = 0
-# Функция для получения текущего ключа API
+
 def get_current_api_key():
     return api_keys[current_api_key_index]
 def get_current_midjourney_key():
@@ -140,7 +140,7 @@ def process_images(files):
 
             attempts = 0
 
-            # Получение текущего ключа API
+
             api_key = get_current_api_key()
             midjourney_key = get_current_midjourney_key()
 
@@ -287,10 +287,7 @@ def process_images(files):
 
                         log_and_print("Промт отправлен в Midjourney (1 параграф, второй раз)", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
                         pprint.pp(response_data1)
-
-
                         check_image_status(response_data1)
-                        pprint.pp(response_data1)
                     pause_check()
 
                     if len(paragraphs) >= 2:
@@ -313,7 +310,6 @@ def process_images(files):
                         pprint.pp(response_data2)
 
                         check_image_status(response_data2)
-                        pprint.pp(response_data1)
                     pause_check()
                     if len(paragraphs) >= 2:
                         result_2 = paragraphs[1].rstrip('.')
@@ -334,8 +330,6 @@ def process_images(files):
                         pprint.pp(response_data2)
 
                         check_image_status(response_data2)
-                        pprint.pp(response_data1)
-
                     pause_check()
                     if len(paragraphs) >= 3:
                         result_3 = paragraphs[2].rstrip('.')
@@ -355,7 +349,7 @@ def process_images(files):
                         pprint.pp(response_data3)
 
                         check_image_status(response_data3)
-                        pprint.pp(response_data1)
+
                     pause_check()
                     if len(paragraphs) >= 3:
                         result_3 = paragraphs[2].rstrip('.')
@@ -374,9 +368,6 @@ def process_images(files):
                         pprint.pp(response_data3)
 
                         check_image_status(response_data3)
-                        pprint.pp(response_data1)
-
-
 
                     else:
                         log_and_print("Не все параграфы найдены ", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
@@ -407,9 +398,6 @@ def process_images(files):
                 log_and_print(f"Достигнуто максимальное количество попыток ({attempts_max}) для файла {image_file}. Переходим к следующему файлу.", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")", "\n")
 
 
-        log_and_print("Все файлы успешно обработаны!")
-        input("Для выхода нажмите Enter...")
-
 num_threads = 5  # Задаем количество потоков
 chunk_size = len(sorted_image_files) // num_threads  # Вычисляем размер каждой части
 if chunk_size == 0:
@@ -427,3 +415,6 @@ for chunk in file_chunks:
 for thread in threads:
     thread.join()
 
+
+log_and_print("Все файлы успешно обработаны!")
+input("Для выхода нажмите Enter...")
