@@ -12,9 +12,9 @@ import json
 import pprint
 import urllib.request
 import threading
-
 from logger import log_and_print
-from pause import toggle_pause, toggle_pause2, pause_check
+from pause import toggle_pause, toggle_pause2, pause_check, pause_for_two_hours
+from sep_files import separate_files
 
 # Чтение API-ключей из файла конфигурации
 config = configparser.ConfigParser()
@@ -43,16 +43,9 @@ temp = int(config['API']['temp'])
 model = config['API']['model']
 
 
-
-# Функция для кодирования изображения в формат Base64
 def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
-
-# Функция для приостановки работы программы на два часа при превышении лимита запросов
-def pause_for_two_hours():
-    log_and_print("Превышен лимит запросов. Остановка работы на два часа.")
-    time.sleep(7200)  # 7200 секунд = 2 часа
 
 print("Выберите папку с вашими изображениями", "\n")
 # Путь к папке с изображениями
@@ -64,43 +57,21 @@ if not folder_path:
     exit()
 
 all_files = os.listdir(folder_path)
-
 lock = threading.Lock()
-
-# Функция для разделения файлов на те, что начинаются с цифр и те, что начинаются с букв
-def separate_files(files):
-    numeric_files = []
-    text_files = []
-    for file in files:
-        if file.split('.')[0].isdigit():
-            numeric_files.append(file)
-        else:
-            text_files.append(file)
-    return numeric_files, text_files
-
-# Разделяем файлы на числовые и текстовые
 numeric_files, text_files = separate_files(all_files)
-
-# Сортируем числовые файлы
 sorted_numeric_files = sorted(numeric_files, key=lambda x: int(x.split('.')[0]))
-
-# Сортируем текстовые файлы
 sorted_text_files = sorted(text_files)
-
-# Объединяем отсортированные списки
 sorted_image_files = sorted_numeric_files + sorted_text_files
 
-# Объединяем отсортированные списки
 sorted_image_files = sorted_numeric_files + sorted_text_files
 print("Для постановки на паузу нажмите '-', для снятие с паузы '+'")
 print("Ваш запрос:", promt, "\n")
 
-# Переменные для хранения результатов обработки изображений
 result_1 = ""
 result_2 = ""
 result_3 = ""
 
-# Список всех API-ключей
+
 api_keys = [api_key1, api_key2, api_key3, api_key4, api_key5]
 
 midjourney_api_keys = [
@@ -115,7 +86,6 @@ midjourney_api_keys = [
     api_key_midjorney9,
     api_key_midjorney10
 ]
-
 
 current_api_key_index = 0
 current_midjourney_key_index = 0
@@ -392,8 +362,7 @@ def process_images(files):
 
                 pause_check()
 
-                break  # Выходим из цикла while, если ответ не содержит запрещенных слов или достигнуто ограничение по попыткам
-            # Если после 5 попыток ответ все еще содержит запрещенные слова, переходим к следующему файлу
+                break  
             if attempts == attempts_max:
                 log_and_print(f"Достигнуто максимальное количество попыток ({attempts_max}) для файла {image_file}. Переходим к следующему файлу.", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")", "\n")
 

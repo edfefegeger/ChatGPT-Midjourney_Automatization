@@ -20,3 +20,7 @@ def pause_check():
         while Not_paused == False:
             time.sleep(10)                
         log_and_print("Снятие с паузы", "\n")
+
+def pause_for_two_hours():
+    log_and_print("Превышен лимит запросов. Остановка работы на два часа.")
+    time.sleep(7200)  # 7200 секунд = 2 часа
