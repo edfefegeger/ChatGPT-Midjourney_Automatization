@@ -65,6 +65,8 @@ if not folder_path:
 
 all_files = os.listdir(folder_path)
 
+lock = threading.Lock()
+
 # Функция для разделения файлов на те, что начинаются с цифр и те, что начинаются с букв
 def separate_files(files):
     numeric_files = []
@@ -122,7 +124,7 @@ def get_current_api_key():
     return api_keys[current_api_key_index]
 def get_current_midjourney_key():
     return midjourney_api_keys[current_midjourney_key_index]
-def process_images(api_key):
+def process_images(files_for_thread):
     global current_api_key_index  # Добавляем эту строку
     global current_midjourney_key_index  # Добавляем эту строку
     global paused  # При необходимости добавляем эту строку
@@ -406,10 +408,20 @@ def process_images(api_key):
         log_and_print("Все файлы успешно обработаны!")
         input("Для выхода нажмите Enter...")
 
+num_threads = 5  # Задаем количество потоков
+chunk_size = len(all_files) // num_threads  # Вычисляем размер каждой части
+if chunk_size == 0:
+    chunk_size = 1  # Минимальный размер части
+file_chunks = [all_files[i:i + chunk_size] for i in range(0, len(all_files), chunk_size)]
+
+
+# Создаем и запускаем потоки
 threads = []
-for key in api_keys:
-    thread = threading.Thread(target=process_images, args=(key,))
+for chunk in file_chunks:
+    thread = threading.Thread(target=process_images, args=(chunk,))
     thread.start()
     threads.append(thread)
+
+# Ждем завершения всех потоков
 for thread in threads:
     thread.join()
