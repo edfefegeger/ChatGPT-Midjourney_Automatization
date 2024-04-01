@@ -185,6 +185,7 @@ def process_images(files):
                                 log_and_print(f"Изображение успешно скачано: {image_name}", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
                             except Exception as e:
                                 log_and_print(f"Ошибка при скачивании изображения {image_url}: {e}", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
+
                     def send_request(method, path, body=None, headers={}):
                         conn = http.client.HTTPSConnection("cl.imagineapi.dev")
                         conn.request(method, path, body=json.dumps(body) if body else None, headers=headers)
@@ -318,7 +319,7 @@ def process_images(files):
             pause_check()
             break  
         if attempts == attempts_max:
-            log_and_print(f"Достигнуто максимальное количество попыток ({attempts_max}) для файла {image_file}. Переходим к следующему файлу.", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")", "\n")
+            log_and_print(f"Достигнуто максимальное количество попыток ({attempts_max}) для файла {image_file}. Переходим к следующему файлу.", "\n","(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")", "\n")
 
 
 num_threads = 5  # Задаем количество потоков
@@ -334,10 +335,8 @@ for chunk in file_chunks:
     thread.start()
     threads.append(thread)
 
-# Register the event handler for '-' key and pass the 'threads' variable
 keyboard.add_hotkey('-', lambda: toggle_pause(threads))
 
-# Register the event handler for '+' key
 keyboard.add_hotkey('+', toggle_pause2)
 
 # Ждем завершения всех потоков
