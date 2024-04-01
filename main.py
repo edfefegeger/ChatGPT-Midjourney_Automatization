@@ -11,8 +11,7 @@ import http.client
 import json
 import pprint
 import urllib.request
-
-import urllib3
+import threading
 
 from logger import log_and_print
 from pause import toggle_pause, toggle_pause2, pause_check
@@ -123,286 +122,294 @@ def get_current_api_key():
     return api_keys[current_api_key_index]
 def get_current_midjourney_key():
     return midjourney_api_keys[current_midjourney_key_index]
+def process_images(api_key):
+    global current_api_key_index  # Добавляем эту строку
+    global current_midjourney_key_index  # Добавляем эту строку
+    global paused  # При необходимости добавляем эту строку
 
-global paused
-paused = False
-keyboard.add_hotkey('-', toggle_pause)
-keyboard.add_hotkey('+', toggle_pause2)
+    paused = False
+    keyboard.add_hotkey('-', toggle_pause)
+    keyboard.add_hotkey('+', toggle_pause2)
 
-while not paused or paused:# Обработка каждого изображения
-    for image_file in sorted_image_files:
+    while not paused or paused: 
+        for image_file in sorted_image_files:
 
-        attempts = 0
+            attempts = 0
 
-        # Получение текущего ключа API
-        api_key = get_current_api_key()
-        midjourney_key = get_current_midjourney_key()
+            # Получение текущего ключа API
+            api_key = get_current_api_key()
+            midjourney_key = get_current_midjourney_key()
 
-        # Определяем, какой ключ использовать для текущего файла
-        file_count = f"Ключ {current_api_key_index + 1}"
-        midjourney_key_count = f"Ключ {current_midjourney_key_index + 1}"
-        # Увеличиваем индекс для следующего использования ключа
-        current_api_key_index = (current_api_key_index + 1) % len(api_keys)
-        current_midjourney_key_index = (current_midjourney_key_index + 1) % len(midjourney_api_keys)
+            # Определяем, какой ключ использовать для текущего файла
+            file_count = f"Ключ {current_api_key_index + 1}"
+            midjourney_key_count = f"Ключ {current_midjourney_key_index + 1}"
+            # Увеличиваем индекс для следующего использования ключа
+            current_api_key_index = (current_api_key_index + 1) % len(api_keys)
+            current_midjourney_key_index = (current_midjourney_key_index + 1) % len(midjourney_api_keys)
 
-        # Установка ключа API
-        openai.api_key = api_key
+            # Установка ключа API
+            openai.api_key = api_key
 
-        # Флаг для проверки состояния паузы
-        # paused = False
-
-        # Цикл для обработки запросов с обработкой ошибок и ограничений
-        while attempts < attempts_max:
-            try:
-                # Формируем полный путь к файлу
-                image_path = os.path.join(folder_path, image_file)
-                # Кодируем изображение в формат Base64
-                base64_image = encode_image(image_path)
-                pause_check()
-                # Отправляем запрос к OpenAI API с изображением в формате Base64
-                response = openai.ChatCompletion.create(
-                    model=model,
-                    messages=[
-                        {
-                            "role": "user",
-                            "content": [
-                                {"type": "text", "text": promt},
-                                {
-                                    "type": "image_url",
-                                    "image_url": {
-                                        "url": f"data:image/jpeg;base64,{base64_image}",
-                                        "detail": detail,
-                                        "temp": temp,
-                                        "max_tokens": max_tokens
+            # Цикл для обработки запросов с обработкой ошибок и ограничений
+            while attempts < attempts_max:
+                try:
+                    # Формируем полный путь к файлу
+                    image_path = os.path.join(folder_path, image_file)
+                    # Кодируем изображение в формат Base64
+                    base64_image = encode_image(image_path)
+                    pause_check()
+                    # Отправляем запрос к OpenAI API с изображением в формате Base64
+                    response = openai.ChatCompletion.create(
+                        model=model,
+                        messages=[
+                            {
+                                "role": "user",
+                                "content": [
+                                    {"type": "text", "text": promt},
+                                    {
+                                        "type": "image_url",
+                                        "image_url": {
+                                            "url": f"data:image/jpeg;base64,{base64_image}",
+                                            "detail": detail,
+                                            "temp": temp,
+                                            "max_tokens": max_tokens
+                                        }
                                     }
-                                }
-                            ]
+                                ]
+                            }
+                        ]
+                    )
+
+                    # Получаем текстовый ответ от GPT
+                    gpt_response = response.choices[0]["message"]["content"].rstrip(".")
+
+
+                    # Разбиваем ответ на параграфы
+                    paragraphs = gpt_response.split("\n\n")
+                    if "--ar 16:9" not in gpt_response:
+                        # Если не соответствует, повторяем запрос
+                        log_and_print("Ошибка формата ответа с --ar 16:9 . Повторный запрос.", "(Ключ GPT: ", current_api_key_index)
+                        attempts += 1
+                        continue
+                    # Выводим информацию о тегах и названии файла
+                    log_and_print(f"File: '{image_file}' Обработан c CHAT GPT ключом: {file_count}! \n{response.choices[0]['message']['content']}\n")
+                    pause_check()
+                    # Проверяем, сколько параграфов найдено
+                    if len(paragraphs) >= 1:
+                        result_1 = paragraphs[0].rstrip('.')
+                        log_and_print("Найден параграф 1", "\n", "(Ключ GPT: ", current_api_key_index,")")
+                        data1 = {
+                            "prompt": result_1
                         }
-                    ]
-                )
-
-                # Получаем текстовый ответ от GPT
-                gpt_response = response.choices[0]["message"]["content"].rstrip(".")
-
-
-                # Разбиваем ответ на параграфы
-                paragraphs = gpt_response.split("\n\n")
-                if "--ar 16:9" not in gpt_response:
-                    # Если не соответствует, повторяем запрос
-                    log_and_print("Ошибка формата ответа с --ar 16:9 . Повторный запрос.")
-                    attempts += 1
-                    continue
-                # Выводим информацию о тегах и названии файла
-                log_and_print(f"File: '{image_file}' Обработан c CHAT GPT ключом: {file_count}! \n{response.choices[0]['message']['content']}\n")
-                pause_check()
-                # Проверяем, сколько параграфов найдено
-                if len(paragraphs) >= 1:
-                    result_1 = paragraphs[0].rstrip('.')
-                    log_and_print("Найден параграф 1", "\n")
-                    data1 = {
-                        "prompt": result_1
-                    }
-                    headers1 = {
-                        'Authorization': f'Bearer {midjourney_key}',
-                        'Content-Type': 'application/json'
-                    }
-                    conn = http.client.HTTPSConnection("cl.imagineapi.dev")
-                    conn.request("POST", "/items/images/", body=json.dumps(data1), headers=headers1)
-
-                    response1 = conn.getresponse()
-                    response_data1 = json.loads(response1.read().decode('utf-8'))
-
-                    log_and_print("Промт отправлен в Midjourney (1 параграф)")
-                    pprint.pp(response_data1)
-
-                    def download_images(image_urls, folder_path):
-                        # Создаем папку с сегодняшней датой, если она еще не существует
-                        today_folder = os.path.join(folder_path, datetime.datetime.now().strftime("%Y-%m-%d"))
-                        if not os.path.exists(today_folder):
-                            os.makedirs(today_folder)
-
-                        for image_url in image_urls:
-                            try:
-                                image_name = image_url.split('/')[-1]  # Получаем имя файла из URL
-                                image_path = os.path.join(today_folder, image_name)
-                                urllib.request.urlretrieve(image_url, image_path)  # Скачиваем изображение
-                                log_and_print(f"Изображение успешно скачано: {image_name}")
-                            except Exception as e:
-                                log_and_print(f"Ошибка при скачивании изображения {image_url}: {e}")
-                                
-                    def send_request(method, path, body=None, headers={}):
+                        headers1 = {
+                            'Authorization': f'Bearer {midjourney_key}',
+                            'Content-Type': 'application/json'
+                        }
                         conn = http.client.HTTPSConnection("cl.imagineapi.dev")
-                        conn.request(method, path, body=json.dumps(body) if body else None, headers=headers)
-                        response = conn.getresponse()
-                        data = json.loads(response.read().decode())
-                        conn.close()
-                        return data
+                        conn.request("POST", "/items/images/", body=json.dumps(data1), headers=headers1)
 
-                    def check_image_status(response_data):
-                        max_attempts = 3  # Максимальное количество попыток
-                        attempts_mid = 0
-                        while attempts_mid < max_attempts:
-                            response_data = send_request('GET', f"/items/images/{response_data['data']['id']}", headers=headers1)
-                            if response_data['data']['status'] == 'completed':
-                                log_and_print(f"Статус: {response_data['data']['status']}")
-                                log_and_print('Завершена обработка от Midjourney')
-                                upscaled_urls = response_data['data']['upscaled_urls']
-                                folder_path = "Results"
-                                download_images(upscaled_urls, folder_path)
+                        response1 = conn.getresponse()
+                        response_data1 = json.loads(response1.read().decode('utf-8'))
 
-                                return True
-                            elif response_data['data']['status'] == 'failed':
-                                log_and_print('Ошибка. Обработка в Midjourney не удалась. Повторная попытка отправки...', "\n")
-                                conn.request("POST", "/items/images/", body=json.dumps(data1), headers=headers1)
-                                response1 = conn.getresponse()
-                                response_data = json.loads(response1.read().decode('utf-8'))
-                                attempts_mid += 1
-                            else:
-                                log_and_print(f"Изображение еще не завершило генерацию. Статус: {response_data['data']['status']}")
-                                time.sleep(15)
-                        log_and_print('Достигнуто максимальное количество попыток. Обработка в Midjourney не удалась.', "\n")
-                        return False
-                    
-                    check_image_status(response_data1)
+                        log_and_print("Промт отправлен в Midjourney (1 параграф)", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                        pprint.pp(response_data1)
+
+                        def download_images(image_urls, folder_path):
+                            # Создаем папку с сегодняшней датой, если она еще не существует
+                            today_folder = os.path.join(folder_path, datetime.datetime.now().strftime("%Y-%m-%d"))
+                            if not os.path.exists(today_folder):
+                                os.makedirs(today_folder)
+
+                            for image_url in image_urls:
+                                try:
+                                    image_name = image_url.split('/')[-1]  # Получаем имя файла из URL
+                                    image_path = os.path.join(today_folder, image_name)
+                                    urllib.request.urlretrieve(image_url, image_path)  # Скачиваем изображение
+                                    log_and_print(f"Изображение успешно скачано: {image_name}", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                                except Exception as e:
+                                    log_and_print(f"Ошибка при скачивании изображения {image_url}: {e}", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+
+                        def send_request(method, path, body=None, headers={}):
+                            conn = http.client.HTTPSConnection("cl.imagineapi.dev")
+                            conn.request(method, path, body=json.dumps(body) if body else None, headers=headers)
+                            response = conn.getresponse()
+                            data = json.loads(response.read().decode())
+                            conn.close()
+                            return data
+
+                        def check_image_status(response_data):
+                            max_attempts = 3  # Максимальное количество попыток
+                            attempts_mid = 0
+                            while attempts_mid < max_attempts:
+                                response_data = send_request('GET', f"/items/images/{response_data['data']['id']}", headers=headers1)
+                                if response_data['data']['status'] == 'completed':
+                                    log_and_print(f"Статус: {response_data['data']['status']}", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                                    log_and_print('Завершена обработка от Midjourney', "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                                    upscaled_urls = response_data['data']['upscaled_urls']
+                                    folder_path = "Results"
+                                    download_images(upscaled_urls, folder_path)
+
+                                    return True
+                                elif response_data['data']['status'] == 'failed':
+                                    log_and_print('Ошибка. Обработка в Midjourney не удалась. Повторная попытка отправки...', "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")", "\n")
+                                    conn.request("POST", "/items/images/", body=json.dumps(data1), headers=headers1)
+                                    response1 = conn.getresponse()
+                                    response_data = json.loads(response1.read().decode('utf-8'))
+                                    attempts_mid += 1
+                                else:
+                                    log_and_print(f"Изображение еще не завершило генерацию. Статус: {response_data['data']['status']}", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                                    time.sleep(15)
+                            log_and_print('Достигнуто максимальное количество попыток. Обработка в Midjourney не удалась.', "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")", "\n")
+                            return False
+
+                        check_image_status(response_data1)
+
+                    pause_check()
+
+                    if len(paragraphs) >= 1:
+                        result_1 = paragraphs[0].rstrip('.')
+                        data1 = {
+                            "prompt": result_1
+                        }
+                        headers1 = {
+                            'Authorization': f'Bearer {midjourney_key}',
+                            'Content-Type': 'application/json'
+                        }
+                        conn = http.client.HTTPSConnection("cl.imagineapi.dev")
+                        conn.request("POST", "/items/images/", body=json.dumps(data1), headers=headers1)
+
+                        response1 = conn.getresponse()
+                        response_data1 = json.loads(response1.read().decode('utf-8'))
+
+                        log_and_print("Промт отправлен в Midjourney (1 параграф, второй раз)", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                        pprint.pp(response_data1)
+
+
+                        check_image_status(response_data1)
+                        pprint.pp(response_data1)
+                    pause_check()
+
+                    if len(paragraphs) >= 2:
+                        result_2 = paragraphs[1].rstrip('.')
+                        log_and_print("Найден параграф 2", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")", "\n")
+                        data2 = {
+                        "prompt": result_2, }
+                        headers2 = {
+                            'Authorization': f'Bearer {midjourney_key}',  # <<<< TODO: remember to change this
+                            'Content-Type': 'application/json'
+                        }
+                        conn = http.client.HTTPSConnection("cl.imagineapi.dev")
+                        conn.request("POST", "/items/images/", body=json.dumps(data2), headers=headers2)
+
+                        response2 = conn.getresponse()
+                        response_data2 = json.loads(response2.read().decode('utf-8'))
+
+                        log_and_print("Промт отправлен в Midjourney (2 параграф)", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+
+                        pprint.pp(response_data2)
+
+                        check_image_status(response_data2)
+                        pprint.pp(response_data1)
+                    pause_check()
+                    if len(paragraphs) >= 2:
+                        result_2 = paragraphs[1].rstrip('.')
+                        data2 = {
+                        "prompt": result_2, }
+                        headers2 = {
+                            'Authorization': f'Bearer {midjourney_key}',  # <<<< TODO: remember to change this
+                            'Content-Type': 'application/json'
+                        }
+                        conn = http.client.HTTPSConnection("cl.imagineapi.dev")
+                        conn.request("POST", "/items/images/", body=json.dumps(data2), headers=headers2)
+
+                        response2 = conn.getresponse()
+                        response_data2 = json.loads(response2.read().decode('utf-8'))
+
+                        log_and_print("Промт отправлен в Midjourney (2 параграф, второй раз)", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+
+                        pprint.pp(response_data2)
+
+                        check_image_status(response_data2)
+                        pprint.pp(response_data1)
+
+                    pause_check()
+                    if len(paragraphs) >= 3:
+                        result_3 = paragraphs[2].rstrip('.')
+                        log_and_print("Найден параграф 3", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")", "\n")
+                        data3 = {
+                        "prompt": result_3, }
+                        headers3 = {
+                            'Authorization': f'Bearer {midjourney_key}',  # <<<< TODO: remember to change this
+                            'Content-Type': 'application/json'
+                        }
+                        conn = http.client.HTTPSConnection("cl.imagineapi.dev")
+                        conn.request("POST", "/items/images/", body=json.dumps(data3), headers=headers3)
+
+                        response3 = conn.getresponse()
+                        response_data3 = json.loads(response3.read().decode('utf-8'))
+                        log_and_print("Промт отправлен в Midjourney (3 параграф)", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                        pprint.pp(response_data3)
+
+                        check_image_status(response_data3)
+                        pprint.pp(response_data1)
+                    pause_check()
+                    if len(paragraphs) >= 3:
+                        result_3 = paragraphs[2].rstrip('.')
+                        data3 = {
+                        "prompt": result_3, }
+                        headers3 = {
+                            'Authorization': f'Bearer {midjourney_key}',  # <<<< TODO: remember to change this
+                            'Content-Type': 'application/json'
+                        }
+                        conn = http.client.HTTPSConnection("cl.imagineapi.dev")
+                        conn.request("POST", "/items/images/", body=json.dumps(data3), headers=headers3)
+
+                        response3 = conn.getresponse()
+                        response_data3 = json.loads(response3.read().decode('utf-8'))
+                        log_and_print("Промт отправлен в Midjourney (3 параграф, второй раз)", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                        pprint.pp(response_data3)
+
+                        check_image_status(response_data3)
+                        pprint.pp(response_data1)
+
+
+
+                    else:
+                        log_and_print("Не все параграфы найдены ", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+
+                    log_and_print(f"File: '{image_file}' Обработан c ImagineDev ключом: {midjourney_key_count}!", "\n")
+
+                    print("---------------------------------------")
+
+                except Exception as e:
+                    if str(e) == "'data'":
+                        log_and_print(f"Пропущен файл {image_file} из-за ошибки: {e}", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                        break  # Переходим к следующему файлу
+                    else:
+                        log_and_print("Ошибка при обработке файла:", e, "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                        attempts += 1
+                        continue
+
+                except openai.error.APIError as e:
+                    if "You’ve reached the current usage cap for GPT-4" in str(e):
+                        pause_for_two_hours()
+                        continue
 
                 pause_check()
 
-                if len(paragraphs) >= 1:
-                    result_1 = paragraphs[0].rstrip('.')
-                    data1 = {
-                        "prompt": result_1
-                    }
-                    headers1 = {
-                        'Authorization': f'Bearer {midjourney_key}',
-                        'Content-Type': 'application/json'
-                    }
-                    conn = http.client.HTTPSConnection("cl.imagineapi.dev")
-                    conn.request("POST", "/items/images/", body=json.dumps(data1), headers=headers1)
-
-                    response1 = conn.getresponse()
-                    response_data1 = json.loads(response1.read().decode('utf-8'))
-
-                    log_and_print("Промт отправлен в Midjourney (1 параграф, второй раз)")
-                    pprint.pp(response_data1)
+                break  # Выходим из цикла while, если ответ не содержит запрещенных слов или достигнуто ограничение по попыткам
+            # Если после 5 попыток ответ все еще содержит запрещенные слова, переходим к следующему файлу
+            if attempts == attempts_max:
+                log_and_print(f"Достигнуто максимальное количество попыток ({attempts_max}) для файла {image_file}. Переходим к следующему файлу.", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")", "\n")
 
 
-                    check_image_status(response_data1)
-                    pprint.pp(response_data1)
-                pause_check()
+        log_and_print("Все файлы успешно обработаны!")
+        input("Для выхода нажмите Enter...")
 
-                if len(paragraphs) >= 2:
-                    result_2 = paragraphs[1].rstrip('.')
-                    log_and_print("Найден параграф 2", "\n")
-                    data2 = {
-                    "prompt": result_2, }
-                    headers2 = {
-                        'Authorization': f'Bearer {midjourney_key}',  # <<<< TODO: remember to change this
-                        'Content-Type': 'application/json'
-                    }
-                    conn = http.client.HTTPSConnection("cl.imagineapi.dev")
-                    conn.request("POST", "/items/images/", body=json.dumps(data2), headers=headers2)
-
-                    response2 = conn.getresponse()
-                    response_data2 = json.loads(response2.read().decode('utf-8'))
-
-                    log_and_print("Промт отправлен в Midjourney (2 параграф)")
-
-                    pprint.pp(response_data2)
-
-                    check_image_status(response_data2)
-                    pprint.pp(response_data1)
-                pause_check()
-                if len(paragraphs) >= 2:
-                    result_2 = paragraphs[1].rstrip('.')
-                    data2 = {
-                    "prompt": result_2, }
-                    headers2 = {
-                        'Authorization': f'Bearer {midjourney_key}',  # <<<< TODO: remember to change this
-                        'Content-Type': 'application/json'
-                    }
-                    conn = http.client.HTTPSConnection("cl.imagineapi.dev")
-                    conn.request("POST", "/items/images/", body=json.dumps(data2), headers=headers2)
-
-                    response2 = conn.getresponse()
-                    response_data2 = json.loads(response2.read().decode('utf-8'))
-
-                    log_and_print("Промт отправлен в Midjourney (2 параграф, второй раз)")
-
-                    pprint.pp(response_data2)
-
-                    check_image_status(response_data2)
-                    pprint.pp(response_data1)
-
-                pause_check()
-                if len(paragraphs) >= 3:
-                    result_3 = paragraphs[2].rstrip('.')
-                    log_and_print("Найден параграф 3", "\n")
-                    data3 = {
-                    "prompt": result_3, }
-                    headers3 = {
-                        'Authorization': f'Bearer {midjourney_key}',  # <<<< TODO: remember to change this
-                        'Content-Type': 'application/json'
-                    }
-                    conn = http.client.HTTPSConnection("cl.imagineapi.dev")
-                    conn.request("POST", "/items/images/", body=json.dumps(data3), headers=headers3)
-
-                    response3 = conn.getresponse()
-                    response_data3 = json.loads(response3.read().decode('utf-8'))
-                    log_and_print("Промт отправлен в Midjourney (3 параграф)")
-                    pprint.pp(response_data3)
-
-                    check_image_status(response_data3)
-                    pprint.pp(response_data1)
-                pause_check()
-                if len(paragraphs) >= 3:
-                    result_3 = paragraphs[2].rstrip('.')
-                    data3 = {
-                    "prompt": result_3, }
-                    headers3 = {
-                        'Authorization': f'Bearer {midjourney_key}',  # <<<< TODO: remember to change this
-                        'Content-Type': 'application/json'
-                    }
-                    conn = http.client.HTTPSConnection("cl.imagineapi.dev")
-                    conn.request("POST", "/items/images/", body=json.dumps(data3), headers=headers3)
-
-                    response3 = conn.getresponse()
-                    response_data3 = json.loads(response3.read().decode('utf-8'))
-                    log_and_print("Промт отправлен в Midjourney (3 параграф, второй раз)")
-                    pprint.pp(response_data3)
-
-                    check_image_status(response_data3)
-                    pprint.pp(response_data1)
-
-                
-
-                else:
-                    log_and_print("Не все параграфы найдены ")
-
-                log_and_print(f"File: '{image_file}' Обработан c ImagineDev ключом: {midjourney_key_count}!", "\n")
-
-                print("---------------------------------------")
-
-            except Exception as e:
-                if str(e) == "'data'":
-                    log_and_print(f"Пропущен файл {image_file} из-за ошибки: {e}")
-                    break  # Переходим к следующему файлу
-                else:
-                    log_and_print("Ошибка при обработке файла:", e)
-                    attempts += 1
-                    continue
-
-            except openai.error.APIError as e:
-                if "You’ve reached the current usage cap for GPT-4" in str(e):
-                    pause_for_two_hours()
-                    continue
-
-            pause_check()
-
-            break  # Выходим из цикла while, если ответ не содержит запрещенных слов или достигнуто ограничение по попыткам
-        # Если после 5 попыток ответ все еще содержит запрещенные слова, переходим к следующему файлу
-        if attempts == attempts_max:
-            log_and_print(f"Достигнуто максимальное количество попыток ({attempts_max}) для файла {image_file}. Переходим к следующему файлу.", "\n")
-
-        
-    log_and_print("Все файлы успешно обработаны!")
-    input("Для выхода нажмите Enter...")
+threads = []
+for key in api_keys:
+    thread = threading.Thread(target=process_images, args=(key,))
+    thread.start()
+    threads.append(thread)
+for thread in threads:
+    thread.join()
