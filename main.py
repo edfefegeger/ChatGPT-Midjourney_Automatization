@@ -245,7 +245,7 @@ while not paused or paused:# Обработка каждого изображе�
                             response_data = send_request('GET', f"/items/images/{response_data['data']['id']}", headers=headers1)
                             if response_data['data']['status'] == 'completed':
                                 log_and_print(f"Статус: {response_data['data']['status']}")
-                                log_and_print('Завершена обработка от Midjourney', "\n")
+                                log_and_print('Завершена обработка от Midjourney')
                                 upscaled_urls = response_data['data']['upscaled_urls']
                                 folder_path = "Results"
                                 download_images(upscaled_urls, folder_path)
@@ -378,7 +378,7 @@ while not paused or paused:# Обработка каждого изображе�
                 else:
                     log_and_print("Не все параграфы найдены ")
 
-                log_and_print(f"File: '{image_file}' Обработан c ImagineDev ключом: {midjourney_key_count}! \n{response.choices[0]['message']['content']}\n", "\n")
+                log_and_print(f"File: '{image_file}' Обработан c ImagineDev ключом: {midjourney_key_count}!", "\n")
 
                 print("---------------------------------------")
 
