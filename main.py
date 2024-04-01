@@ -124,17 +124,19 @@ def get_current_api_key():
     return api_keys[current_api_key_index]
 def get_current_midjourney_key():
     return midjourney_api_keys[current_midjourney_key_index]
-def process_images(files_for_thread):
-    global current_api_key_index  # Добавляем эту строку
-    global current_midjourney_key_index  # Добавляем эту строку
-    global paused  # При необходимости добавляем эту строку
+
+def process_images(files):
+    global current_api_key_index  
+    global current_midjourney_key_index 
+    global paused  
+    global sorted_image_files  
 
     paused = False
     keyboard.add_hotkey('-', toggle_pause)
     keyboard.add_hotkey('+', toggle_pause2)
 
     while not paused or paused: 
-        for image_file in sorted_image_files:
+        for image_file in files:
 
             attempts = 0
 
@@ -409,11 +411,10 @@ def process_images(files_for_thread):
         input("Для выхода нажмите Enter...")
 
 num_threads = 5  # Задаем количество потоков
-chunk_size = len(all_files) // num_threads  # Вычисляем размер каждой части
+chunk_size = len(sorted_image_files) // num_threads  # Вычисляем размер каждой части
 if chunk_size == 0:
     chunk_size = 1  # Минимальный размер части
-file_chunks = [all_files[i:i + chunk_size] for i in range(0, len(all_files), chunk_size)]
-
+file_chunks = [sorted_image_files[i:i + chunk_size] for i in range(0, len(sorted_image_files), chunk_size)]
 
 # Создаем и запускаем потоки
 threads = []
@@ -425,3 +426,4 @@ for chunk in file_chunks:
 # Ждем завершения всех потоков
 for thread in threads:
     thread.join()
+
