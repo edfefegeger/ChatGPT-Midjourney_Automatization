@@ -2,23 +2,33 @@ import time
 from logger import log_and_print
 
 paused = False
-def toggle_pause():
+Not_paused = True  # Initialize Not_paused
+
+def toggle_pause(threads):
     global paused
     paused = not paused
     global Not_paused
     Not_paused = False
-    log_and_print("Нажато '-', ожидание выполнения текущего запроса и ставим на паузу")
+    log_and_print("Нажато '-', ожидание выполнения текущих запросов в потоках и ставим на паузу")
+    if paused:
+        pause_all_threads(threads)
+
+def pause_all_threads(threads):
+    for thread in threads:
+        thread.paused = True
+
 def toggle_pause2():
     global paused
     paused = False
     global Not_paused
     Not_paused = True
     log_and_print("Нажато '+'")
+
 def pause_check():
     if paused == True:
-        log_and_print("Вы на паузе", "\n")
+        log_and_print("Поток на паузе", "\n")
         while Not_paused == False:
-            time.sleep(10)                
+            time.sleep(10)
         log_and_print("Снятие с паузы", "\n")
 
 def pause_for_two_hours():
