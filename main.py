@@ -188,7 +188,7 @@ def process_images(api_key):
                     paragraphs = gpt_response.split("\n\n")
                     if "--ar 16:9" not in gpt_response:
                         # Если не соответствует, повторяем запрос
-                        log_and_print("Ошибка формата ответа с --ar 16:9 . Повторный запрос.", "(Ключ GPT: ", current_api_key_index)
+                        log_and_print("Ошибка формата ответа с --ar 16:9 . Повторный запрос.", "(Ключ GPT: ", file_count)
                         attempts += 1
                         continue
                     # Выводим информацию о тегах и названии файла
@@ -197,7 +197,7 @@ def process_images(api_key):
                     # Проверяем, сколько параграфов найдено
                     if len(paragraphs) >= 1:
                         result_1 = paragraphs[0].rstrip('.')
-                        log_and_print("Найден параграф 1", "\n", "(Ключ GPT: ", current_api_key_index,")")
+                        log_and_print("Найден параграф 1", "\n", "(Ключ GPT: ", file_count,")")
                         data1 = {
                             "prompt": result_1
                         }
@@ -211,7 +211,7 @@ def process_images(api_key):
                         response1 = conn.getresponse()
                         response_data1 = json.loads(response1.read().decode('utf-8'))
 
-                        log_and_print("Промт отправлен в Midjourney (1 параграф)", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                        log_and_print("Промт отправлен в Midjourney (1 параграф)", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", midjourney_key_count,")")
                         pprint.pp(response_data1)
 
                         def download_images(image_urls, folder_path):
@@ -225,9 +225,9 @@ def process_images(api_key):
                                     image_name = image_url.split('/')[-1]  # Получаем имя файла из URL
                                     image_path = os.path.join(today_folder, image_name)
                                     urllib.request.urlretrieve(image_url, image_path)  # Скачиваем изображение
-                                    log_and_print(f"Изображение успешно скачано: {image_name}", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                                    log_and_print(f"Изображение успешно скачано: {image_name}", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
                                 except Exception as e:
-                                    log_and_print(f"Ошибка при скачивании изображения {image_url}: {e}", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                                    log_and_print(f"Ошибка при скачивании изображения {image_url}: {e}", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
 
                         def send_request(method, path, body=None, headers={}):
                             conn = http.client.HTTPSConnection("cl.imagineapi.dev")
@@ -243,23 +243,23 @@ def process_images(api_key):
                             while attempts_mid < max_attempts:
                                 response_data = send_request('GET', f"/items/images/{response_data['data']['id']}", headers=headers1)
                                 if response_data['data']['status'] == 'completed':
-                                    log_and_print(f"Статус: {response_data['data']['status']}", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
-                                    log_and_print('Завершена обработка от Midjourney', "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                                    log_and_print(f"Статус: {response_data['data']['status']}", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
+                                    log_and_print('Завершена обработка от Midjourney', "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
                                     upscaled_urls = response_data['data']['upscaled_urls']
                                     folder_path = "Results"
                                     download_images(upscaled_urls, folder_path)
 
                                     return True
                                 elif response_data['data']['status'] == 'failed':
-                                    log_and_print('Ошибка. Обработка в Midjourney не удалась. Повторная попытка отправки...', "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")", "\n")
+                                    log_and_print('Ошибка. Обработка в Midjourney не удалась. Повторная попытка отправки...', "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")", "\n")
                                     conn.request("POST", "/items/images/", body=json.dumps(data1), headers=headers1)
                                     response1 = conn.getresponse()
                                     response_data = json.loads(response1.read().decode('utf-8'))
                                     attempts_mid += 1
                                 else:
-                                    log_and_print(f"Изображение еще не завершило генерацию. Статус: {response_data['data']['status']}", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                                    log_and_print(f"Изображение еще не завершило генерацию. Статус: {response_data['data']['status']}", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
                                     time.sleep(15)
-                            log_and_print('Достигнуто максимальное количество попыток. Обработка в Midjourney не удалась.', "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")", "\n")
+                            log_and_print('Достигнуто максимальное количество попыток. Обработка в Midjourney не удалась.', "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")", "\n")
                             return False
 
                         check_image_status(response_data1)
@@ -281,7 +281,7 @@ def process_images(api_key):
                         response1 = conn.getresponse()
                         response_data1 = json.loads(response1.read().decode('utf-8'))
 
-                        log_and_print("Промт отправлен в Midjourney (1 параграф, второй раз)", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                        log_and_print("Промт отправлен в Midjourney (1 параграф, второй раз)", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
                         pprint.pp(response_data1)
 
 
@@ -291,7 +291,7 @@ def process_images(api_key):
 
                     if len(paragraphs) >= 2:
                         result_2 = paragraphs[1].rstrip('.')
-                        log_and_print("Найден параграф 2", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")", "\n")
+                        log_and_print("Найден параграф 2", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")", "\n")
                         data2 = {
                         "prompt": result_2, }
                         headers2 = {
@@ -304,7 +304,7 @@ def process_images(api_key):
                         response2 = conn.getresponse()
                         response_data2 = json.loads(response2.read().decode('utf-8'))
 
-                        log_and_print("Промт отправлен в Midjourney (2 параграф)", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                        log_and_print("Промт отправлен в Midjourney (2 параграф)", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
 
                         pprint.pp(response_data2)
 
@@ -325,7 +325,7 @@ def process_images(api_key):
                         response2 = conn.getresponse()
                         response_data2 = json.loads(response2.read().decode('utf-8'))
 
-                        log_and_print("Промт отправлен в Midjourney (2 параграф, второй раз)", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                        log_and_print("Промт отправлен в Midjourney (2 параграф, второй раз)", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
 
                         pprint.pp(response_data2)
 
@@ -335,7 +335,7 @@ def process_images(api_key):
                     pause_check()
                     if len(paragraphs) >= 3:
                         result_3 = paragraphs[2].rstrip('.')
-                        log_and_print("Найден параграф 3", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")", "\n")
+                        log_and_print("Найден параграф 3", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")", "\n")
                         data3 = {
                         "prompt": result_3, }
                         headers3 = {
@@ -347,7 +347,7 @@ def process_images(api_key):
 
                         response3 = conn.getresponse()
                         response_data3 = json.loads(response3.read().decode('utf-8'))
-                        log_and_print("Промт отправлен в Midjourney (3 параграф)", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                        log_and_print("Промт отправлен в Midjourney (3 параграф)", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
                         pprint.pp(response_data3)
 
                         check_image_status(response_data3)
@@ -366,7 +366,7 @@ def process_images(api_key):
 
                         response3 = conn.getresponse()
                         response_data3 = json.loads(response3.read().decode('utf-8'))
-                        log_and_print("Промт отправлен в Midjourney (3 параграф, второй раз)", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                        log_and_print("Промт отправлен в Midjourney (3 параграф, второй раз)", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
                         pprint.pp(response_data3)
 
                         check_image_status(response_data3)
@@ -375,7 +375,7 @@ def process_images(api_key):
 
 
                     else:
-                        log_and_print("Не все параграфы найдены ", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                        log_and_print("Не все параграфы найдены ", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
 
                     log_and_print(f"File: '{image_file}' Обработан c ImagineDev ключом: {midjourney_key_count}!", "\n")
 
@@ -383,10 +383,10 @@ def process_images(api_key):
 
                 except Exception as e:
                     if str(e) == "'data'":
-                        log_and_print(f"Пропущен файл {image_file} из-за ошибки: {e}", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                        log_and_print(f"Пропущен файл {image_file} из-за ошибки: {e}", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
                         break  # Переходим к следующему файлу
                     else:
-                        log_and_print("Ошибка при обработке файла:", e, "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")")
+                        log_and_print("Ошибка при обработке файла:", e, "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
                         attempts += 1
                         continue
 
@@ -400,7 +400,7 @@ def process_images(api_key):
                 break  # Выходим из цикла while, если ответ не содержит запрещенных слов или достигнуто ограничение по попыткам
             # Если после 5 попыток ответ все еще содержит запрещенные слова, переходим к следующему файлу
             if attempts == attempts_max:
-                log_and_print(f"Достигнуто максимальное количество попыток ({attempts_max}) для файла {image_file}. Переходим к следующему файлу.", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", current_midjourney_key_index,")", "\n")
+                log_and_print(f"Достигнуто максимальное количество попыток ({attempts_max}) для файла {image_file}. Переходим к следующему файлу.", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")", "\n")
 
 
         log_and_print("Все файлы успешно обработаны!")
