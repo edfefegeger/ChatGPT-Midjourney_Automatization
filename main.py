@@ -101,6 +101,7 @@ def process_images(files):
     global current_midjourney_key_index
     global paused
     global sorted_image_files
+    global num_successful_files  # Объявляем счетчик как глобальную переменную
 
     for image_file in files:
 
@@ -317,6 +318,7 @@ def process_images(files):
                 if "You’ve reached the current usage cap for GPT-4" in str(e):
                     pause_for_two_hours()
                     continue
+            num_successful_files += 1
             pause_check()
             break
         if attempts == attempts_max:
@@ -329,6 +331,9 @@ if chunk_size == 0:
     chunk_size = 1  # Минимальный размер части
 file_chunks = [sorted_image_files[i:i + chunk_size] for i in range(0, len(sorted_image_files), chunk_size)]
 
+global num_successful_files
+
+num_successful_files = 0
 # Создаем и запускаем потоки
 threads = []
 for chunk in file_chunks:
@@ -340,10 +345,12 @@ keyboard.add_hotkey('-', lambda: toggle_pause(threads))
 
 keyboard.add_hotkey('+', toggle_pause2)
 
+
 # Ждем завершения всех потоков
 for thread in threads:
     thread.join()
 
 
 log_and_print("Конец. Все файлы успешно обработаны!")
+log_and_print("Всего успешно обработано файлов GPT:", num_successful_files)
 input("Для выхода нажмите Enter...")
