@@ -7,6 +7,8 @@
         "sep_files.py",
         "config.ini",
         "logger.py",
-        "ui_form.py"
+        "ui_form.py",
+        "config.ui",
+        "ui_config.py"
     ]
 }
