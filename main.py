@@ -16,6 +16,7 @@ from logger import log_and_print
 from pause import toggle_pause, toggle_pause2, pause_check, pause_for_two_hours
 from sep_files import separate_files
 
+log_and_print("Запуск программы")
 # Чтение API-ключей из файла конфигурации
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -96,10 +97,10 @@ def get_current_midjourney_key():
     return midjourney_api_keys[current_midjourney_key_index]
 
 def process_images(files):
-    global current_api_key_index  
-    global current_midjourney_key_index 
-    global paused  
-    global sorted_image_files  
+    global current_api_key_index
+    global current_midjourney_key_index
+    global paused
+    global sorted_image_files
 
     for image_file in files:
 
@@ -317,7 +318,7 @@ def process_images(files):
                     pause_for_two_hours()
                     continue
             pause_check()
-            break  
+            break
         if attempts == attempts_max:
             log_and_print(f"Достигнуто максимальное количество попыток ({attempts_max}) для файла {image_file}. Переходим к следующему файлу.", "\n","(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")", "\n")
 
@@ -344,5 +345,5 @@ for thread in threads:
     thread.join()
 
 
-log_and_print("Все файлы успешно обработаны!")
+log_and_print("Конец. Все файлы успешно обработаны!")
 input("Для выхода нажмите Enter...")
