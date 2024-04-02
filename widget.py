@@ -154,4 +154,5 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     widget = Widget()
     widget.show()
+    widget.setWindowTitle("Главное меню")
     sys.exit(app.exec())
