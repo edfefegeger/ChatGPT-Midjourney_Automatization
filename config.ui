@@ -484,6 +484,12 @@
          <height>32</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
       </widget>
      </item>
      <item>
@@ -493,6 +499,11 @@
          <width>0</width>
          <height>32</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
        </property>
       </widget>
      </item>
@@ -504,6 +515,11 @@
          <height>32</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
       </widget>
      </item>
      <item>
@@ -513,6 +529,11 @@
          <width>0</width>
          <height>32</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
        </property>
       </widget>
      </item>
@@ -524,6 +545,11 @@
          <height>32</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
       </widget>
      </item>
      <item>
@@ -533,6 +559,11 @@
          <width>0</width>
          <height>32</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
        </property>
       </widget>
      </item>
@@ -544,6 +575,11 @@
          <height>32</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
       </widget>
      </item>
      <item>
@@ -553,6 +589,11 @@
          <width>0</width>
          <height>32</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
        </property>
       </widget>
      </item>
@@ -564,6 +605,11 @@
          <height>32</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
       </widget>
      </item>
      <item>
@@ -573,6 +619,11 @@
          <width>0</width>
          <height>32</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
        </property>
       </widget>
      </item>
@@ -584,6 +635,11 @@
          <height>32</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
       </widget>
      </item>
      <item>
@@ -593,6 +649,11 @@
          <width>0</width>
          <height>32</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
        </property>
       </widget>
      </item>
@@ -604,6 +665,11 @@
          <height>32</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
       </widget>
      </item>
      <item>
@@ -614,6 +680,11 @@
          <height>32</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
       </widget>
      </item>
      <item>
@@ -623,6 +694,11 @@
          <width>0</width>
          <height>32</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
        </property>
       </widget>
      </item>

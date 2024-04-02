@@ -206,90 +206,108 @@ class Ui_Form(object):
         self.lineEdit_9 = QLineEdit(Form)
         self.lineEdit_9.setObjectName(u"lineEdit_9")
         self.lineEdit_9.setMinimumSize(QSize(0, 32))
+        font2 = QFont()
+        font2.setPointSize(12)
+        font2.setBold(False)
+        self.lineEdit_9.setFont(font2)
 
         self.verticalLayout_2.addWidget(self.lineEdit_9)
 
         self.lineEdit_10 = QLineEdit(Form)
         self.lineEdit_10.setObjectName(u"lineEdit_10")
         self.lineEdit_10.setMinimumSize(QSize(0, 32))
+        self.lineEdit_10.setFont(font1)
 
         self.verticalLayout_2.addWidget(self.lineEdit_10)
 
         self.lineEdit_11 = QLineEdit(Form)
         self.lineEdit_11.setObjectName(u"lineEdit_11")
         self.lineEdit_11.setMinimumSize(QSize(0, 32))
+        self.lineEdit_11.setFont(font1)
 
         self.verticalLayout_2.addWidget(self.lineEdit_11)
 
         self.lineEdit_12 = QLineEdit(Form)
         self.lineEdit_12.setObjectName(u"lineEdit_12")
         self.lineEdit_12.setMinimumSize(QSize(0, 32))
+        self.lineEdit_12.setFont(font1)
 
         self.verticalLayout_2.addWidget(self.lineEdit_12)
 
         self.lineEdit_13 = QLineEdit(Form)
         self.lineEdit_13.setObjectName(u"lineEdit_13")
         self.lineEdit_13.setMinimumSize(QSize(0, 32))
+        self.lineEdit_13.setFont(font1)
 
         self.verticalLayout_2.addWidget(self.lineEdit_13)
 
         self.lineEdit_14 = QLineEdit(Form)
         self.lineEdit_14.setObjectName(u"lineEdit_14")
         self.lineEdit_14.setMinimumSize(QSize(0, 32))
+        self.lineEdit_14.setFont(font1)
 
         self.verticalLayout_2.addWidget(self.lineEdit_14)
 
         self.lineEdit_15 = QLineEdit(Form)
         self.lineEdit_15.setObjectName(u"lineEdit_15")
         self.lineEdit_15.setMinimumSize(QSize(0, 32))
+        self.lineEdit_15.setFont(font1)
 
         self.verticalLayout_2.addWidget(self.lineEdit_15)
 
         self.lineEdit_16 = QLineEdit(Form)
         self.lineEdit_16.setObjectName(u"lineEdit_16")
         self.lineEdit_16.setMinimumSize(QSize(0, 32))
+        self.lineEdit_16.setFont(font1)
 
         self.verticalLayout_2.addWidget(self.lineEdit_16)
 
         self.lineEdit_17 = QLineEdit(Form)
         self.lineEdit_17.setObjectName(u"lineEdit_17")
         self.lineEdit_17.setMinimumSize(QSize(0, 32))
+        self.lineEdit_17.setFont(font1)
 
         self.verticalLayout_2.addWidget(self.lineEdit_17)
 
         self.lineEdit_18 = QLineEdit(Form)
         self.lineEdit_18.setObjectName(u"lineEdit_18")
         self.lineEdit_18.setMinimumSize(QSize(0, 32))
+        self.lineEdit_18.setFont(font1)
 
         self.verticalLayout_2.addWidget(self.lineEdit_18)
 
         self.lineEdit_19 = QLineEdit(Form)
         self.lineEdit_19.setObjectName(u"lineEdit_19")
         self.lineEdit_19.setMinimumSize(QSize(0, 32))
+        self.lineEdit_19.setFont(font1)
 
         self.verticalLayout_2.addWidget(self.lineEdit_19)
 
         self.lineEdit_20 = QLineEdit(Form)
         self.lineEdit_20.setObjectName(u"lineEdit_20")
         self.lineEdit_20.setMinimumSize(QSize(0, 32))
+        self.lineEdit_20.setFont(font1)
 
         self.verticalLayout_2.addWidget(self.lineEdit_20)
 
         self.lineEdit_21 = QLineEdit(Form)
         self.lineEdit_21.setObjectName(u"lineEdit_21")
         self.lineEdit_21.setMinimumSize(QSize(0, 32))
+        self.lineEdit_21.setFont(font1)
 
         self.verticalLayout_2.addWidget(self.lineEdit_21)
 
         self.lineEdit_22 = QLineEdit(Form)
         self.lineEdit_22.setObjectName(u"lineEdit_22")
         self.lineEdit_22.setMinimumSize(QSize(0, 32))
+        self.lineEdit_22.setFont(font1)
 
         self.verticalLayout_2.addWidget(self.lineEdit_22)
 
         self.lineEdit_8 = QLineEdit(Form)
         self.lineEdit_8.setObjectName(u"lineEdit_8")
         self.lineEdit_8.setMinimumSize(QSize(0, 32))
+        self.lineEdit_8.setFont(font1)
 
         self.verticalLayout_2.addWidget(self.lineEdit_8)
 
@@ -327,10 +345,10 @@ class Ui_Form(object):
         self.pushButton = QPushButton(Form)
         self.pushButton.setObjectName(u"pushButton")
         self.pushButton.setMaximumSize(QSize(16777215, 16777215))
-        font2 = QFont()
-        font2.setPointSize(14)
-        font2.setBold(True)
-        self.pushButton.setFont(font2)
+        font3 = QFont()
+        font3.setPointSize(14)
+        font3.setBold(True)
+        self.pushButton.setFont(font3)
 
         self.gridLayout.addWidget(self.pushButton, 1, 0, 1, 2)
 
