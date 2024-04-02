@@ -2,7 +2,7 @@ import time
 from logger import log_and_print
 
 paused = False
-Not_paused = True  
+Not_paused = True
 
 def toggle_pause(threads):
     global paused
