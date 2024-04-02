@@ -1,0 +1,12 @@
+{
+    "files": [
+        "widget.py",
+        "form.ui",
+        "main.py",
+        "pause.py",
+        "sep_files.py",
+        "config.ini",
+        "logger.py",
+        "ui_form.py"
+    ]
+}
