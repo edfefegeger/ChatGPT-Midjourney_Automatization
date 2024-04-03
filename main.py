@@ -36,6 +36,38 @@ api_key_midjorney8 = config['API']['api_key_midjourney8']
 api_key_midjorney9 = config['API']['api_key_midjourney9']
 api_key_midjorney10 = config['API']['api_key_midjourney10']
 
+all_api_keys = [
+    config['API']['api_key'],
+    config['API']['api_key2'],
+    config['API']['api_key3'],
+    config['API']['api_key4'],
+    config['API']['api_key5']
+]
+midjourney_api_keys = [
+    config['API']['api_key_midjourney'],
+    config['API']['api_key_midjourney2'],
+    config['API']['api_key_midjourney3'],
+    config['API']['api_key_midjourney4'],
+    config['API']['api_key_midjourney5'],
+    config['API']['api_key_midjourney6'],
+    config['API']['api_key_midjourney7'],
+    config['API']['api_key_midjourney8'],
+    config['API']['api_key_midjourney9'],
+    config['API']['api_key_midjourney10']
+]
+
+api_keys = [key for key in all_api_keys if key]
+midjourney_api_keys = [key for key in midjourney_api_keys if key]
+
+# Если список пуст, выходим из программы
+if not api_keys:
+    log_and_print("Ошибка. Нет доступных API-ключей. Программа завершает работу.")
+    exit()
+
+if not midjourney_api_keys:
+    log_and_print("Ошибка. Нет доступных ключей Midjourney. Программа завершает работу.")
+    exit()
+
 promt = config['API']['promt']
 detail = config['API']['detail']
 attempts_max = int(config['API']['max_attempts'])
@@ -73,7 +105,6 @@ result_2 = ""
 result_3 = ""
 
 
-api_keys = [api_key1, api_key2, api_key3, api_key4, api_key5]
 
 midjourney_api_keys = [
     api_key_midjorney,
@@ -151,7 +182,7 @@ def process_images(files):
                 paragraphs = gpt_response.split("\n\n")
                 if "--ar 16:9" not in gpt_response:
                     # Если не соответствует, повторяем запрос
-                    log_and_print("Ошибка формата ответа с --ar 16:9 . Повторный запрос.", "(Ключ GPT: ", file_count)
+                    log_and_print("Ошибка формата ответа с --ar 16:9 . Повторный запрос.", "(Ключ GPT: ", file_count,")")
                     attempts += 1
                     continue
                 # Выводим информацию о тегах и названии файла
@@ -172,7 +203,7 @@ def process_images(files):
                     conn.request("POST", "/items/images/", body=json.dumps(data1), headers=headers1)
                     response1 = conn.getresponse()
                     response_data1 = json.loads(response1.read().decode('utf-8'))
-                    log_and_print("Промт отправлен в Midjourney (1 параграф)", "(Ключ GPT: ", current_api_key_index, "Ключ Midjounrey: ", midjourney_key_count,")")
+                    log_and_print("Промт отправлен в Midjourney (1 параграф)", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")")
                     pprint.pp(response_data1)
                     def download_images(image_urls, folder_path):
                         # Создаем папку с сегодняшней датой, если она еще не существует
