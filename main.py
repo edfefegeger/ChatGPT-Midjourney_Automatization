@@ -35,30 +35,17 @@ all_api_keys = [
     config['API']['api_key4'],
     config['API']['api_key5']
 ]
-midjourney_api_keys = [
-    config['API']['api_key_midjourney'],
-    config['API']['api_key_midjourney2'],
-    config['API']['api_key_midjourney3'],
-    config['API']['api_key_midjourney4'],
-    config['API']['api_key_midjourney5'],
-    config['API']['api_key_midjourney6'],
-    config['API']['api_key_midjourney7'],
-    config['API']['api_key_midjourney8'],
-    config['API']['api_key_midjourney9'],
-    config['API']['api_key_midjourney10']
-]
+
 
 api_keys = [key for key in all_api_keys if key]
-midjourney_api_keys = [key for key in midjourney_api_keys if key]
+
 
 # Если список пуст, выходим из программы
 if not api_keys:
     log_and_print("Ошибка. Нет доступных API-ключей. Программа завершает работу.")
     exit()
 
-if not midjourney_api_keys:
-    log_and_print("Ошибка. Нет доступных ключей Midjourney. Программа завершает работу.")
-    exit()
+
 
 promt = config['API']['promt']
 detail = config['API']['detail']
@@ -84,8 +71,7 @@ if not folder_path:
 
 def get_current_api_key():
     return api_keys[current_api_key_index]
-def get_current_midjourney_key():
-    return midjourney_api_keys[current_midjourney_key_index]
+
 
 # Получите список всех папок в выбранной директории
 subdirectories = [os.path.join(folder_path, d) for d in os.listdir(folder_path) if os.path.isdir(os.path.join(folder_path, d))]
@@ -100,13 +86,11 @@ def process_images(files, subdir):
 
         attempts = 0
         api_key = get_current_api_key()
-        midjourney_key = get_current_midjourney_key()
         # Определяем, какой ключ использовать для текущего файла
         file_count = f"Ключ {current_api_key_index + 1}"
         midjourney_key_count = f"Ключ {current_midjourney_key_index + 1}"
         # Увеличиваем индекс для следующего использования ключа
         current_api_key_index = (current_api_key_index + 1) % len(api_keys)
-        current_midjourney_key_index = (current_midjourney_key_index + 1) % len(midjourney_api_keys)
         # Установка ключа API
         openai.api_key = api_key
         # Цикл для обработки запросов с обработкой ошибок и ограничений
@@ -155,13 +139,13 @@ def process_images(files, subdir):
                 if len(paragraphs) >= 1:
                     result_1 = paragraphs[0].rstrip('.')
                     log_and_print("Найден параграф 1", "\n", "(Ключ GPT: ", file_count,")")
-                    data1 = {
-                        "prompt": result_1
-                    }
-                    headers1 = {
-                        'Authorization': f'Bearer {midjourney_key}',
-                        'Content-Type': 'application/json'
-                    }
+                    # data1 = {
+                    #     "prompt": result_1
+                    # }
+                    # headers1 = {
+                    #     'Authorization': f'Bearer {midjourney_key}',
+                    #     'Content-Type': 'application/json'
+                    # }
                     # conn = http.client.HTTPSConnection("cl.imagineapi.dev")
                     # conn.request("POST", "/items/images/", body=json.dumps(data1), headers=headers1)
                     # response1 = conn.getresponse()

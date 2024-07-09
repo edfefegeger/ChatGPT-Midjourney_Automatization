@@ -171,3 +171,41 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2024-07-09 15:50:06,841 - INFO - Всего успешно обработано файлов GPT: 2
 2024-07-09 15:50:07,068 - INFO - Всего успешно обработано файлов GPT: 2
 2024-07-09 15:52:26,169 - INFO - Нажато '-', ожидание выполнения текущих запросов в потоках и ставим на паузу
+2024-07-09 16:08:48,014 - INFO - Запуск программы
+2024-07-09 16:08:48,608 - INFO - Запуск программы
+2024-07-09 16:09:02,409 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male mannequin wearing black shorts, standing on a round black platform. The mannequin has a deep brown skin tone and is posed with arms outstretched to the sides in a T-pose. The background is plain gray, emphasizing the subject. The photo is framed with a preference for the 16:9 aspect ratio. The lighting used is neutral and evenly distributed, avoiding both shadows and highlights, ensuring a clear and detailed representation of the mannequin. The color correction is subtle, focusing on natural skin tones and fabric textures. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male mannequin wearing black shorts, standing on a round black platform. The mannequin has a light beige skin tone and is posed with arms outstretched to the sides in a T-pose. The background is plain gray, emphasizing the subject. The photo is framed with a preference for the 16:9 aspect ratio. The lighting used is neutral and evenly distributed, avoiding both shadows and highlights, ensuring a clear and detailed representation of the mannequin. The color correction is subtle, focusing on natural skin tones and fabric textures. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male mannequin wearing black shorts, standing on a round black platform. The mannequin has an olive skin tone and is posed with arms outstretched to the sides in a T-pose. The background is plain gray, emphasizing the subject. The photo is framed with a preference for the 16:9 aspect ratio. The lighting used is neutral and evenly distributed, avoiding both shadows and highlights, ensuring a clear and detailed representation of the mannequin. The color correction is subtle, focusing on natural skin tones and fabric textures. --ar 16:9
+
+2024-07-09 16:09:02,411 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-09 16:09:02,411 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 16:09:02,411 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 16:09:02,411 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-09 16:09:02,413 - INFO - Обработка подпапки '1' завершена.
+2024-07-09 16:09:16,263 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with shoulder-length brown hair styled in loose waves. She is wearing a white, long-sleeved blouse with subtle dot patterns and crossing her fingers on both hands, looking up with a hopeful smile. The backdrop is a soft pink, providing a vibrant yet calming frame to the shot. This studio shot was taken with a Canon EOS 5D Mark IV. The lighting is bright and even, highlighting her facial features and clothing with no shadow distractions. The color correction brings out natural skin tones and the clear detail of her attire against the pastel background, in a contemporary and clean style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with shoulder-length auburn hair styled in bouncy curls. She is wearing a light blue, long-sleeved blouse with intricate lace patterns and crossing her fingers on both hands, looking up with a hopeful smile. The backdrop is a soft peach, providing a warm and inviting frame to the shot. This studio shot was taken with a Canon EOS 5D Mark IV. The lighting is bright and even, highlighting her facial features and clothing with no shadow distractions. The color correction brings out natural skin tones and the clear detail of her attire against the soft background, in a contemporary and clean style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with shoulder-length blonde hair styled in gentle waves. She is wearing a lavender, long-sleeved blouse with delicate floral patterns and crossing her fingers on both hands, looking up with a hopeful smile. The backdrop is a soft mint green, providing a fresh and soothing frame to the shot. This studio shot was taken with a Canon EOS 5D Mark IV. The lighting is bright and even, highlighting her facial features and clothing with no shadow distractions. The color correction brings out natural skin tones and the clear detail of her attire against the cool background, in a contemporary and clean style --ar 16:9
+
+2024-07-09 16:09:16,264 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-09 16:09:16,265 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 2 ) 
+
+2024-07-09 16:09:16,265 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 2 ) 
+
+2024-07-09 16:09:16,265 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 2! 
+
+2024-07-09 16:09:16,267 - INFO - Обработка подпапки '2' завершена.
+2024-07-09 16:09:16,528 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-09 16:09:16,728 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-09 16:09:16,729 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-09 16:09:16,925 - INFO - Всего успешно обработано файлов GPT: 2
