@@ -15,8 +15,10 @@ import threading
 from logger import log_and_print
 from pause import toggle_pause, toggle_pause2, pause_check, pause_for_two_hours
 from sep_files import separate_files
+
 current_api_key_index = 0
 current_midjourney_key_index = 0
+txt_couner = 1
 log_and_print("Запуск программы")
 
 now = datetime.datetime.now()
@@ -24,9 +26,6 @@ now = datetime.datetime.now()
 file_name = now.strftime("%Y-%m-%d_%H-%M-%S") + ".txt"
 # Путь к файлу в корне проекта
 file_path = os.path.join(os.getcwd(), file_name)
-with open(file_path, 'w') as file:
-    file.write("Логи начаты в " + now.strftime("%Y-%m-%d %H:%M:%S") + "\n")
-
 
 # Чтение API-ключей из файла конфигурации
 config = configparser.ConfigParser()
@@ -37,7 +36,6 @@ api_key3 = config['API']['api_key3']
 api_key4 = config['API']['api_key4']
 api_key5 = config['API']['api_key5']
 
-
 all_api_keys = [
     config['API']['api_key'],
     config['API']['api_key2'],
@@ -46,16 +44,12 @@ all_api_keys = [
     config['API']['api_key5']
 ]
 
-
 api_keys = [key for key in all_api_keys if key]
-
 
 # Если список пуст, выходим из программы
 if not api_keys:
     log_and_print("Ошибка. Нет доступных API-ключей. Программа завершает работу.")
     exit()
-
-
 
 promt = config['API']['promt']
 detail = config['API']['detail']
@@ -63,7 +57,6 @@ attempts_max = int(config['API']['max_attempts'])
 max_tokens = int(config['API']['max_tokens'])
 temp = int(config['API']['temp'])
 model = config['API']['model']
-
 
 def encode_image(image_path):
     with open(image_path, "rb") as image_file:
@@ -82,18 +75,18 @@ if not folder_path:
 def get_current_api_key():
     return api_keys[current_api_key_index]
 
-
 # Получите список всех папок в выбранной директории
 subdirectories = [os.path.join(folder_path, d) for d in os.listdir(folder_path) if os.path.isdir(os.path.join(folder_path, d))]
+
 def process_images(files, subdir):
     global current_api_key_index
     global current_midjourney_key_index
     global paused
     global sorted_image_files
     global num_successful_files  # Объявляем счетчик как глобальную переменную
-    folder_name = os.path.basename(folder_path)  # Получаем имя папки
-    for image_file in files:
+    global txt_couner  # Объявляем txt_couner как глобальную переменную
 
+    for image_file in files:
         attempts = 0
         api_key = get_current_api_key()
         # Определяем, какой ключ использовать для текущего файла
@@ -135,6 +128,10 @@ def process_images(files, subdir):
                 )
                 # Получаем текстовый ответ от GPT
                 gpt_response = response.choices[0]["message"]["content"].rstrip(".")
+
+                with open(file_path, 'a') as file:
+                    file.write(f"{txt_couner}. {gpt_response}\n \n")
+                    txt_couner += 1
                 # Разбиваем ответ на параграфы
                 paragraphs = gpt_response.split("\n\n")
                 if "--ar 16:9" not in gpt_response:

@@ -399,3 +399,258 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2024-07-09 16:56:37,963 - INFO - Конец. Все файлы успешно обработаны!
 2024-07-09 16:56:37,963 - INFO - Всего успешно обработано файлов GPT: 2
 2024-07-09 16:56:38,425 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-09 16:57:19,467 - INFO - Запуск программы
+2024-07-09 16:57:21,171 - INFO - Запуск программы
+2024-07-09 16:57:40,290 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo, a digital human model standing on a black circular platform. The model's skin is a deep brown color, showcasing a lean, well-defined physique with muscular definition. The model wears black shorts and stands with arms extended slightly outward from the body in a neutral pose. The background is a smooth gradient transitioning from white to light gray. Captured with a Canon EOS 5D Mark IV, using soft, even lighting to highlight the model's features. The image is color-corrected for natural skin tones and clear definition, rendered in a professional studio setting --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo, a digital human model standing on a black circular platform. The model's skin is a warm olive color, showcasing a lean, well-defined physique with muscular definition. The model wears black shorts and stands with arms extended slightly outward from the body in a neutral pose. The background is a smooth gradient transitioning from white to light gray. Captured with a Canon EOS 5D Mark IV, using soft, even lighting to highlight the model's features. The image is color-corrected for natural skin tones and clear definition, rendered in a professional studio setting --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo, a digital human model standing on a black circular platform. The model's skin is a fair color, showcasing a lean, well-defined physique with muscular definition. The model wears black shorts and stands with arms extended slightly outward from the body in a neutral pose. The background is a smooth gradient transitioning from white to light gray. Captured with a Canon EOS 5D Mark IV, using soft, even lighting to highlight the model's features. The image is color-corrected for natural skin tones and clear definition, rendered in a professional studio setting --ar 16:9
+
+2024-07-09 16:57:40,291 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-09 16:57:40,292 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 16:57:40,292 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 16:57:40,292 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-09 16:57:40,294 - INFO - Обработка подпапки '1' завершена.
+2024-07-09 16:57:57,370 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with blonde hair, wearing a white blouse with long puffy sleeves tied at the neck, crossing her fingers on both hands in a hopeful gesture, smiling and looking upwards. The background is a solid pastel pink. The image is sharply focused, highlighting her clear, radiant skin and subtle makeup. The frame is a close-up portrait, shot indoors with soft, even lighting that enhances the positive and cheerful mood. The photo has undergone slight color correction to emphasize the natural tones --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with brunette hair, wearing a white blouse with long puffy sleeves tied at the neck, crossing her fingers on both hands in a hopeful gesture, smiling and looking upwards. The background is a solid pastel pink. The image is sharply focused, highlighting her clear, radiant skin and subtle makeup. The frame is a close-up portrait, shot indoors with soft, even lighting that enhances the positive and cheerful mood. The photo has undergone slight color correction to emphasize the natural tones --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with red hair, wearing a white blouse with long puffy sleeves tied at the neck, crossing her fingers on both hands in a hopeful gesture, smiling and looking upwards. The background is a solid pastel pink. The image is sharply focused, highlighting her clear, radiant skin and subtle makeup. The frame is a close-up portrait, shot indoors with soft, even lighting that enhances the positive and cheerful mood. The photo has undergone slight color correction to emphasize the natural tones --ar 16:9
+
+2024-07-09 16:57:57,371 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-09 16:57:57,371 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 16:57:57,371 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 16:57:57,371 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-09 16:57:57,373 - INFO - Обработка подпапки '2' завершена.
+2024-07-09 16:57:57,524 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-09 16:57:57,998 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-09 16:57:57,999 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-09 16:57:58,163 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-09 17:10:45,718 - INFO - Нажато '-', ожидание выполнения текущих запросов в потоках и ставим на паузу
+2024-07-09 17:10:47,805 - INFO - Нажато '-', ожидание выполнения текущих запросов в потоках и ставим на паузу
+2024-07-09 17:19:13,013 - INFO - Запуск программы
+2024-07-09 17:19:13,658 - INFO - Запуск программы
+2024-07-09 17:19:19,253 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\hooks' (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:19,254 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\info' (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:19,254 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\objects' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:19,884 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\info' (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:19,884 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\info' (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:20,011 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-09 17:19:20,011 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:20,024 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-09 17:19:20,024 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:20,147 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\info' (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:20,147 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\info' (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:20,418 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\info' (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:20,419 - INFO - Достигнуто максимальное количество попыток (3) для файла info. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:19:20,419 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\logs' (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:20,580 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\logs' (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:20,581 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\logs' (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:20,635 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:20,913 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:21,246 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\logs' (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:21,247 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\logs' (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:21,510 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-09 17:19:21,511 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\objects' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:21,511 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:21,511 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\objects' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:21,747 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\objects' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:21,747 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\objects' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:21,771 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:21,771 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-09 17:19:21,772 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:21,963 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\hooks' (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:21,964 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\objects' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:21,964 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\hooks' (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:21,964 - INFO - Достигнуто максимальное количество попыток (3) для файла objects. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:19:21,966 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\refs' (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,017 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,130 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\refs' (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,130 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\refs' (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,258 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\hooks' (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,259 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-09 17:19:22,259 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,259 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\hooks' (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,313 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-09 17:19:22,314 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\refs' (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,314 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,314 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\refs' (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,366 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\logs' (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,366 - INFO - Достигнуто максимальное количество попыток (3) для файла logs. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:19:22,494 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,494 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\hooks' (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,495 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\refs' (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,495 - INFO - Достигнуто максимальное количество попыток (3) для файла COMMIT_EDITMSG. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:19:22,495 - INFO - Достигнуто максимальное количество попыток (3) для файла hooks. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:19:22,495 - INFO - Достигнуто максимальное количество попыток (3) для файла refs. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:19:22,548 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,549 - INFO - Достигнуто максимальное количество попыток (3) для файла config. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:19:22,822 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-09 17:19:22,822 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,876 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-09 17:19:22,876 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:22,984 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:23,097 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:23,154 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-09 17:19:23,154 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:23,442 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:23,701 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-09 17:19:23,702 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:23,756 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-09 17:19:23,756 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:23,921 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:23,975 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:24,334 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-09 17:19:24,335 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:24,582 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-09 17:19:24,582 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-09 17:19:24,582 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:24,582 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:24,636 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:24,840 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:24,840 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:24,840 - INFO - Достигнуто максимальное количество попыток (3) для файла HEAD. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:19:24,841 - INFO - Достигнуто максимальное количество попыток (3) для файла description. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:19:24,975 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-09 17:19:24,975 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:25,407 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:19:25,408 - INFO - Достигнуто максимальное количество попыток (3) для файла index. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:19:27,714 - INFO - Запуск программы
+2024-07-09 17:19:28,514 - INFO - Запуск программы
+2024-07-09 17:20:46,357 - ERROR - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:20:47,788 - INFO - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:21:00,445 - ERROR - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:21:00,927 - INFO - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:21:10,386 - ERROR - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:21:11,107 - INFO - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:21:11,107 - INFO - Достигнуто максимальное количество попыток (3) для файла mcr3yx1s.jpg. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:21:11,110 - INFO - Обработка подпапки '1' завершена.
+2024-07-09 17:21:20,949 - ERROR - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:21:21,619 - INFO - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:21:35,903 - ERROR - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:21:36,638 - INFO - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:21:51,785 - ERROR - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:21:52,042 - INFO - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:21:52,043 - INFO - Достигнуто максимальное количество попыток (3) для файла 728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:24:18,609 - INFO - Запуск программы
+2024-07-09 17:24:20,875 - INFO - Запуск программы
+2024-07-09 17:24:36,546 - ERROR - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:24:37,603 - INFO - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:24:48,819 - ERROR - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:24:48,977 - INFO - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:25:02,409 - ERROR - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:25:02,760 - INFO - Ошибка при обработке файла: local variable 'txt_couner' referenced before assignment (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 17:25:02,761 - INFO - Достигнуто максимальное количество попыток (3) для файла mcr3yx1s.jpg. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:25:53,760 - INFO - Запуск программы
+2024-07-09 17:25:55,188 - INFO - Запуск программы
+2024-07-09 17:26:08,324 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a 3D model mannequin, standing tall with arms slightly spread out, wearing black compression shorts. The skin tone is a medium brown with hints of natural shadows and highlights. The mannequin is posed on a sleek black round platform in a professional photography studio with soft, even lighting and a blurred gray background. Captured using a Canon EOS 5D Mark IV with precise color correction, providing immaculate detail and texture --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a 3D model mannequin, standing tall with arms slightly spread out, wearing black compression shorts. The skin tone is a light beige with subtle undertones and smooth texture. The mannequin is posed on a sleek black round platform in a professional photography studio with soft, even lighting and a blurred gray background. Captured using a Nikon D850 with adept color calibration, highlighting impeccable detail and smoothness --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a 3D model mannequin, standing tall with arms slightly spread out, wearing black compression shorts. The skin tone is a deep brown with rich tonal variations and realistic shading. The mannequin is posed on a sleek black round platform in a professional photography studio with soft, even lighting and a blurred gray background. Captured using a Sony A7R IV with advanced color correction, focusing on vivid detail and realism --ar 16:9
+
+2024-07-09 17:26:08,325 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-09 17:26:08,325 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:26:08,325 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:26:08,326 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-09 17:26:08,327 - INFO - Обработка подпапки '1' завершена.
+2024-07-09 17:26:47,031 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with dark brown hair and hazel eyes, crossing her fingers with both hands while smiling optimistically. She is wearing a light blue, flowy blouse with intricate patterns, standing against a soft, blurred green background. The image is framed mid-shot, located outdoors in a garden with delicate flowers and foliage in the background. Captured with a Canon EOS 5D Mark IV, the lighting is natural and bright, with gentle color correction to enhance the vibrancy. The style is cheerful and uplifting --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with blonde hair and blue eyes, crossing her fingers with both hands while smiling optimistically. She is wearing a vibrant red, flowy blouse with intricate patterns, standing against a soft, blurred green background. The image is framed mid-shot, located outdoors in a garden with delicate flowers and foliage in the background. Captured with a Canon EOS 5D Mark IV, the lighting is natural and bright, with gentle color correction to enhance the vibrancy. The style is cheerful and uplifting --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with black hair and brown eyes, crossing her fingers with both hands while smiling optimistically. She is wearing a pastel pink, flowy blouse with intricate patterns, standing against a soft, blurred green background. The image is framed mid-shot, located outdoors in a garden with delicate flowers and foliage in the background. Captured with a Canon EOS 5D Mark IV, the lighting is natural and bright, with gentle color correction to enhance the vibrancy. The style is cheerful and uplifting --ar 16:9
+
+2024-07-09 17:26:47,032 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-09 17:26:47,033 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:26:47,033 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:26:47,033 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-09 17:26:47,035 - INFO - Обработка подпапки '2' завершена.
+2024-07-09 17:26:48,508 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-09 17:26:49,879 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-09 17:26:49,880 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-09 17:26:50,474 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-09 17:28:42,507 - INFO - Запуск программы
+2024-07-09 17:28:43,160 - INFO - Запуск программы
+2024-07-09 17:28:59,171 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a detailed, full-body mannequin standing on a round black platform. The mannequin exhibits a smooth, matte black finish and is wearing form-fitted black shorts. The backdrop is a plain grey gradient, enhancing the mannequin's polished appearance. Shot with a Canon EOS 5D Mark IV camera, soft, even lighting with minimal shadows. Post-processing color correction for a natural and balanced look, emphasizing the modern, sleek design. In a clean studio setting with minimal distractions --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a detailed, full-body mannequin standing on a round black platform. The mannequin exhibits a smooth, matte white finish and is wearing form-fitted black shorts. The backdrop is a plain grey gradient, enhancing the mannequin's polished appearance. Shot with a Canon EOS 5D Mark IV camera, soft, even lighting with minimal shadows. Post-processing color correction for a natural and balanced look, emphasizing the modern, sleek design. In a clean studio setting with minimal distractions --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a detailed, full-body mannequin standing on a round black platform. The mannequin exhibits a smooth, matte silver finish and is wearing form-fitted black shorts. The backdrop is a plain grey gradient, enhancing the mannequin's polished appearance. Shot with a Canon EOS 5D Mark IV camera, soft, even lighting with minimal shadows. Post-processing color correction for a natural and balanced look, emphasizing the modern, sleek design. In a clean studio setting with minimal distractions --ar 16:9
+
+2024-07-09 17:28:59,172 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-09 17:28:59,172 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:28:59,173 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:28:59,173 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-09 17:28:59,175 - INFO - Обработка подпапки '1' завершена.
+2024-07-09 17:29:18,391 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with blonde hair wearing a white blouse with delicate patterns. She is standing against a soft pink background, looking up with a hopeful expression and fingers crossed on both hands. The frame is a clean, close-up portrait, captured indoors. The lighting is soft and flattering, providing even illumination on her face and highlighting the texture of her blouse. Shot with a Canon EOS 5D Mark IV, the color correction emphasizes the light pastels of the scene, giving it a fresh and optimistic style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with brown hair wearing a light blue blouse with intricate designs. She is against a pale pink background, gazing upwards with a hopeful look and fingers crossed on both hands. The frame is a clean, close-up portrait, taken indoors. The lighting is soft and even, ensuring her face is well-lit and highlighting the intricate details of her blouse. Captured with a Nikon D850, the color correction brings out the soft pastels, creating a hopeful and positive style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with red hair wearing a yellow blouse with subtle patterns. She stands against a soft pink backdrop, looking upwards with a hopeful expression and fingers crossed on both hands. The frame is a clean, close-up portrait, shot indoors. The lighting is soft and diffused, providing even illumination on her face and showcasing the texture of her blouse. Shot with a Sony Alpha 7R III, the color correction highlights the soft and cheerful tones, establishing an upbeat and optimistic style --ar 16:9
+
+2024-07-09 17:29:18,393 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-09 17:29:18,393 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:29:18,393 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 17:29:18,394 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-09 17:29:18,395 - INFO - Обработка подпапки '2' завершена.
+2024-07-09 17:29:18,662 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-09 17:29:18,828 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-09 17:29:18,828 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-09 17:29:18,999 - INFO - Всего успешно обработано файлов GPT: 2
