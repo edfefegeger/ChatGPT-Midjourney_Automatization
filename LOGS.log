@@ -1,0 +1,173 @@
+2024-07-09 15:47:42,757 - INFO - Запуск программы
+2024-07-09 15:47:44,390 - INFO - Запуск программы
+2024-07-09 15:47:47,754 - ERROR - Ошибка при обработке файла: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 15:47:48,288 - INFO - Ошибка при обработке файла: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 15:47:48,291 - ERROR - Ошибка при обработке файла: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 15:47:48,536 - INFO - Ошибка при обработке файла: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 15:47:48,538 - ERROR - Ошибка при обработке файла: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 15:47:48,762 - INFO - Ошибка при обработке файла: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-09 15:47:48,763 - INFO - Достигнуто максимальное количество попыток (3) для файла mcr3yx1s.jpg. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 15:47:48,765 - INFO - Обработка подпапки '1' завершена.
+2024-07-09 15:47:49,046 - ERROR - Ошибка при обработке файла: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 2 )
+2024-07-09 15:47:49,620 - INFO - Ошибка при обработке файла: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 2 )
+2024-07-09 15:47:49,622 - ERROR - Ошибка при обработке файла: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 2 )
+2024-07-09 15:47:50,227 - INFO - Ошибка при обработке файла: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 2 )
+2024-07-09 15:47:50,229 - ERROR - Ошибка при обработке файла: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 2 )
+2024-07-09 15:47:50,956 - INFO - Ошибка при обработке файла: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 2 )
+2024-07-09 15:47:50,957 - INFO - Достигнуто максимальное количество попыток (3) для файла 728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 2 ) 
+
+2024-07-09 15:47:50,959 - INFO - Обработка подпапки '2' завершена.
+2024-07-09 15:47:51,149 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-09 15:47:51,327 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-09 15:47:51,327 - INFO - Всего успешно обработано файлов GPT: 0
+2024-07-09 15:47:51,510 - INFO - Всего успешно обработано файлов GPT: 0
+2024-07-09 15:49:36,530 - INFO - Запуск программы
+2024-07-09 15:49:37,159 - INFO - Запуск программы
+2024-07-09 15:49:58,038 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a CGI-rendered male figure. The subject stands on a glossy black circular platform with his arms slightly outstretched and feet shoulder-width apart. His skin has a medium brown hue, and he is wearing black tight shorts. The background is a gradient grey, creating a clean and uncluttered studio environment. The image is framed from the front in a full-body shot, captured with a Canon EOS 5D Mark IV camera. Soft, diffused lighting ensures even exposure without harsh shadows. The colors are natural with slight warm tones, and the photo exhibits a realistic aesthetic --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a CGI-rendered male figure. The subject stands on a glossy black circular platform with his arms slightly outstretched and feet shoulder-width apart. His skin has a lighter tan hue, and he is wearing red tight shorts. The background is a gradient grey, creating a clean and uncluttered studio environment. The image is framed from the front in a full-body shot, captured with a Nikon D850 camera. Soft, diffused lighting ensures even exposure without harsh shadows. The colors are natural with cool undertones, and the photo exhibits a realistic aesthetic --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a CGI-rendered male figure. The subject stands on a glossy black circular platform with his arms slightly outstretched and feet shoulder-width apart. His skin has a deep brown hue, and he is wearing navy blue tight shorts. The background is a gradient grey, creating a clean and uncluttered studio environment. The image is framed from the front in a full-body shot, captured with a Sony Alpha 7R IV camera. Soft, diffused lighting ensures even exposure without harsh shadows. The colors are natural with neutral tones, and the photo exhibits a realistic aesthetic --ar 16:9
+
+2024-07-09 15:49:58,038 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-09 15:49:58,039 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 15:49:58,039 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-09 15:49:58,040 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-09 15:49:58,041 - INFO - Обработка подпапки '1' завершена.
+2024-07-09 15:50:06,327 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman wearing a white blouse, fingers crossed, smiling and looking upwards. The blouse is white with light texture while her hair is dark brown and slightly wavy. Background is a solid pink color. The image is tightly framed at mid-torso height. Taken with a Canon EOS 5D Mark IV, natural soft lighting highlights her facial features, with subtle post-color correction for enhanced warmth and vibrance --ar 16:9.
+
+ /imagine prompt: Stock style, hyper realistic, high quality photo of a young woman wearing a blue blouse, fingers crossed, smiling and looking upwards. The blouse is blue with light texture while her hair is blonde and slightly wavy. Background is a soft pastel pink. The image is tightly framed at mid-torso height. Taken with a Canon EOS 5D Mark IV, natural soft lighting highlights her facial features, with subtle post-color correction for enhanced cool tones and contrast --ar 16:9.
+
+ /imagine prompt: Stock style, hyper realistic, high quality photo of a young woman wearing a green blouse, fingers crossed, smiling and looking upwards. The blouse is green with light texture while her hair is curly red. Background is a soft pastel pink. The image is tightly framed at mid-torso height. Taken with a Canon EOS 5D Mark IV, natural soft lighting highlights her facial features, with subtle post-color correction for enhanced brightness and saturation --ar 16:9.
+
+2024-07-09 15:50:06,328 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-09 15:50:06,329 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 2 ) 
+
+2024-07-09 15:50:06,329 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 2 ) 
+
+2024-07-09 15:50:06,329 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 2! 
+
+2024-07-09 15:50:06,331 - INFO - Обработка подпапки '2' завершена.
+2024-07-09 15:50:06,551 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-09 15:50:06,841 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-09 15:50:06,841 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-09 15:50:07,068 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-09 15:52:26,169 - INFO - Нажато '-', ожидание выполнения текущих запросов в потоках и ставим на паузу
