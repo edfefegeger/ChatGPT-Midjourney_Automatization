@@ -159,7 +159,7 @@ def process_images(files, subdir):
 
                 if len(paragraphs) >= 2:
                     result_2 = paragraphs[1].rstrip('.')
-                    log_and_print("Найден параграф 2", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")", "\n")
+                    # log_and_print("Найден параграф 2", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")", "\n")
                     # data2 = {
                     # "prompt": result_2, }
                     # headers2 = {
@@ -177,7 +177,7 @@ def process_images(files, subdir):
 
                 if len(paragraphs) >= 3:
                     result_3 = paragraphs[2].rstrip('.')
-                    log_and_print("Найден параграф 3", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")", "\n")
+                    # log_and_print("Найден параграф 3", "(Ключ GPT: ", file_count, "Ключ Midjounrey: ", midjourney_key_count,")", "\n")
                     # data3 = {
                     # "prompt": result_3, }
                     # headers3 = {
@@ -211,7 +211,7 @@ def process_images(files, subdir):
                     continue
 
             with open(file_path, 'a') as file:
-                    file.write(f"{txt_couner_second}. {gpt_response}\n \n")
+                    file.write(f"{txt_couner_second}. {gpt_response}\n \n \n")
                     txt_couner += 1
                     
 

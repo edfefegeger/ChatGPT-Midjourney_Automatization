@@ -1,0 +1,14 @@
+1. /imagine prompt: Stock style, hyper realistic, high quality photo of a digital 3D rendering of a light-skinned male model, standing on a black circular platform. The subject wears black compression shorts. The background is a smooth gradient grey. The rendering is framed frontally to show the full length of the model. Camera used is a high-resolution DSLR, with soft and even lighting, minimal shadows, and clean color correction for a professional look. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a digital 3D rendering of a dark-skinned male model, standing on a black circular platform. The subject wears black compression shorts. The background is a smooth gradient grey. The rendering is framed frontally to show the full length of the model. Camera used is a high-resolution DSLR, with soft and even lighting, minimal shadows, and clean color correction for a professional look. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a digital 3D rendering of a medium-skinned male model, standing on a black circular platform. The subject wears black compression shorts. The background is a smooth gradient grey. The rendering is framed frontally to show the full length of the model. Camera used is a high-resolution DSLR, with soft and even lighting, minimal shadows, and clean color correction for a professional look. --ar 16:9
+ 
+ 
+2. /imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with blonde hair, wearing a light blue blouse. She has a joyful expression with both hands crossed fingers. The background is a gradient pastel blue. The image is framed closely, taken with a Canon EOS 5D Mark IV. Soft, natural lighting enhances her features. Vibrant colors and sharp details create a professional and optimistic atmosphere --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with red hair, wearing a light green blouse. She has a joyful expression with both hands crossed fingers. The background is a gradient pastel purple. The image is framed closely, taken with a Canon EOS 5D Mark IV. Soft, natural lighting enhances her features. Vibrant colors and sharp details create a professional and optimistic atmosphere --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with black hair, wearing a light pink blouse. She has a joyful expression with both hands crossed fingers. The background is a gradient pastel yellow. The image is framed closely, taken with a Canon EOS 5D Mark IV. Soft, natural lighting enhances her features. Vibrant colors and sharp details create a professional and optimistic atmosphere --ar 16:9
+ 
+ 

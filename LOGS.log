@@ -720,3 +720,127 @@
 2024-07-10 16:46:16,108 - INFO - File: 'images (1).jpeg' Обработан ключом: Ключ 1! 
 
 2024-07-10 16:46:16,111 - INFO - Обработка подпапки '4' завершена.
+2024-07-10 16:47:06,819 - INFO - Запуск программы
+2024-07-10 16:47:07,319 - INFO - Запуск программы
+2024-07-10 16:47:21,043 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a digital 3D model of a male figure standing on a circular platform. The figure has lightly tanned skin, short black hair, and is wearing tight black shorts. The background is a smooth gradient transitioning from light gray to white. The model stands with arms slightly outward and feet together, showcasing a well-defined muscular structure. The lighting is soft and even, emphasizing the anatomical details of the figure. The scene is well-framed, centered, and shot in a high-resolution format --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a digital 3D model of a male figure standing on a circular platform. The figure has fair skin, short blonde hair, and is wearing tight white shorts. The background is a smooth gradient transitioning from light gray to white. The model stands with arms slightly outward and feet together, showcasing a well-defined muscular structure. The lighting is soft and even, emphasizing the anatomical details of the figure. The scene is well-framed, centered, and shot in a high-resolution format --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a digital 3D model of a male figure standing on a circular platform. The figure has medium brown skin, short dark brown hair, and is wearing tight navy blue shorts. The background is a smooth gradient transitioning from light gray to white. The model stands with arms slightly outward and feet together, showcasing a well-defined muscular structure. The lighting is soft and even, emphasizing the anatomical details of the figure. The scene is well-framed, centered, and shot in a high-resolution format --ar 16:9
+
+2024-07-10 16:47:21,044 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-10 16:47:21,045 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:47:21,045 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:47:21,046 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:47:21,049 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 16:47:32,449 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with glowing blonde hair wearing a flowing white blouse with subtle polka dot texture, fingers crossed, looking up with a hopeful expression, standing against a light blue pastel background. Captured using a Canon EOS R5, with natural lighting enhancing the gentle tones and soft shadows, high-resolution detail in an airy and bright studio setting --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with rich auburn hair wearing a flowing white blouse with subtle polka dot texture, fingers crossed, looking up with a hopeful expression, standing against a light blue pastel background. Captured using a Canon EOS R5, with natural lighting enhancing the gentle tones and soft shadows, high-resolution detail in an airy and bright studio setting --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with deep brown hair wearing a flowing white blouse with subtle polka dot texture, fingers crossed, looking up with a hopeful expression, standing against a light blue pastel background. Captured using a Canon EOS R5, with natural lighting enhancing the gentle tones and soft shadows, high-resolution detail in an airy and bright studio setting --ar 16:9
+
+2024-07-10 16:47:32,450 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-10 16:47:32,450 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:47:32,450 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:47:32,450 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:47:32,453 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 16:47:45,449 - INFO - File: 'images.jpeg' Обработан c CHAT GPT ключом: Ключ 3! 
+/imagine prompt: Stock style, hyper realistic, high-quality photo of a majestic snow-covered evergreen tree. The branches are laden with heavy snow, standing prominently in a vast, wintry landscape. Encased by a natural frame of frost-covered shrubs and trees in the distance, the scene is set in a serene, undisturbed snowy field at sunrise, creating a tranquil and calming atmosphere. Taken with a Canon EOS 5D Mark IV, the lighting captures the cold, crisp air, with a subtle warm light just peeking over the horizon casting long shadows. Colors are cool with a slight blue tint, emphasizing the chill of the early morning. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high-quality photo of a grand snow-covered evergreen tree. The tree’s branches are heavily laden with glistening snow, standing resplendent in a vast, undisturbed snowy landscape. It is framed naturally by a backdrop of frost-draped trees and bushes in the distance. The image is set in a peaceful, untouched snowy field at dawn. Captured with a Nikon D850, the lighting accentuates the serene and crisp morning air, with the first light of day casting a gentle glow and long, soft shadows. The colors are predominantly cool blues and whites, with a touch of warm hues from the sunrise, subtly enhancing the wintry feel. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high-quality photo of a magnificent snow-covered evergreen tree. Laden with thick layers of snow, the tree stands out boldly in a sweeping, snow-blanketed landscape. Naturally framed by a distant row of frost-kissed trees and shrubs. The scenery takes place in a tranquil, untouched snowy meadow at dawn. Shot with a Sony A7R IV, the lighting captures the pristine, cold atmosphere, with dawn's early light creeping over the horizon casting extended shadows. Color correction brings out the icy blues and pure whites, with hints of warmth from the first light of day, enhancing the wintery mood of the scene. --ar 16:9
+
+2024-07-10 16:47:45,451 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 3 )
+2024-07-10 16:47:45,451 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:47:45,451 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:47:45,451 - INFO - File: 'images.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:47:45,454 - INFO - Обработка подпапки '3' завершена.
+2024-07-10 16:47:55,933 - INFO - File: 'images (1).jpeg' Обработан c CHAT GPT ключом: Ключ 4! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of an intricate optical illusion graphic, the focus is on a series of concentric circular patterns creating a tunnel effect, vibrant rainbow colors of red, orange, yellow, green, blue, and purple radiate from the center, the seamless repetition of patterns results in a mesmerizing visual experience, additional elements include a slight 3D effect enhancing the illusion's depth, bordered in a simple black frame, design is set against a plain white background, captured using a Canon EOS R5, lighting is evenly distributed to showcase the vivid colors, precise color correction to maintain accuracy, style is geometric and psychedelic  --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of an intricate optical illusion graphic, the focus is on a series of concentric circular patterns creating a tunnel effect, vibrant blue, teal, and purple colors radiate from the center, the seamless repetition of patterns results in a mesmerizing visual experience, additional elements include a slight 3D effect enhancing the illusion's depth, bordered in a simple black frame, design is set against a plain white background, captured using a Canon EOS R5, lighting is evenly distributed to showcase the vivid colors, precise color correction to maintain accuracy, style is geometric and psychedelic  --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of an intricate optical illusion graphic, the focus is on a series of concentric circular patterns creating a tunnel effect, vibrant shades of pink, purple, and red radiate from the center, the seamless repetition of patterns results in a mesmerizing visual experience, additional elements include a slight 3D effect enhancing the illusion's depth, bordered in a simple black frame, design is set against a plain white background, captured using a Canon EOS R5, lighting is evenly distributed to showcase the vivid colors, precise color correction to maintain accuracy, style is geometric and psychedelic  --ar 16:9
+
+2024-07-10 16:47:55,935 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 4 )
+2024-07-10 16:47:55,935 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:47:55,935 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:47:55,936 - INFO - File: 'images (1).jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:47:55,939 - INFO - Обработка подпапки '4' завершена.
+2024-07-10 16:47:56,242 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-10 16:47:56,463 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-10 16:47:56,463 - INFO - Всего успешно обработано файлов GPT: 4
+2024-07-10 16:47:56,682 - INFO - Всего успешно обработано файлов GPT: 4
+2024-07-10 16:56:46,576 - INFO - Запуск программы
+2024-07-10 16:56:47,232 - INFO - Запуск программы
+2024-07-10 16:56:59,032 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a digital 3D rendering of a light-skinned male model, standing on a black circular platform. The subject wears black compression shorts. The background is a smooth gradient grey. The rendering is framed frontally to show the full length of the model. Camera used is a high-resolution DSLR, with soft and even lighting, minimal shadows, and clean color correction for a professional look. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a digital 3D rendering of a dark-skinned male model, standing on a black circular platform. The subject wears black compression shorts. The background is a smooth gradient grey. The rendering is framed frontally to show the full length of the model. Camera used is a high-resolution DSLR, with soft and even lighting, minimal shadows, and clean color correction for a professional look. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a digital 3D rendering of a medium-skinned male model, standing on a black circular platform. The subject wears black compression shorts. The background is a smooth gradient grey. The rendering is framed frontally to show the full length of the model. Camera used is a high-resolution DSLR, with soft and even lighting, minimal shadows, and clean color correction for a professional look. --ar 16:9
+
+2024-07-10 16:56:59,033 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-10 16:56:59,034 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:56:59,036 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 16:57:07,622 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with blonde hair, wearing a light blue blouse. She has a joyful expression with both hands crossed fingers. The background is a gradient pastel blue. The image is framed closely, taken with a Canon EOS 5D Mark IV. Soft, natural lighting enhances her features. Vibrant colors and sharp details create a professional and optimistic atmosphere --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with red hair, wearing a light green blouse. She has a joyful expression with both hands crossed fingers. The background is a gradient pastel purple. The image is framed closely, taken with a Canon EOS 5D Mark IV. Soft, natural lighting enhances her features. Vibrant colors and sharp details create a professional and optimistic atmosphere --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with black hair, wearing a light pink blouse. She has a joyful expression with both hands crossed fingers. The background is a gradient pastel yellow. The image is framed closely, taken with a Canon EOS 5D Mark IV. Soft, natural lighting enhances her features. Vibrant colors and sharp details create a professional and optimistic atmosphere --ar 16:9
+
+2024-07-10 16:57:07,623 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-10 16:57:07,624 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:57:07,626 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 16:57:20,708 - INFO - File: 'images.jpeg' Обработан c CHAT GPT ключом: Ключ 3! 
+/imagine prompt: Stock style, hyper-realistic, high quality photo of a solitary green spruce tree blanketed with heavy snow. The tree stands in the middle of a vast, untouched snowfield, with snow drifts creating gentle undulations in the terrain. In the background, a dense forest of snow-covered evergreen trees is faintly visible. The scene is captured with a Canon EOS 5D Mark IV. It is a serene winter landscape under a dark, cloudy sky at dawn with the sun attempting to break through, casting a soft, cool light and long shadows. Style: Photorealism with detailed textures and natural color correction  --ar 16:9
+
+/imagine prompt: Stock style, hyper-realistic, high quality photo of a solitary blue spruce tree blanketed with heavy snow. The tree stands in the middle of a vast, untouched snowfield, with snow drifts creating gentle undulations in the terrain. In the background, a dense forest of snow-covered blue spruce trees is faintly visible. The scene is captured with a Nikon D850. It is a serene winter landscape under a dark, cloudy sky at dawn with the sun attempting to break through, casting a soft, blue light and long shadows. Style: Photorealism with detailed textures and natural color correction  --ar 16:9
+
+/imagine prompt: Stock style, hyper-realistic, high quality photo of a solitary white spruce tree blanketed with heavy snow. The tree stands in the middle of a vast, untouched snowfield, with snow drifts creating gentle undulations in the terrain. In the background, a dense forest of snow-covered white spruce trees is faintly visible. The scene is captured with a Sony Alpha 7R IV. It is a serene winter landscape under a dark, cloudy sky at dawn with the sun attempting to break through, casting a soft, white light and long shadows. Style: Photorealism with detailed textures and natural color correction  --ar 16:9
+
+2024-07-10 16:57:20,709 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 3 )
+2024-07-10 16:57:20,710 - INFO - File: 'images.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:57:20,712 - INFO - Обработка подпапки '3' завершена.
+2024-07-10 16:57:40,098 - INFO - File: 'images (1).jpeg' Обработан c CHAT GPT ключом: Ключ 4! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a mesmerizing, multi-colored radial pattern with intense, vibrant hues radiating from the center to the edges. The pattern features a series of repeating teardrop shapes in shades of red, green, blue, and yellow, creating an optical illusion effect. The image has a crisp, clean look with high contrast and vivid saturation. The central point is a small, deep blue dot, while outer patterns form a hypnotic, pulsating effect. Frame width proportions are perfectly balanced, emphasizing the symmetry. This digital artwork was enhanced with a Canon EOS 5D camera under controlled artificial lighting, ensuring sharpness and clarity. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of an entrancing, monochromatic radial pattern with varying shades of blue, creating a serene, calming visual experience. The pattern consists of concentric circles with delicate, feather-like designs that intensify towards the center. The image is finely detailed with smooth gradients, portraying a sophisticated and tranquil atmosphere. Central focus is a deep navy dot, adding depth to the overall motif. The framing is consistently even, enhancing symmetry and balance. Created using a Nikon D850 camera, the image benefits from studio lighting for impeccable clarity and definition. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of an alluring, warm-tone radial pattern featuring shades of orange, yellow, and red, giving a radiant, energetic impression. The pattern displays a sunburst effect with intricate, flame-like shapes emanating from the center. High dynamic range and crisp clarity elevate the vibrant, fiery ambiance of the design. The focal point is a bright orange dot at the center, anchoring the explosive pattern. The framing aligns perfectly with the dynamic symmetry of the composition. Captured with a Sony A7R III camera using professional lighting, the image exhibits high clarity and intensified colors. --ar 16:9
+
+2024-07-10 16:57:40,099 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 4 )
+2024-07-10 16:57:40,099 - INFO - File: 'images (1).jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:57:40,102 - INFO - Обработка подпапки '4' завершена.
+2024-07-10 16:57:40,267 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-10 16:57:41,248 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-10 16:57:41,248 - INFO - Всего успешно обработано файлов GPT: 4
+2024-07-10 16:57:41,435 - INFO - Всего успешно обработано файлов GPT: 4
