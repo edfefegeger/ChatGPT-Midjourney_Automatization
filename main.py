@@ -30,10 +30,6 @@ file_date = now.strftime("%Y-%m-%d_%H-%M-%S")
 file_path = os.path.join(os.getcwd(), file_name)
 
 
-
-
-
-
 # Чтение API-ключей из файла конфигурации
 config = configparser.ConfigParser()
 config.read('config.ini')

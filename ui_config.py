@@ -22,7 +22,7 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(1161, 474)
+        Form.resize(1161, 499)
         Form.setMaximumSize(QSize(16777215, 720))
         self.gridLayout = QGridLayout(Form)
         self.gridLayout.setObjectName(u"gridLayout")
@@ -109,6 +109,12 @@ class Ui_Form(object):
         self.label_7.setFont(font)
 
         self.verticalLayout.addWidget(self.label_7)
+
+        self.label_12 = QLabel(Form)
+        self.label_12.setObjectName(u"label_12")
+        self.label_12.setFont(font)
+
+        self.verticalLayout.addWidget(self.label_12)
 
 
         self.gridLayout.addLayout(self.verticalLayout, 0, 0, 1, 1)
@@ -199,6 +205,13 @@ class Ui_Form(object):
 
         self.verticalLayout_2.addWidget(self.lineEdit_6)
 
+        self.lineEdit_7 = QLineEdit(Form)
+        self.lineEdit_7.setObjectName(u"lineEdit_7")
+        self.lineEdit_7.setMinimumSize(QSize(0, 32))
+        self.lineEdit_7.setFont(font1)
+
+        self.verticalLayout_2.addWidget(self.lineEdit_7)
+
 
         self.gridLayout.addLayout(self.verticalLayout_2, 0, 1, 1, 1)
 
@@ -231,6 +244,7 @@ class Ui_Form(object):
         self.label_5.setText(QCoreApplication.translate("Form", u"Model:", None))
         self.label_6.setText(QCoreApplication.translate("Form", u"Temp:", None))
         self.label_7.setText(QCoreApplication.translate("Form", u"Max_tokens:", None))
+        self.label_12.setText(QCoreApplication.translate("Form", u"\u041c\u0430\u043a\u0441. \u043f\u0440\u043e\u043c\u0442\u043e\u0432 \u0432 txt", None))
         self.lineEdit.setText("")
         self.lineEdit_2.setText("")
         self.lineEdit_3.setText("")

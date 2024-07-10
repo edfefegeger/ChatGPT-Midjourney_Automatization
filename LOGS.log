@@ -736,3 +736,122 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2024-07-10 14:31:43,304 - INFO - Конец. Все файлы успешно обработаны!
 2024-07-10 14:31:43,304 - INFO - Всего успешно обработано файлов GPT: 2
 2024-07-10 14:31:43,475 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-10 14:48:35,265 - INFO - Запуск программы
+2024-07-10 14:48:35,797 - INFO - Запуск программы
+2024-07-10 14:48:49,081 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a bare-chested man with medium skin tone, wearing black shorts, standing on a black platform. His arms are stretched out to the sides. The background is a seamless gradient of light gray. Shot with a Canon EOS 5D Mark IV, using soft diffused lighting, and color corrected for natural skin tones. The overall style is professional studio photography --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a bare-chested man with light skin tone, wearing white shorts, standing on a black platform. His arms are stretched outward. The backdrop is a smooth gradient of light gray. Captured with a Nikon D850, using soft, even lighting, and color corrected to enhance natural hues. The style mimics high-end commercial photography --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a bare-chested man with dark skin tone, wearing navy blue shorts, standing on a black platform. His arms are held outwards. The setting features a seamless gradient background in a light gray color. Photographed with a Sony Alpha a7R IV, featuring soft, diffused lighting and color correction for realistic skin tones. The aesthetic aligns with professional studio portraiture --ar 16:9
+
+2024-07-10 14:48:49,082 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-10 14:48:49,083 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:48:49,083 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:48:49,083 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-10 14:48:49,085 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 14:48:50,632 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 14:48:50,632 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:48:51,240 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:48:51,989 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 14:48:51,989 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:48:52,170 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:48:52,739 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 14:48:52,739 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:48:53,106 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:48:53,106 - INFO - Достигнуто максимальное количество попыток (3) для файла 728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:48:53,109 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 14:48:53,501 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-10 14:48:53,810 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-10 14:48:53,811 - INFO - Всего успешно обработано файлов GPT: 1
+2024-07-10 14:48:54,153 - INFO - Всего успешно обработано файлов GPT: 1
+2024-07-10 14:50:15,124 - INFO - Запуск программы
+2024-07-10 14:50:16,024 - INFO - Запуск программы
+2024-07-10 14:50:21,181 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 14:50:21,181 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:50:21,617 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:50:21,893 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 14:50:21,893 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:50:22,066 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:50:22,264 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 14:50:22,264 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:50:22,380 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:50:22,380 - INFO - Достигнуто максимальное количество попыток (3) для файла mcr3yx1s.jpg. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:50:22,383 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 14:50:23,719 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 14:50:23,719 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:50:24,326 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:50:25,005 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 14:50:25,006 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:50:25,107 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:50:25,918 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 14:50:25,919 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:50:26,121 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:50:26,122 - INFO - Достигнуто максимальное количество попыток (3) для файла 728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:50:26,125 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 14:51:58,581 - INFO - Запуск программы
+2024-07-10 14:51:58,847 - INFO - Запуск программы
+2024-07-10 14:52:03,161 - INFO - error_code=unsupported_country_region_territory error_message='Country, region, or territory not supported' error_param=None error_type=request_forbidden message='OpenAI API error received' stream_error=False
+2024-07-10 14:52:03,161 - ERROR - Ошибка при обработке файла: Country, region, or territory not supported (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:03,340 - INFO - Ошибка при обработке файла: Country, region, or territory not supported (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:03,373 - INFO - error_code=unsupported_country_region_territory error_message='Country, region, or territory not supported' error_param=None error_type=request_forbidden message='OpenAI API error received' stream_error=False
+2024-07-10 14:52:03,373 - ERROR - Ошибка при обработке файла: Country, region, or territory not supported (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:03,451 - INFO - Ошибка при обработке файла: Country, region, or territory not supported (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:03,476 - INFO - error_code=unsupported_country_region_territory error_message='Country, region, or territory not supported' error_param=None error_type=request_forbidden message='OpenAI API error received' stream_error=False
+2024-07-10 14:52:03,476 - ERROR - Ошибка при обработке файла: Country, region, or territory not supported (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:03,545 - INFO - Ошибка при обработке файла: Country, region, or territory not supported (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:03,545 - INFO - Достигнуто максимальное количество попыток (3) для файла mcr3yx1s.jpg. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:52:03,548 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 14:52:03,792 - INFO - error_code=unsupported_country_region_territory error_message='Country, region, or territory not supported' error_param=None error_type=request_forbidden message='OpenAI API error received' stream_error=False
+2024-07-10 14:52:03,793 - ERROR - Ошибка при обработке файла: Country, region, or territory not supported (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:04,016 - INFO - Ошибка при обработке файла: Country, region, or territory not supported (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:04,085 - INFO - error_code=unsupported_country_region_territory error_message='Country, region, or territory not supported' error_param=None error_type=request_forbidden message='OpenAI API error received' stream_error=False
+2024-07-10 14:52:04,085 - ERROR - Ошибка при обработке файла: Country, region, or territory not supported (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:04,247 - INFO - Ошибка при обработке файла: Country, region, or territory not supported (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:04,305 - INFO - error_code=unsupported_country_region_territory error_message='Country, region, or territory not supported' error_param=None error_type=request_forbidden message='OpenAI API error received' stream_error=False
+2024-07-10 14:52:04,306 - ERROR - Ошибка при обработке файла: Country, region, or territory not supported (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:04,437 - INFO - Ошибка при обработке файла: Country, region, or territory not supported (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:04,438 - INFO - Достигнуто максимальное количество попыток (3) для файла 728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:52:04,441 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 14:52:15,385 - INFO - Запуск программы
+2024-07-10 14:52:16,600 - INFO - Запуск программы
+2024-07-10 14:52:21,202 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 14:52:21,202 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:22,056 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:22,324 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 14:52:22,324 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:22,571 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:22,853 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 14:52:22,853 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:23,064 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:23,065 - INFO - Достигнуто максимальное количество попыток (3) для файла mcr3yx1s.jpg. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:52:23,068 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 14:52:24,808 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 14:52:24,808 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:25,430 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:26,171 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 14:52:26,171 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:26,287 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:27,089 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 14:52:27,089 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:27,302 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 14:52:27,303 - INFO - Достигнуто максимальное количество попыток (3) для файла 728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:52:27,306 - INFO - Обработка подпапки '2' завершена.
