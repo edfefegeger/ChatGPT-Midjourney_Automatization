@@ -19,6 +19,7 @@ from sep_files import separate_files
 current_api_key_index = 0
 current_midjourney_key_index = 0
 txt_couner = 1
+txt_couner_second = 1
 log_and_print("Запуск программы")
 
 now = datetime.datetime.now()
@@ -60,6 +61,7 @@ attempts_max = int(config['API']['max_attempts'])
 max_tokens = int(config['API']['max_tokens'])
 temp = int(config['API']['temp'])
 model = config['API']['model']
+max_txt = int(config['API']['max_txt'])  
 
 def encode_image(image_path):
     with open(image_path, "rb") as image_file:
@@ -87,7 +89,10 @@ def process_images(files, subdir):
     global paused
     global sorted_image_files
     global num_successful_files  # Объявляем счетчик как глобальную переменную
-    global txt_couner  # Объявляем txt_couner как глобальную переменную
+    global txt_couner  # Объявляем txt_counter как глобальную переменную
+    global txt_couner_second
+    global file_path  # Объявляем file_path как глобальную переменную
+    global file_date
 
     for image_file in files:
         attempts = 0
@@ -206,8 +211,28 @@ def process_images(files, subdir):
                     continue
 
             with open(file_path, 'a') as file:
-                    file.write(f"{txt_couner}. {gpt_response}\n \n")
+                    file.write(f"{txt_couner_second}. {gpt_response}\n \n")
                     txt_couner += 1
+                    txt_couner_second += 1
+
+            if txt_couner_second >= max_txt:
+                # Новое имя файла
+                new_file_name = file_date + '_' + str(txt_couner_second) + '.txt'
+
+                # Путь к новому файлу в той же директории
+                new_file_path = os.path.join(os.getcwd(), new_file_name)
+
+                # Переименовываем файл
+                os.rename(file_path, new_file_path)
+                now = datetime.datetime.now()
+                # Форматируем дату и время в строку
+                file_name = now.strftime("%Y-%m-%d_%H-%M-%S") + ".txt"
+
+                file_date = now.strftime("%Y-%m-%d_%H-%M-%S")
+                # Путь к файлу в корне проекта
+                file_path = os.path.join(os.getcwd(), file_name)
+                txt_couner_second = 1
+
 
             num_successful_files += 1
             pause_check()
