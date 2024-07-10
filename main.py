@@ -213,7 +213,10 @@ def process_images(files, subdir):
             with open(file_path, 'a') as file:
                     file.write(f"{txt_couner_second}. {gpt_response}\n \n")
                     txt_couner += 1
-                    txt_couner_second += 1
+                    
+
+
+             
 
             if txt_couner_second >= max_txt:
                 # Новое имя файла
@@ -232,7 +235,8 @@ def process_images(files, subdir):
                 # Путь к файлу в корне проекта
                 file_path = os.path.join(os.getcwd(), file_name)
                 txt_couner_second = 1
-
+            else:
+                txt_couner_second += 1 
 
             num_successful_files += 1
             pause_check()
@@ -313,14 +317,6 @@ for subdir in subdirectories:
 
     log_processed_folder(os.path.basename(subdir))
 
-# Новое имя файла
-new_file_name = file_date + '_' + str(num_successful_files) + '.txt'
-
-# Путь к новому файлу в той же директории
-new_file_path = os.path.join(os.getcwd(), new_file_name)
-
-# Переименовываем файл
-os.rename(file_path, new_file_path)
 
 # После обработки всех подпапок выведите сообщение о завершении
 log_and_print("Конец. Все файлы успешно обработаны!")

@@ -182,3 +182,541 @@
 2024-07-10 15:44:42,575 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
 
 2024-07-10 15:44:42,578 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 15:47:08,904 - INFO - Запуск программы
+2024-07-10 15:47:09,483 - INFO - Запуск программы
+2024-07-10 15:47:21,985 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male mannequin standing on a circular black pedestal. The mannequin has a dark skin tone, showcasing a realistic human-like texture. The background is a gradient light grey devoid of any additional elements or details. The mannequin is wearing black shorts. The photo is framed head-on in a full-body shot. The location is an indoor studio setting with even, diffused lighting that minimizes shadows. The image is captured using a high-resolution DSLR camera. Color correction is applied to enhance skin tones and fabric textures. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male mannequin standing on a circular black pedestal. The mannequin has a fair skin tone, showcasing a realistic human-like texture. The background is a gradient light grey devoid of any additional elements or details. The mannequin is wearing black shorts. The photo is framed head-on in a full-body shot. The location is an indoor studio setting with even, diffused lighting that minimizes shadows. The image is captured using a high-resolution DSLR camera. Color correction is applied to enhance skin tones and fabric textures. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male mannequin standing on a circular black pedestal. The mannequin has a medium skin tone, showcasing a realistic human-like texture. The background is a gradient light grey devoid of any additional elements or details. The mannequin is wearing black shorts. The photo is framed head-on in a full-body shot. The location is an indoor studio setting with even, diffused lighting that minimizes shadows. The image is captured using a high-resolution DSLR camera. Color correction is applied to enhance skin tones and fabric textures. --ar 16:9
+
+2024-07-10 15:47:21,986 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-10 15:47:21,987 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 15:47:21,987 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 15:47:21,987 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-10 15:47:21,990 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 15:47:29,514 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a smiling woman with dark brown hair, wearing a white blouse. Her hands are raised and fingers crossed. She stands against a pink background with a solid color frame. Shot with a Canon EOS R5 camera, crisp lighting, vibrant color correction, professional studio style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a smiling woman with jet black hair, wearing a white blouse. Her hands are raised and fingers crossed. She stands against a pink background with a solid color frame. Shot with a Canon EOS R5 camera, crisp lighting, vibrant color correction, professional studio style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a smiling woman with blonde hair, wearing a white blouse. Her hands are raised and fingers crossed. She stands against a pink background with a solid color frame. Shot with a Canon EOS R5 camera, crisp lighting, vibrant color correction, professional studio style --ar 16:9
+
+2024-07-10 15:47:29,515 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-10 15:47:29,515 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 15:47:29,515 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 15:47:29,516 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 15:47:29,518 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 15:47:29,787 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-10 15:47:29,946 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-10 15:47:29,947 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-10 15:47:30,201 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-10 16:25:30,166 - INFO - Запуск программы
+2024-07-10 16:25:30,828 - INFO - Запуск программы
+2024-07-10 16:25:35,056 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\logs' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,057 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\refs' (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,547 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\logs' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,548 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\logs' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,564 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\refs' (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,564 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\refs' (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,656 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\logs' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,657 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:35,657 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,657 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\logs' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,702 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:35,702 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,727 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\refs' (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,728 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:35,729 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,729 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\refs' (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,809 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\logs' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,809 - INFO - Достигнуто максимальное количество попыток (3) для файла logs. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:25:35,810 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\objects' (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,862 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\refs' (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,863 - INFO - Достигнуто максимальное количество попыток (3) для файла refs. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:25:35,942 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\objects' (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:35,942 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\objects' (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:36,052 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:36,101 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\objects' (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:36,102 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:36,103 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\objects' (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:36,266 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:36,266 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\objects' (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:36,267 - INFO - Достигнуто максимальное количество попыток (3) для файла objects. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:25:36,404 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:36,405 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:36,511 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:36,511 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:36,558 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:36,564 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:36,564 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:36,751 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:36,752 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:36,924 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:36,924 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,054 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:37,055 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,107 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:37,108 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,108 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:37,109 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,161 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,161 - INFO - Достигнуто максимальное количество попыток (3) для файла HEAD. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:25:37,217 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,218 - INFO - Достигнуто максимальное количество попыток (3) для файла index. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:25:37,218 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\info' (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,270 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,270 - INFO - Достигнуто максимальное количество попыток (3) для файла description. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:25:37,271 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\hooks' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,352 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\info' (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,352 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\info' (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,391 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\hooks' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,392 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:37,392 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,393 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\hooks' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,519 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\info' (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,520 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\info' (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,523 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,581 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,581 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\hooks' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,582 - ERROR - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\hooks' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,639 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\info' (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,640 - INFO - Достигнуто максимальное количество попыток (3) для файла info. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:25:37,797 - INFO - Ошибка при обработке файла: [Errno 13] Permission denied: 'C:/Users/Super PC/Downloads/GPT_Midjourney\\.git\\hooks' (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,798 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:37,798 - INFO - Достигнуто максимальное количество попыток (3) для файла hooks. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 5 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:25:37,798 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:37,850 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:37,850 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:38,012 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:38,013 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:38,264 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:38,265 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:38,265 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:38,265 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:38,465 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:38,466 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:38,466 - INFO - Достигнуто максимальное количество попыток (3) для файла COMMIT_EDITMSG. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:25:38,467 - INFO - Достигнуто максимальное количество попыток (3) для файла config. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:25:38,837 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:38,837 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:38,932 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:39,298 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:39,298 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:39,396 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:44,500 - INFO - Запуск программы
+2024-07-10 16:25:44,946 - INFO - Запуск программы
+2024-07-10 16:25:47,109 - INFO - error_code=invalid_image_format error_message="You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']." error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:25:47,109 - ERROR - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:47,219 - INFO - Ошибка при обработке файла: You uploaded an unsupported image. Please make sure your image is below 20 MB in size and is of one the following formats: ['png', 'jpeg', 'gif', 'webp']. (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:25:47,219 - INFO - Достигнуто максимальное количество попыток (3) для файла FETCH_HEAD. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:25:57,635 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male model standing in a T-pose. The model has dark skin and is wearing black compression shorts. The background is a solid light gray. The scene is well-lit with soft, diffused lighting, creating subtle shadows. The model is standing on a sleek, circular black platform. Photo taken with a Canon EOS 5D Mark IV, ensuring high detail and clarity. The colors are slightly warm with precise color correction. The style is clean and professional, ideal for anatomical study or fitness advertisement. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male model standing in a T-pose. The model has light skin and is wearing gray compression shorts. The background is a solid light gray. The scene is well-lit with soft, diffused lighting, creating subtle shadows. The model is standing on a sleek, circular black platform. Photo taken with a Canon EOS 5D Mark IV, ensuring high detail and clarity. The colors are slightly cool with precise color correction. The style is clean and professional, ideal for anatomical study or fitness advertisement. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male model standing in a T-pose. The model has medium skin and is wearing navy blue compression shorts. The background is a solid light gray. The scene is well-lit with soft, diffused lighting, creating subtle shadows. The model is standing on a sleek, circular black platform. Photo taken with a Canon EOS 5D Mark IV, ensuring high detail and clarity. The colors are neutral with precise color correction. The style is clean and professional, ideal for anatomical study or fitness advertisement. --ar 16:9
+
+2024-07-10 16:25:57,636 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-10 16:25:57,637 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:25:57,637 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:25:57,637 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:25:57,640 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 16:26:06,891 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo, a woman with light brown hair wearing a white blouse, crossing her fingers with a hopeful expression, standing against a soft pastel pink background. The lighting is even and bright, accentuating her cheerful demeanor. The image is framed in a waist-up shot, captured with a Canon EOS Rebel T7 camera, with excellent color correction applied to emphasize the soft tones and vibrant colors --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo, a woman with dark brown hair wearing a sky blue blouse, crossing her fingers with a hopeful expression, standing against a pale blue background. The lighting is even and bright, highlighting her positive energy. The image is framed in a waist-up shot, captured with a Canon EOS Rebel T7 camera, with subtle color correction enhancing the cool shades and tones --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo, a woman with blonde hair wearing a light yellow blouse, crossing her fingers with a hopeful expression, standing against a soft yellow background. The lighting is soft and diffused, creating a warm and inviting atmosphere. The image is framed in a waist-up shot, captured with a Canon EOS Rebel T7 camera, with appropriate color correction to bring out the warm hues and tones --ar 16:9
+
+2024-07-10 16:26:06,892 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-10 16:26:06,892 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:26:06,893 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:26:06,893 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:26:06,896 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 16:34:55,479 - INFO - Запуск программы
+2024-07-10 16:34:56,011 - INFO - Запуск программы
+2024-07-10 16:35:09,906 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a mannequin. The object is a human-sized plastic mannequin with caramel skin tone. The mannequin is standing upright on a shiny, circular black platform. It is wearing black compression shorts, posing with arms extended outward. The setting is a minimalist indoor studio with a plain light gray background. Captured in a centered frame using a Canon EOS R5 camera, well-lit with soft, diffused lighting from above. The photo has undergone color correction for a natural and vibrant appearance. The style is clean, modern, and professional --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a mannequin. The object is a human-sized plastic mannequin with an ebony skin tone. The mannequin is standing upright on a shiny, circular black platform. It is wearing navy blue compression shorts, posing with arms extended outward. The setting is a minimalist indoor studio with a plain light gray background. Captured in a centered frame using a Canon EOS R5 camera, well-lit with soft, diffused lighting from above. The photo has undergone color correction for a natural and vibrant appearance. The style is clean, modern, and professional --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a mannequin. The object is a human-sized plastic mannequin with a porcelain skin tone. The mannequin is standing upright on a shiny, circular black platform. It is wearing dark green compression shorts, posing with arms extended outward. The setting is a minimalist indoor studio with a plain light gray background. Captured in a centered frame using a Canon EOS R5 camera, well-lit with soft, diffused lighting from above. The photo has undergone color correction for a natural and vibrant appearance. The style is clean, modern, and professional --ar 16:9
+
+2024-07-10 16:35:09,908 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-10 16:35:09,908 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:35:09,908 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:35:09,908 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:35:09,911 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 16:35:18,153 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with blonde hair wearing a white blouse, crossing her fingers with a hopeful smile on her face. The background is a soft pink color. Shot with a Canon EOS R, utilizing natural lighting and refined color correction. The scene is minimalistic, focusing on her expression and hand gesture --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with brown hair wearing a blue blouse, crossing her fingers with a hopeful smile on her face. The background is a soft pink color. Shot with a Canon EOS R, utilizing natural lighting and refined color correction. The scene is minimalistic, focusing on her expression and hand gesture --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with red hair wearing a green blouse, crossing her fingers with a hopeful smile on her face. The background is a soft pink color. Shot with a Canon EOS R, utilizing natural lighting and refined color correction. The scene is minimalistic, focusing on her expression and hand gesture --ar 16:9
+
+2024-07-10 16:35:18,154 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-10 16:35:18,154 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:35:18,155 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:35:18,155 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:35:18,158 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 16:36:09,838 - INFO - Запуск программы
+2024-07-10 16:36:10,419 - INFO - Запуск программы
+2024-07-10 16:36:26,413 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo; highly detailed 3D-rendered human model in a frontal pose, standing on a glossy black platform, wearing black shorts; medium brown skin tone, well-defined musculature, neutral expression; plain grey background with soft gradient. Taken with a Canon EOS 5D Mark IV camera, using even studio lighting; balanced color correction, clean and professional style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo; highly detailed 3D-rendered human model in a frontal pose, standing on a glossy black platform, wearing black shorts; light tan skin tone, well-defined musculature, neutral expression; plain grey background with soft gradient. Taken with a Canon EOS 5D Mark IV camera, using even studio lighting; balanced color correction, clean and professional style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo; highly detailed 3D-rendered human model in a frontal pose, standing on a glossy black platform, wearing black shorts; dark brown skin tone, well-defined musculature, neutral expression; plain grey background with soft gradient. Taken with a Canon EOS 5D Mark IV camera, using even studio lighting; balanced color correction, clean and professional style --ar 16:9
+
+2024-07-10 16:36:26,414 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-10 16:36:26,414 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:36:26,415 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:36:26,415 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:36:26,418 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 16:36:36,468 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/Imagine prompt: Stock style, hyper realistic, high-quality photo of a woman with blonde hair, styled in loose waves, wearing a white sheer blouse with intricate patterns. She is crossing her fingers, looking hopeful, and smiling widely. The background is a soft pink shade, and the overall light is bright and even, providing a clean and vibrant feel. The photo is framed in a 16:9 aspect ratio --ar 16:9
+
+/Imagine prompt: Stock style, hyper realistic, high-quality photo of a woman with black hair, styled in loose waves, wearing a white sheer blouse with intricate patterns. She is crossing her fingers, looking hopeful, and smiling widely. The background is a soft pink shade, and the overall light is bright and even, providing a clean and vibrant feel. The photo is framed in a 16:9 aspect ratio --ar 16:9
+
+/Imagine prompt: Stock style, hyper realistic, high-quality photo of a woman with brown hair, styled in loose waves, wearing a white sheer blouse with intricate patterns. She is crossing her fingers, looking hopeful, and smiling widely. The background is a soft pink shade, and the overall light is bright and even, providing a clean and vibrant feel. The photo is framed in a 16:9 aspect ratio --ar 16:9
+
+2024-07-10 16:36:36,469 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-10 16:36:36,469 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:36:36,470 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:36:36,470 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:36:36,473 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 16:36:37,448 - INFO - Запуск программы
+2024-07-10 16:36:37,946 - INFO - Запуск программы
+2024-07-10 16:36:45,594 - ERROR - Ошибка. Папка не выбрана. Программа завершает работу.
+2024-07-10 16:36:45,804 - INFO - Ошибка. Папка не выбрана. Программа завершает работу.
+2024-07-10 16:36:52,866 - INFO - Запуск программы
+2024-07-10 16:36:53,505 - INFO - Запуск программы
+2024-07-10 16:37:07,552 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a bald model mannequin in a standing position, wearing black fitted shorts. The mannequin has a dark caramel skin tone, slender and defined muscle structure. Positioned centrally on a black circular platform against a smooth gradient grey background. The image is frame full body within the platform, captured in a studio environment with diffused natural lighting from the left, minimizing shadows and highlighting the fine details. Camera: Canon EOS 5D Mark IV with 85mm lens. Color corrected to emphasize natural tones and silky finish --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a bald model mannequin in a standing position, wearing black fitted shorts. The mannequin has an olive skin tone, slender and defined muscle structure. Positioned centrally on a black circular platform against a smooth gradient grey background. The image is frame full body within the platform, captured in a studio environment with diffused natural lighting from the left, minimizing shadows and highlighting the fine details. Camera: Canon EOS 5D Mark IV with 85mm lens. Color corrected to emphasize natural tones and silky finish --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a bald model mannequin in a standing position, wearing black fitted shorts. The mannequin has a light tan skin tone, slender and defined muscle structure. Positioned centrally on a black circular platform against a smooth gradient grey background. The image is frame full body within the platform, captured in a studio environment with diffused natural lighting from the left, minimizing shadows and highlighting the fine details. Camera: Canon EOS 5D Mark IV with 85mm lens. Color corrected to emphasize natural tones and silky finish --ar 16:9
+
+2024-07-10 16:37:07,553 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-10 16:37:07,553 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:37:07,553 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:37:07,554 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:37:07,557 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 16:37:16,032 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with brunette hair wearing a white blouse, crossing her fingers and looking upwards with a hopeful expression. The background is a solid light pink. The photo is taken indoors with soft, even lighting using a Canon EOS 5D Mark IV. The image is color corrected to have a soft pastel tone. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with blonde hair wearing a white blouse, crossing her fingers and looking upwards with a hopeful expression. The background is a solid light pink. The photo is taken indoors with soft, even lighting using a Canon EOS 5D Mark IV. The image is color corrected to have a soft pastel tone. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with black hair wearing a white blouse, crossing her fingers and looking upwards with a hopeful expression. The background is a solid light pink. The photo is taken indoors with soft, even lighting using a Canon EOS 5D Mark IV. The image is color corrected to have a soft pastel tone. --ar 16:9
+
+2024-07-10 16:37:16,033 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-10 16:37:16,033 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:37:16,033 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:37:16,034 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:37:45,267 - INFO - Запуск программы
+2024-07-10 16:37:45,814 - INFO - Запуск программы
+2024-07-10 16:37:59,587 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+**Version 1:**
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a hyper realistic male mannequin with light brown skin wearing black shorts. The mannequin stands on a glossy black circular platform in a minimalist studio with a smooth grey gradient background. Soft, even lighting illuminates the scene, casting gentle shadows and highlighting the subtle musculature of the mannequin. The frame is a wide 16:9 aspect ratio, perfectly centered, taken with a Canon EOS 5D Mark IV. The colors are naturally balanced with slight warm tones, emphasizing realistic and high-definition detailing. --ar 16:9
+
+**Version 2:**
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a hyper realistic male mannequin with medium brown skin wearing white shorts. The mannequin is positioned on a sleek black circular platform in a modern minimalist studio against a sleek grey gradient backdrop. The lighting is uniformly distributed, creating soft shadows and accentuating the lifelike anatomy of the figure. The shot has a wide 16:9 aspect ratio, precisely centered, captured using a Nikon D850. The color correction ensures neutral tones with a slight cool hue, making the image appear crisp and clear. --ar 16:9
+
+**Version 3:**
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a hyper realistic male mannequin with dark brown skin wearing red shorts. The mannequin stands firmly on a glossy black circular platform inside a contemporary minimalist studio, featuring a clean grey gradient background. Ambient lighting is evenly spread, producing soft shadows and enhancing the realism in the mannequin’s texture and muscle definition. The photograph is framed in a wide 16:9 aspect ratio, centrally aligned, taken with a Sony A7R IV. Colors are meticulously balanced with a slight emphasis on warm tones, achieving an authentic and highly detailed look. --ar 16:9
+
+2024-07-10 16:37:59,589 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-10 16:37:59,589 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:37:59,590 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:37:59,590 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:37:59,593 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 16:38:09,585 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with brown hair wearing a white blouse. She is standing against a pink background with a happy, hopeful expression, crossing her fingers on both hands. The photo was taken with a Canon EOS 5D Mark IV, using natural lighting and color correction for a bright and vibrant aesthetic --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with blonde hair wearing a blue blouse. She is standing against a pink background with a happy, hopeful expression, crossing her fingers on both hands. The photo was taken with a Canon EOS 5D Mark IV, using natural lighting and color correction for a bright and vibrant aesthetic --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with black hair wearing a green blouse. She is standing against a pink background with a happy, hopeful expression, crossing her fingers on both hands. The photo was taken with a Canon EOS 5D Mark IV, using natural lighting and color correction for a bright and vibrant aesthetic --ar 16:9
+
+2024-07-10 16:38:09,586 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-10 16:38:09,586 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:38:09,586 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:38:09,586 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:38:09,589 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 16:38:09,751 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-10 16:38:09,935 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-10 16:38:09,935 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-10 16:38:10,056 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-10 16:40:23,106 - INFO - Запуск программы
+2024-07-10 16:40:23,732 - INFO - Запуск программы
+2024-07-10 16:40:38,186 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young person standing on a sleek black circular platform in a studio setting. The subject is wearing black shorts. Their skin tone is a rich, warm brown, and the lighting is soft, casting subtle shadows to highlight the contours of their muscles. The background is a clean, gradient white, creating a professional and modern atmosphere. Photographed with a Canon EOS R5, the image has been enhanced with precise color correction and sharpness --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young person standing on a sleek black circular platform in a studio setting. The subject is wearing black shorts. Their skin tone is a fair light tone with slight pinkish hue, and the lighting is soft, casting subtle shadows to highlight the contours of their muscles. The background is a clean, gradient white, creating a professional and modern atmosphere. Photographed with a Canon EOS R5, the image has been enhanced with precise color correction and sharpness --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young person standing on a sleek black circular platform in a studio setting. The subject is wearing black shorts. Their skin tone is a deep, rich dark brown, and the lighting is soft, casting subtle shadows to highlight the contours of their muscles. The background is a clean, gradient white, creating a professional and modern atmosphere. Photographed with a Canon EOS R5, the image has been enhanced with precise color correction and sharpness --ar 16:9
+
+2024-07-10 16:40:38,186 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-10 16:40:38,187 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:40:38,187 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:40:38,187 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:40:38,190 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 16:40:46,939 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with blonde hair, wearing a white blouse. She is standing in front of a pink background, smiling and crossing her fingers with both hands. The natural lighting highlights her vibrant expression. Canon EOS-1D X Mark III camera, professional color correction, studio lighting setup --ar 16:9 
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with brunette hair, wearing a blue blouse. She is standing in front of a yellow background, smiling and crossing her fingers with both hands. The natural lighting highlights her vibrant expression. Canon EOS-1D X Mark III camera, professional color correction, studio lighting setup --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with red hair, wearing a green blouse. She is standing in front of a lavender background, smiling and crossing her fingers with both hands. The natural lighting highlights her vibrant expression. Canon EOS-1D X Mark III camera, professional color correction, studio lighting setup --ar 16:9
+
+2024-07-10 16:40:46,940 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-10 16:40:46,940 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:40:46,940 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:40:46,941 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:40:46,943 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 16:42:46,020 - INFO - Запуск программы
+2024-07-10 16:42:46,501 - INFO - Запуск программы
+2024-07-10 16:43:00,108 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male mannequin with a tan skin tone, wearing black shorts, displayed on a sleek, reflective platform against a neutral gray background. The mannequin's arms are slightly away from the sides of its body, fingers are relaxed, standing at attention. The lighting is evenly distributed, creating subtle shadows to accentuate the contours. Canon EOS 5D Mark IV, carefully calibrated color correction, sharp details, professional studio setup --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male mannequin with a fair skin tone, wearing red shorts, displayed on a sleek, reflective platform against a neutral gray background. The mannequin's arms are slightly away from the sides of its body, fingers relaxed, standing at attention. The lighting is evenly distributed, creating subtle shadows to accentuate the contours. Canon EOS 5D Mark IV, carefully calibrated color correction, sharp details, professional studio setup --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male mannequin with a dark skin tone, wearing blue shorts, displayed on a sleek, reflective platform against a neutral gray background. The mannequin's arms are slightly away from the sides of its body, fingers relaxed, standing at attention. The lighting is evenly distributed, creating subtle shadows to accentuate the contours. Canon EOS 5D Mark IV, carefully calibrated color correction, sharp details, professional studio setup --ar 16:9
+
+2024-07-10 16:43:00,109 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-10 16:43:00,109 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:43:00,110 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:43:00,110 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:43:00,113 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 16:43:10,698 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a smiling woman with shoulder-length blonde hair, wearing a white blouse, crossing her fingers. The background is a solid pink color. The photo is tightly framed, capturing only the subject from the waist up. Taken with a Canon EOS 5D Mark IV camera in a studio with soft, even lighting. Color correction enhances the natural tones of the woman's hair and skin --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a smiling woman with shoulder-length brown hair, wearing a light blue blouse, crossing her fingers. The background is a solid pink color. The photo is tightly framed, capturing only the subject from the waist up. Taken with a Nikon D850 camera in a studio with soft, even lighting. Color correction emphasizes the soft hues of the blouse and the warm skin tones --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a smiling woman with shoulder-length auburn hair, wearing a yellow blouse, crossing her fingers. The background is a solid pink color. The photo is tightly framed, capturing only the subject from the waist up. Taken with a Sony Alpha 7R IV camera in a studio with soft, even lighting. Color correction focuses on bringing out the vibrant color of the blouse and the natural warmth of the woman's skin --ar 16:9
+
+2024-07-10 16:43:10,699 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-10 16:43:10,699 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:43:10,700 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:43:10,700 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:43:10,704 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 16:44:30,254 - INFO - Запуск программы
+2024-07-10 16:44:30,848 - INFO - Запуск программы
+2024-07-10 16:44:32,422 - ERROR - Ошибка. Папка не выбрана. Программа завершает работу.
+2024-07-10 16:44:32,597 - INFO - Ошибка. Папка не выбрана. Программа завершает работу.
+2024-07-10 16:44:44,989 - INFO - Запуск программы
+2024-07-10 16:44:45,519 - INFO - Запуск программы
+2024-07-10 16:44:59,950 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a 3D model of a male figure standing in a neutral pose. The figure has a light skin tone and is wearing black shorts. The object is centered on a reflective black circular platform. The background is a clean, minimalistic light grey gradient. The image is framed in a portrait orientation, suggesting a studio setting. The lighting is soft and evenly distributed, highlighting the contours of the figure's body. Captured with a high-resolution DSLR camera, ensuring sharpness and clarity. Subtle color correction enhances the natural tones of the figure --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a 3D model of a male figure standing in a neutral pose. The figure has a medium skin tone and is wearing black shorts. The object is centered on a reflective black circular platform. The background is a clean, minimalistic light grey gradient. The image is framed in a portrait orientation, suggesting a studio setting. The lighting is soft and evenly distributed, highlighting the contours of the figure's body. Captured with a high-resolution DSLR camera, ensuring sharpness and clarity. Subtle color correction enhances the natural tones of the figure --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a 3D model of a male figure standing in a neutral pose. The figure has a dark skin tone and is wearing black shorts. The object is centered on a reflective black circular platform. The background is a clean, minimalistic light grey gradient. The image is framed in a portrait orientation, suggesting a studio setting. The lighting is soft and evenly distributed, highlighting the contours of the figure's body. Captured with a high-resolution DSLR camera, ensuring sharpness and clarity. Subtle color correction enhances the natural tones of the figure --ar 16:9
+
+2024-07-10 16:44:59,950 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-10 16:44:59,951 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:44:59,951 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:44:59,951 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:44:59,954 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 16:45:12,207 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with light brown hair and blue eyes, crossing her fingers with both hands, wearing a white blouse with delicate patterns. She is standing against a pastel pink background, smiling and looking slightly upwards. The image has a clean frame and is shot in a studio environment with soft, even lighting. The camera used is a Canon EOS-1D X Mark III, with meticulous color correction and a high-contrast finish, giving a crisp and vibrant look --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with dark brown hair and brown eyes, crossing her fingers with both hands, wearing a light blue blouse with delicate patterns. She is standing against a pastel pink background, smiling and looking slightly upwards. The image has a clean frame and is shot in a studio environment with soft, even lighting. The camera used is a Canon EOS-1D X Mark III, with meticulous color correction and a high-contrast finish, giving a crisp and vibrant look --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with blonde hair and green eyes, crossing her fingers with both hands, wearing a pastel yellow blouse with delicate patterns. She is standing against a pastel pink background, smiling and looking slightly upwards. The image has a clean frame and is shot in a studio environment with soft, even lighting. The camera used is a Canon EOS-1D X Mark III, with meticulous color correction and a high-contrast finish, giving a crisp and vibrant look --ar 16:9
+
+2024-07-10 16:45:12,208 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-10 16:45:12,208 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:45:12,209 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:45:12,209 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:45:12,212 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 16:45:12,922 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:45:12,922 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:45:14,543 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:45:14,867 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:45:14,868 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:45:15,138 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:45:15,403 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:45:15,403 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:45:15,567 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:45:15,567 - INFO - Достигнуто максимальное количество попыток (3) для файла images.jpeg. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:45:15,570 - INFO - Обработка подпапки '3' завершена.
+2024-07-10 16:45:16,955 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:45:16,955 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:45:17,480 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:45:17,773 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:45:17,774 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:45:17,871 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:45:18,143 - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2024-07-10 16:45:18,143 - ERROR - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:45:18,253 - INFO - Ошибка при обработке файла: Incorrect API key provided: sk-proj-********************************************DLLe. You can find your API key at https://platform.openai.com/account/api-keys. (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 )
+2024-07-10 16:45:18,254 - INFO - Достигнуто максимальное количество попыток (3) для файла images (1).jpeg. Переходим к следующему файлу. 
+ (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:45:18,257 - INFO - Обработка подпапки '4' завершена.
+2024-07-10 16:45:33,449 - INFO - Запуск программы
+2024-07-10 16:45:34,091 - INFO - Запуск программы
+2024-07-10 16:45:46,029 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male mannequin with a light brown skin tone, wearing form-fitting black cycling shorts. The mannequin is standing on a glossy black pedestal in a studio setup with a plain gray background. The photo is captured with a Canon EOS 5D Mark IV, under soft diffused lighting. Color correction emphasizes warm skin tones, and the style is clean and minimalistic --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male mannequin with a medium brown skin tone, wearing form-fitting black cycling shorts. The mannequin is standing on a glossy black pedestal in a studio setup with a plain gray background. The photo is captured with a Canon EOS 5D Mark IV, under soft diffused lighting. Color correction emphasizes neutral skin tones, and the style is clean and minimalistic --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male mannequin with a dark brown skin tone, wearing form-fitting black cycling shorts. The mannequin is standing on a glossy black pedestal in a studio setup with a plain gray background. The photo is captured with a Canon EOS 5D Mark IV, under soft diffused lighting. Color correction emphasizes cool skin tones, and the style is clean and minimalistic --ar 16:9
+
+2024-07-10 16:45:46,030 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-10 16:45:46,031 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:45:46,031 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:45:46,031 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:45:46,034 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 16:45:58,060 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with brown hair styled in loose waves, wearing a white blouse with a neckline tie and sheer sleeves. She has a cheerful expression, fingers crossed, and is looking upwards. The background is solid pastel pink. Close-up frame. Taken with a Canon EOS 5D Mark IV camera, natural lighting enhances the warm tones of her skin and hair. Minimal color correction for a vibrant and clear image. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with blonde hair styled in loose waves, wearing a white blouse with a neckline tie and sheer sleeves. She has a cheerful expression, fingers crossed, and is looking upwards. The background is solid pastel pink. Close-up frame. Taken with a Canon EOS 5D Mark IV camera, natural lighting enhances the warm tones of her skin and hair. Minimal color correction for a vibrant and clear image. --ar 16:9  
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with red hair styled in loose waves, wearing a white blouse with a neckline tie and sheer sleeves. She has a cheerful expression, fingers crossed, and is looking upwards. The background is solid pastel pink. Close-up frame. Taken with a Canon EOS 5D Mark IV camera, natural lighting enhances the warm tones of her skin and hair. Minimal color correction for a vibrant and clear image. --ar 16:9
+
+2024-07-10 16:45:58,061 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-10 16:45:58,061 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:45:58,062 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:45:58,062 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:45:58,065 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 16:46:08,790 - INFO - File: 'images.jpeg' Обработан c CHAT GPT ключом: Ключ 3! 
+/imagine prompt: Stock style, hyper-realistic, high-quality photo of a winter wonderland, featuring a frosty landscape. A large, snow-covered evergreen tree stands prominently in the foreground, with smaller snow-topped trees receding into the background. The thick blanket of pure white snow covers the ground, creating soft, undulating shapes. A serene forest of conifers stretches out into the horizon under a twilight sky. Shot on a Canon EOS 5D Mark IV, the composition captures the soft light of dawn, with hues of cool blue and white. The image showcases impeccable color correction, emphasizing the crisp, cold atmosphere of the scene, creating a tranquil and picturesque winter setting --ar 16:9
+
+/imagine prompt: Stock style, hyper-realistic, high-quality photo of a winter wonderland, featuring a frosty landscape. A large, snow-covered evergreen tree with a hint of morning sunlight tinged with a soft golden hue stands prominently in the foreground, with smaller snow-topped trees bathed in early light receding into the background. The thick blanket of pure white snow covers the ground, creating soft, undulating shapes. A serene forest of conifers stretches out into the horizon under a twilight sky. Shot on a Nikon D850, the composition captures the soft light of dawn, with hues of warm gold and pristine white. The image showcases impeccable color correction, emphasizing the serene and inviting atmosphere of the winter scene --ar 16:9
+
+/imagine prompt: Stock style, hyper-realistic, high-quality photo of a winter wonderland, featuring a frosty landscape. A large, snow-covered evergreen tree stands prominently in the foreground under a vibrant sunrise, with a pink and purple sky casting delicate colors onto the snowy scene. Smaller snow-topped trees recede into the background. The thick blanket of pure white snow covers the ground, creating soft, undulating shapes. A serene forest of conifers stretches out into the horizon. Shot on a Sony Alpha 7R IV, the composition captures the enchanting light of dawn, with hues of pink, purple, and white. The image showcases impeccable color correction, accentuating the dreamy and magical atmosphere of the winter setting --ar 16:9
+
+2024-07-10 16:46:08,791 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 3 )
+2024-07-10 16:46:08,791 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:46:08,792 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 3 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:46:08,792 - INFO - File: 'images.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:46:08,794 - INFO - Обработка подпапки '3' завершена.
+2024-07-10 16:46:16,106 - INFO - File: 'images (1).jpeg' Обработан c CHAT GPT ключом: Ключ 4! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a mesmerizing, psychedelic spiral pattern in vibrant blue and purple hues, the spiral radiates from a central point creating a hypnotic effect, additional elements include subtle glowing accents that enhance the illusion, framed tightly to emphasize the spiral formation, likely created digitally, enhanced with Canon EOS 5D Mark IV, bright and vibrant lighting, precise color correction, modern and futuristic style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a mesmerizing, psychedelic spiral pattern in vivid red and orange hues, the spiral radiates from a central point creating a hypnotic effect, additional elements include subtle glowing accents that enhance the illusion, framed tightly to emphasize the spiral formation, likely created digitally, enhanced with Canon EOS 5D Mark IV, bright and vibrant lighting, precise color correction, modern and futuristic style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a mesmerizing, psychedelic spiral pattern in vibrant yellow and green hues, the spiral radiates from a central point creating a hypnotic effect, additional elements include subtle glowing accents that enhance the illusion, framed tightly to emphasize the spiral formation, likely created digitally, enhanced with Canon EOS 5D Mark IV, bright and vibrant lighting, precise color correction, modern and futuristic style --ar 16:9
+
+2024-07-10 16:46:16,107 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 4 )
+2024-07-10 16:46:16,107 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:46:16,107 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 4 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 16:46:16,108 - INFO - File: 'images (1).jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 16:46:16,111 - INFO - Обработка подпапки '4' завершена.
