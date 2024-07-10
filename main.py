@@ -24,8 +24,15 @@ log_and_print("Запуск программы")
 now = datetime.datetime.now()
 # Форматируем дату и время в строку
 file_name = now.strftime("%Y-%m-%d_%H-%M-%S") + ".txt"
+
+file_date = now.strftime("%Y-%m-%d_%H-%M-%S")
 # Путь к файлу в корне проекта
 file_path = os.path.join(os.getcwd(), file_name)
+
+
+
+
+
 
 # Чтение API-ключей из файла конфигурации
 config = configparser.ConfigParser()
@@ -129,9 +136,7 @@ def process_images(files, subdir):
                 # Получаем текстовый ответ от GPT
                 gpt_response = response.choices[0]["message"]["content"].rstrip(".")
 
-                with open(file_path, 'a') as file:
-                    file.write(f"{txt_couner}. {gpt_response}\n \n")
-                    txt_couner += 1
+
                 # Разбиваем ответ на параграфы
                 paragraphs = gpt_response.split("\n\n")
                 if "--ar 16:9" not in gpt_response:
@@ -203,6 +208,11 @@ def process_images(files, subdir):
                 if "You’ve reached the current usage cap for GPT-4" in str(e):
                     pause_for_two_hours()
                     continue
+
+            with open(file_path, 'a') as file:
+                    file.write(f"{txt_couner}. {gpt_response}\n \n")
+                    txt_couner += 1
+
             num_successful_files += 1
             pause_check()
             break
@@ -282,6 +292,14 @@ for subdir in subdirectories:
 
     log_processed_folder(os.path.basename(subdir))
 
+# Новое имя файла
+new_file_name = file_date + '_' + str(num_successful_files) + '.txt'
+
+# Путь к новому файлу в той же директории
+new_file_path = os.path.join(os.getcwd(), new_file_name)
+
+# Переименовываем файл
+os.rename(file_path, new_file_path)
 
 # После обработки всех подпапок выведите сообщение о завершении
 log_and_print("Конец. Все файлы успешно обработаны!")

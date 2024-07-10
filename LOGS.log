@@ -654,3 +654,85 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2024-07-09 17:29:18,828 - INFO - Конец. Все файлы успешно обработаны!
 2024-07-09 17:29:18,828 - INFO - Всего успешно обработано файлов GPT: 2
 2024-07-09 17:29:18,999 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-10 14:20:36,192 - INFO - Запуск программы
+2024-07-10 14:20:36,830 - INFO - Запуск программы
+2024-07-10 14:23:06,481 - INFO - Запуск программы
+2024-07-10 14:23:06,714 - INFO - Запуск программы
+2024-07-10 14:25:12,964 - INFO - Запуск программы
+2024-07-10 14:25:13,197 - INFO - Запуск программы
+2024-07-10 14:25:41,877 - INFO - Запуск программы
+2024-07-10 14:25:42,135 - INFO - Запуск программы
+2024-07-10 14:25:54,985 - ERROR - Ошибка. Папка не выбрана. Программа завершает работу.
+2024-07-10 14:25:55,181 - INFO - Ошибка. Папка не выбрана. Программа завершает работу.
+2024-07-10 14:29:11,990 - INFO - Запуск программы
+2024-07-10 14:29:12,266 - INFO - Запуск программы
+2024-07-10 14:29:31,097 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male mannequin. The mannequin has a skin tone with a warm hue, wearing black athletic shorts. The object stands on a glossy round platform with a seamless white backdrop. The image is captured with a Canon EOS 5D Mark IV camera, the lighting is soft and even, minimal shadows. The colors are clean and accurately corrected, creating a studio photography look --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male mannequin. The mannequin has a skin tone with a cool hue, wearing black athletic shorts. The object stands on a glossy round platform with a seamless white backdrop. The image is captured with a Canon EOS 5D Mark IV camera, the lighting is soft and even, minimal shadows. The colors are clean and accurately corrected, creating a studio photography look --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a male mannequin. The mannequin has a skin tone with a neutral hue, wearing black athletic shorts. The object stands on a glossy round platform with a seamless white backdrop. The image is captured with a Canon EOS 5D Mark IV camera, the lighting is soft and even, minimal shadows. The colors are clean and accurately corrected, creating a studio photography look --ar 16:9
+
+2024-07-10 14:29:31,098 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-10 14:29:31,099 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:29:31,099 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:29:31,099 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-10 14:29:31,102 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 14:29:46,160 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with golden brown hair, wearing a white blouse with intricate patterns, standing against a solid pink background, making a hopeful expression with her fingers crossed. The location is a studio with soft, even lighting that highlights her natural features. Shot with a Canon EOS 5D Mark IV, perfectly color corrected to bring out the warm tones in her hair and the fine details of her blouse --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with jet black hair, wearing a light blue blouse with delicate lace details, standing against a solid pink background, making a wishful expression with her fingers crossed. The location is a studio with soft, even lighting that accentuates her smooth complexion. Shot with a Canon EOS 5D Mark IV, expertly color corrected to enhance the deep hues of her hair and the soft pastel of her blouse --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a young woman with auburn hair, wearing a pastel yellow blouse with subtle embroidery, standing against a solid pink background, hoping with fingers crossed. The setting is a studio designed with even, diffused lighting that casts a gentle glow over her features. Shot with a Canon EOS 5D Mark IV, thoughtfully color corrected to bring out the rich colors in her hair and the delicate tones of her blouse --ar 16:9
+
+2024-07-10 14:29:46,161 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-10 14:29:46,162 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:29:46,162 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:29:46,162 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 14:29:46,164 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 14:31:04,743 - INFO - Запуск программы
+2024-07-10 14:31:06,328 - INFO - Запуск программы
+2024-07-10 14:31:32,008 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a realistic anatomical model of a human figure. The figure is a full-body, male model displayed in black shorts. It stands on a black circular platform. The skintone is medium-dark with a healthy, vibrant glow. The background is a gradient from light grey at the bottom to white at the top, giving a clean, clinical feel. The photo is framed in a portrait orientation, captured in a studio setting. The camera model used is a Canon EOS 5D Mark IV. Lighting is even and soft, illuminating the figure from multiple angles. Color correction emphasizes natural skin tones and contrasts. Style is professional and highly detailed --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a realistic anatomical model of a human figure. The figure is a full-body, male model displayed in black shorts. It stands on a black circular platform. The skintone is light with subtle undertones of pink. The background is a gradient from light grey at the bottom to white at the top, giving a clean, clinical feel. The photo is framed in a portrait orientation, captured in a studio setting. The camera model used is a Canon EOS 5D Mark IV. Lighting is even and soft, illuminating the figure from multiple angles. Color correction emphasizes natural skin tones and contrasts. Style is professional and highly detailed --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a realistic anatomical model of a human figure. The figure is a full-body, male model displayed in black shorts. It stands on a black circular platform. The skintone is dark with a rich, natural texture. The background is a gradient from light grey at the bottom to white at the top, giving a clean, clinical feel. The photo is framed in a portrait orientation, captured in a studio setting. The camera model used is a Canon EOS 5D Mark IV. Lighting is even and soft, illuminating the figure from multiple angles. Color correction emphasizes natural skin tones and contrasts. Style is professional and highly detailed --ar 16:9
+
+2024-07-10 14:31:32,010 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-10 14:31:32,010 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:31:32,010 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 1 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:31:32,010 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-10 14:31:32,013 - INFO - Обработка подпапки '1' завершена.
+2024-07-10 14:31:42,917 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with brown hair, wearing a white blouse, holding her crossed fingers beside a pastel pink background. The blouse is slightly translucent with delicate embroidery, and the woman's hair is styled in loose waves. The woman is looking upwards with a hopeful expression. The photo is framed from the waist up, taken using a Canon EOS 5D Mark IV, with soft, even lighting. The color correction is warm, emphasizing the softness of the setting --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with blonde hair, wearing a white blouse, holding her crossed fingers beside a pastel pink background. The blouse is slightly translucent with delicate embroidery, and the woman's hair is styled in loose waves. The woman is looking upwards with a hopeful expression. The photo is framed from the waist up, taken using a Canon EOS 5D Mark IV, with soft, even lighting. The color correction is warm, emphasizing the softness of the setting --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with black hair, wearing a white blouse, holding her crossed fingers beside a pastel pink background. The blouse is slightly translucent with delicate embroidery, and the woman's hair is styled in loose waves. The woman is looking upwards with a hopeful expression. The photo is framed from the waist up, taken using a Canon EOS 5D Mark IV, with soft, even lighting. The color correction is warm, emphasizing the softness of the setting --ar 16:9
+
+2024-07-10 14:31:42,918 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-10 14:31:42,918 - INFO - Найден параграф 2 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:31:42,918 - INFO - Найден параграф 3 (Ключ GPT:  Ключ 2 Ключ Midjounrey:  Ключ 1 ) 
+
+2024-07-10 14:31:42,919 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-10 14:31:42,921 - INFO - Обработка подпапки '2' завершена.
+2024-07-10 14:31:43,130 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-10 14:31:43,304 - INFO - Конец. Все файлы успешно обработаны!
+2024-07-10 14:31:43,304 - INFO - Всего успешно обработано файлов GPT: 2
+2024-07-10 14:31:43,475 - INFO - Всего успешно обработано файлов GPT: 2
