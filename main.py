@@ -219,6 +219,10 @@ def process_images(files, subdir):
              
 
             if txt_couner_second >= max_txt:
+                
+                file_name = now.strftime("%Y-%m-%d_%H-%M-%S") + ".txt"
+
+                file_date = now.strftime("%Y-%m-%d_%H-%M-%S")
                 # Новое имя файла
                 new_file_name = file_date + '_' + str(txt_couner_second) + '.txt'
 
@@ -229,9 +233,7 @@ def process_images(files, subdir):
                 os.rename(file_path, new_file_path)
                 now = datetime.datetime.now()
                 # Форматируем дату и время в строку
-                file_name = now.strftime("%Y-%m-%d_%H-%M-%S") + ".txt"
 
-                file_date = now.strftime("%Y-%m-%d_%H-%M-%S")
                 # Путь к файлу в корне проекта
                 file_path = os.path.join(os.getcwd(), file_name)
                 txt_couner_second = 1
@@ -317,6 +319,14 @@ for subdir in subdirectories:
 
     log_processed_folder(os.path.basename(subdir))
 
+                # Новое имя файла
+new_file_name = file_date + '_' + str(txt_couner_second - 1) + '.txt'
+
+                # Путь к новому файлу в той же директории
+new_file_path = os.path.join(os.getcwd(), new_file_name)
+
+                # Переименовываем файл
+os.rename(file_path, new_file_path)
 
 # После обработки всех подпапок выведите сообщение о завершении
 log_and_print("Конец. Все файлы успешно обработаны!")
