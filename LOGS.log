@@ -164,3 +164,116 @@
 2024-07-11 14:05:59,224 - INFO - Конец. Все файлы успешно обработаны!
 2024-07-11 14:05:59,224 - INFO - Всего успешно обработано файлов GPT: 4
 2024-07-11 14:05:59,444 - INFO - Всего успешно обработано файлов GPT: 4
+2024-07-11 14:21:10,366 - INFO - Запуск программы
+2024-07-11 14:21:10,900 - INFO - Запуск программы
+2024-07-11 14:21:22,152 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a 3D rendered human model with light brown skin tone. The model is shirtless, wearing black shorts, and standing on a black round platform. The setting is a studio with a smooth gradient white-to-gray background, captured with a Canon EOS 5D Mark IV camera. Bright, diffused lighting, neutral color correction, highly detailed, realistic textures, minimalistic style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a 3D rendered human model with light tan skin tone. The model is shirtless, wearing dark gray shorts, and standing on a glossy black round platform. The setting is a professional studio with a soft gradient gray-to-white background, captured with a Nikon D850 camera. Even, diffused lighting, balanced color correction, extremely detailed, realistic textures, clean and minimalistic style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a 3D rendered human model with medium brown skin tone. The model is shirtless, wearing charcoal shorts, and standing on a polished black round platform. The setting is a studio with a clear gradient white-to-gray background, captured with a Sony A7R IV camera. Soft, diffused lighting, subtle color correction, meticulously detailed, realistic textures, modern and minimalistic style --ar 16:9
+
+2024-07-11 14:21:22,153 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-11 14:21:22,153 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-11 14:21:22,157 - INFO - Обработка подпапки '1' завершена.
+2024-07-11 14:21:34,503 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with blond hair wearing a white blouse. She is standing against a light pink background with an expression of hope, holding both hands up with fingers crossed. The woman's manicure is red, complementing her confident pose. Shot with a Canon EOS 5D Mark IV, the lighting is soft, enhancing the overall warm and positive feeling of the image. The photo is sharpened and color corrected to highlight the subtle details in the fabric of the blouse and the soft waves in her hair --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with brown hair wearing a light blue blouse. She is standing against a light pink background with an expression of hope, holding both hands up with fingers crossed. The woman's manicure is pink, complementing her expressive pose. Shot with a Canon EOS 5D Mark IV, the lighting is soft, enhancing the overall warm and positive feeling of the image. The photo is sharpened and color corrected to highlight the subtle details in the fabric of the blouse and the soft waves in her hair --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with black hair wearing a pastel yellow blouse. She is standing against a light pink background with an expression of hope, holding both hands up with fingers crossed. The woman's manicure is purple, complementing her expressive pose. Shot with a Canon EOS 5D Mark IV, the lighting is soft, enhancing the overall warm and positive feeling of the image. The photo is sharpened and color corrected to highlight the subtle details in the fabric of the blouse and the soft waves in her hair --ar 16:9
+
+2024-07-11 14:21:34,504 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-11 14:21:34,504 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-11 14:21:34,509 - INFO - Обработка подпапки '2' завершена.
+2024-07-11 14:21:42,423 - INFO - File: 'images.jpeg' Обработан c CHAT GPT ключом: Ключ 3! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a pristine snow-covered landscape with a solitary evergreen tree. The tree's branches are laden with thick, fresh snow. The background features a dense forest of snow-capped trees, stretching across undulating hills. The scene is framed by the early morning light, casting a serene glow across the snow. Location: remote mountain valley. Camera model: Canon EOS 5D Mark IV. Lighting: natural sunrise, soft and diffused. Color correction: cool tones to emphasize the cold. Style: winter wonderland, tranquil, untouched --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a pristine snow-covered landscape with a solitary red-leafed tree. The tree's branches are outlined with frost, creating a striking contrast against the white snow. The background features a dense forest of snow-covered trees, providing depth to the image. The scene is framed by the early morning light, casting a serene glow across the snow. Location: remote mountain valley. Camera model: Canon EOS 5D Mark IV. Lighting: natural sunrise, soft and diffused. Color correction: cool tones to emphasize the cold, with warm highlights on the red leaves. Style: winter wonderland, tranquil, untouched --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a pristine snow-covered landscape with a solitary orange-leafed tree. The tree's branches are outlined with frost, creating a vibrant contrast against the white snow. The background features a dense forest of snow-covered trees, providing depth to the image. The scene is framed by the early morning light, casting a serene glow across the snow. Location: remote mountain valley. Camera model: Canon EOS 5D Mark IV. Lighting: natural sunrise, soft and diffused. Color correction: cool tones to emphasize the cold, with warm highlights on the orange leaves. Style: winter wonderland, tranquil, untouched --ar 16:9
+
+2024-07-11 14:21:42,424 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 3 )
+2024-07-11 14:21:42,424 - INFO - File: 'images.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-11 14:21:42,428 - INFO - Обработка подпапки '3' завершена.
+2024-07-11 14:21:48,896 - INFO - File: 'images (1).jpeg' Обработан c CHAT GPT ключом: Ключ 4! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of an optical illusion graphic, with vibrant blue and purple colors radiating from the center in a mesmerizing pattern. The design creates a dynamic sense of movement and depth, drawing the viewer's eye inward. The image is captured in a perfectly square frame, set against a neutral background, with professional lighting accentuating the rich hues. Shot with a Canon EOS 5D Mark IV, the photo features pristine color correction and a contemporary style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of an optical illusion graphic, with bright green and yellow colors radiating from the center in a mesmerizing pattern. The design creates a dynamic sense of movement and depth, drawing the viewer's eye inward. The image is captured in a perfectly square frame, set against a neutral background, with professional lighting accentuating the vibrant hues. Shot with a Nikon D850, the photo features pristine color correction and a contemporary style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of an optical illusion graphic, with intense red and orange colors radiating from the center in a mesmerizing pattern. The design creates a dynamic sense of movement and depth, drawing the viewer's eye inward. The image is captured in a perfectly square frame, set against a neutral background, with professional lighting accentuating the fiery hues. Shot with a Sony A7R IV, the photo features pristine color correction and a contemporary style --ar 16:9
+
+2024-07-11 14:21:48,897 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 4 )
+2024-07-11 14:21:48,898 - INFO - File: 'images (1).jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-11 14:21:48,901 - INFO - Обработка подпапки '4' завершена.
+2024-07-11 14:27:08,115 - INFO - Запуск программы
+2024-07-11 14:27:08,700 - INFO - Запуск программы
+2024-07-11 14:27:22,488 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a 3D rendered male mannequin. The mannequin has a light skin tone with a smooth texture, wearing tight black cycling shorts. The background is a plain gradient from light gray to white. The mannequin stands on a glossy black circular platform. The image is shot with a Nikon D850 camera, using soft natural light. Color correction highlights realistic skin tones and shadows. Minimalistic and modern studio shot --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a 3D rendered male mannequin. The mannequin has a medium skin tone with a smooth texture, wearing tight black cycling shorts. The background is a plain gradient from light gray to white. The mannequin stands on a glossy black circular platform. The image is shot with a Nikon D850 camera, using soft natural light. Color correction highlights realistic skin tones and shadows. Minimalistic and modern studio shot --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a 3D rendered male mannequin. The mannequin has a dark skin tone with a smooth texture, wearing tight black cycling shorts. The background is a plain gradient from light gray to white. The mannequin stands on a glossy black circular platform. The image is shot with a Nikon D850 camera, using soft natural light. Color correction highlights realistic skin tones and shadows. Minimalistic and modern studio shot --ar 16:9
+
+2024-07-11 14:27:22,489 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-11 14:27:22,489 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-11 14:27:37,801 - INFO - Запуск программы
+2024-07-11 14:27:38,532 - INFO - Запуск программы
+2024-07-11 14:27:52,822 - INFO - File: 'mcr3yx1s.jpg' Обработан c CHAT GPT ключом: Ключ 1! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a digital human model standing on a glossy black platform, wearing dark blue shorts, with a muscular and toned physique. The model has a neutral expression and is positioned with arms slightly out to the sides. The backdrop is a seamless grey gradient. The image is perfectly centered and framed in landscape orientation. Taken with a Canon 5D Mark IV, using studio lighting, with precise color correction for enhanced skin tones and realistic shading. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a digital human model standing on a glossy black platform, wearing bright red shorts, with a muscular and toned physique. The model has a neutral expression and is positioned with arms slightly out to the sides. The backdrop is a seamless grey gradient. The image is perfectly centered and framed in landscape orientation. Taken with a Canon 5D Mark IV, using studio lighting, with precise color correction for enhanced skin tones and realistic shading. --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a digital human model standing on a glossy black platform, wearing classic black shorts, with a muscular and toned physique. The model has a neutral expression and is positioned with arms slightly out to the sides. The backdrop is a seamless grey gradient. The image is perfectly centered and framed in landscape orientation. Taken with a Canon 5D Mark IV, using studio lighting, with precise color correction for enhanced skin tones and realistic shading. --ar 16:9
+
+2024-07-11 14:27:52,823 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 1 )
+2024-07-11 14:27:52,824 - INFO - File: 'mcr3yx1s.jpg' Обработан ключом: Ключ 1! 
+
+2024-07-11 14:27:52,827 - INFO - Обработка подпапки '1' завершена.
+2024-07-11 14:28:03,376 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан c CHAT GPT ключом: Ключ 2! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with light brown hair and light complexion, wearing a white blouse. She is smiling and has both of her hands up, fingers crossed, against a pink background. The image is taken with a Canon EOS 5D Mark IV, soft lighting enhances her features, and color correction accentuates the vibrancy of the pink background --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with dark brown hair and medium complexion, wearing a white blouse. She is smiling and has both of her hands up, fingers crossed, against a light blue background. The image is taken with a Canon EOS 5D Mark IV, soft lighting enhances her features, and color correction accentuates the vibrancy of the light blue background --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a woman with blonde hair and fair complexion, wearing a light blue blouse. She is smiling and has both of her hands up, fingers crossed, against a yellow background. The image is taken with a Canon EOS 5D Mark IV, soft lighting enhances her features, and color correction accentuates the vibrancy of the yellow background --ar 16:9
+
+2024-07-11 14:28:03,377 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 2 )
+2024-07-11 14:28:03,377 - INFO - File: '728x546_1_7dd3ae90748f9a461d8e98347f765534@1616x1212_0xac120003_18985384621638440665.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-11 14:28:03,380 - INFO - Обработка подпапки '2' завершена.
+2024-07-11 14:28:11,023 - INFO - File: 'images.jpeg' Обработан c CHAT GPT ключом: Ключ 3! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a lush green pine tree covered in pristine white snow, standing alone in a serene, expansive snow-covered field. The scene is framed by a dense forest of coniferous trees in the background, also blanketed in snow. The location is a remote, tranquil forest clearing, with a clear view of the horizon. The photo was taken with a Canon EOS R5, utilizing natural, soft morning light that creates a sense of calm and tranquility. The colors have been subtly corrected to enhance the crisp whites and rich greens, in a realistic yet slightly dreamy winter landscape style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a dark green pine tree covered in thick, powdery snow, standing alone in a peaceful, vast snow-covered meadow. The scene is framed by a thick forest of evergreen trees in the distance, also layered in snow. The location is a secluded, serene open glade, with a wide open sky. The photo was taken with a Nikon D850, using the soft natural light of dawn that bathe the scene in a gentle, tranquil glow. The colors have been gently corrected to accentuate the pure whites and deep greens, in a calm and picturesque winter wonderland style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a blue-green pine tree adorned with a layer of fluffy, undisturbed snow, standing solitary in an open snowy expanse. The scene is framed by a backdrop of tall, snow-laden evergreen trees, with soft hills adding depth to the horizon. The location is a tranquil, remote forest clearing, providing a clear view of the sky. The photo was captured with a Sony A7R IV, using the serene early morning light that casts a peaceful, soft illumination across the landscape. The colors have been carefully corrected to highlight the crisp blues, whites, and greens, rendering a calm and enchanting winter scene style --ar 16:9
+
+2024-07-11 14:28:11,024 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 3 )
+2024-07-11 14:28:11,025 - INFO - File: 'images.jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-11 14:28:11,028 - INFO - Обработка подпапки '3' завершена.
+2024-07-11 14:28:21,569 - INFO - File: 'images (1).jpeg' Обработан c CHAT GPT ключом: Ключ 4! 
+/imagine prompt: Stock style, hyper realistic, high quality photo of a vibrant, multicolored optical illusion pattern, consisting of sharp, radiating lines that create a dynamic, pulsating effect. The intricate design features shades of red, blue, yellow, and green, creating a hypnotic visual experience. The image fills the entire frame with no distinct border, giving a sense of infinite expanse. Taken with a Nikon D850 camera, ensuring high resolution and clarity. The lighting is even and digitally enhanced, with high contrast and saturation to emphasize the vivid colors. The image is clean and sharp, suitable for modern graphic design or artistic projects, in a contemporary, digital art style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a vibrant, multicolored optical illusion pattern, with a dominant cool color palette of blues, greens, and purples, creating a soothing yet mesmerizing effect. The intricate design radiates with precise, sharp lines, filling the entire frame with no borders for an immersive experience. Taken with a Canon EOS 5D Mark IV camera, ensuring high resolution and clarity. The lighting is perfectly balanced and digitally enhanced, highlighting the cool tones. The high contrast and saturation make the colors pop, making it an ideal choice for digital artwork or modern graphic design projects, in a contemporary, abstract art style --ar 16:9
+
+/imagine prompt: Stock style, hyper realistic, high quality photo of a dynamic, multicolored optical illusion pattern, with a warm color palette featuring shades of orange, red, and yellow. The intricate, radiating design creates a pulsing effect, engaging the viewer's perception. The image stretches to the edges of the frame with no borders, suggesting limitless depth. Captured with a Sony Alpha 7R IV camera, offering exceptional detail and clarity. The lighting is uniformly distributed and digitally enhanced, accentuating the warm hues with high contrast and saturation. Ideal for modern graphic design or contemporary digital art projects, the image presents a captivating visual in a vivid, abstract style --ar 16:9
+
+2024-07-11 14:28:21,570 - INFO - Найден параграф 1 
+ (Ключ GPT:  Ключ 4 )
+2024-07-11 14:28:21,571 - INFO - File: 'images (1).jpeg' Обработан ключом: Ключ 1! 
+
+2024-07-11 14:28:21,574 - INFO - Обработка подпапки '4' завершена.

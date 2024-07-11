@@ -93,7 +93,8 @@ def process_images(files, subdir):
     global txt_couner_second
     global file_path  # Объявляем file_path как глобальную переменную
     global file_date
-
+    global now
+    global result_directory
     for image_file in files:
         attempts = 0
         api_key = get_current_api_key()
@@ -225,9 +226,10 @@ def process_images(files, subdir):
                 file_date = now.strftime("%Y-%m-%d_%H-%M-%S")
                 # Новое имя файла
                 new_file_name = file_date + '_' + str(txt_couner_second) + '.txt'
-
+                current_directory = os.getcwd()
+                result_directory = os.path.join(current_directory, "result")
                 # Путь к новому файлу в той же директории
-                new_file_path = os.path.join(os.getcwd(), new_file_name)
+                new_file_path = os.path.join(result_directory, new_file_name)
 
                 # Переименовываем файл
                 os.rename(file_path, new_file_path)
@@ -323,7 +325,7 @@ for subdir in subdirectories:
 new_file_name = file_date + '_' + str(txt_couner_second - 1) + '.txt'
 
                 # Путь к новому файлу в той же директории
-new_file_path = os.path.join(os.getcwd(), new_file_name)
+new_file_path = os.path.join(result_directory, new_file_name)
 
                 # Переименовываем файл
 os.rename(file_path, new_file_path)
