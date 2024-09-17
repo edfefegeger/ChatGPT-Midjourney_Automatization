@@ -4,3 +4,7 @@ PICTURES/*
 config.ini
 
 LOGS.log
+
+__pycache__/*
+
+Results/*
